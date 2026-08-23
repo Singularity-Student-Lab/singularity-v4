@@ -356,144 +356,52 @@ html.w-mod-js:not(.w-mod-ix3) :is(.testimonials-section, [data-wf-target*='["697
 }
 
 /* =========================================================
-   CINEMATIC PAGE TRANSITION ARCHITECTURE
+   SIMPLE ELEGANT PAGE TRANSITION
    ========================================================= */
 
-.singularity-page-transition-overlay {
+.singularity-simple-transition {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 9999999;
-  pointer-events: none;
-  overflow: hidden;
-  will-change: transform;
-}
-
-.transition-curtain-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 50% 50%, #0d0d12 0%, #030305 100%);
   background-color: #050505;
-}
-
-.transition-glow-line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, transparent 0%, rgba(96, 165, 250, 0.3) 20%, rgba(255, 255, 255, 0.95) 50%, rgba(96, 165, 250, 0.3) 80%, transparent 100%);
-  box-shadow: 0 0 20px rgba(96, 165, 250, 0.9), 0 0 40px rgba(147, 197, 253, 0.5);
-  z-index: 2;
-}
-
-.transition-center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  z-index: 999999;
   pointer-events: none;
-}
-
-.transition-logo-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  padding: 0.8rem 1.6rem;
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-}
-
-.transition-logo-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
-  animation: transitionEmblemPulse 1.8s ease-in-out infinite alternate;
-}
-
-.transition-logo-text {
-  font-family: var(--font-tech);
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: #ffffff;
-  line-height: 1;
-}
-
-@keyframes transitionEmblemPulse {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  100% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 15px rgba(96, 165, 250, 0.8)); }
-}
-
-/* STATE: ENTERING (curtain reveals the page by sliding up smoothly) */
-.singularity-page-transition-overlay.state-entering {
-  transform: translateY(-100%);
-  transition: transform 0.52s cubic-bezier(0.76, 0, 0.24, 1);
-  pointer-events: none;
-}
-.singularity-page-transition-overlay.state-entering .transition-glow-line {
-  bottom: 0;
-}
-.singularity-page-transition-overlay.state-entering .transition-center-content {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.22s ease-out;
 }
 
-/* STATE: IDLE (completely hidden and off-screen) */
-.singularity-page-transition-overlay.state-idle {
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* STATE: EXITING (curtain sweeps in from bottom to cover page) */
-.singularity-page-transition-overlay.state-exiting {
-  transform: translateY(0%);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  animation: transitionCurtainEnter 0.42s cubic-bezier(0.76, 0, 0.24, 1) forwards;
-}
-.singularity-page-transition-overlay.state-exiting .transition-glow-line {
+.simple-transition-bar {
+  position: absolute;
   top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #60A5FA;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
+  transition: width 0.2s ease-out;
 }
-.singularity-page-transition-overlay.state-exiting .transition-center-content {
+
+.singularity-simple-transition.state-entering {
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+.singularity-simple-transition.state-idle {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.singularity-simple-transition.state-exiting {
   opacity: 1;
-  animation: transitionFadeIn 0.3s ease 0.1s both;
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 0.18s ease-in;
 }
 
-@keyframes transitionCurtainEnter {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes transitionFadeIn {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -40%) scale(0.96);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
+.singularity-simple-transition.state-exiting .simple-transition-bar {
+  width: 100%;
 }
 

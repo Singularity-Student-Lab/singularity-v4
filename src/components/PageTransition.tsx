@@ -1,21 +1,18 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function PageTransition() {
-  // 'entering' | 'idle' | 'exiting'
   const [transitionState, setTransitionState] = useState<"entering" | "idle" | "exiting">("entering");
-  const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // 1. Initial Page Enter Animation (curtain slides away smoothly)
-    const enterTimer = setTimeout(() => {
+    // 1. Initial Page Enter (smooth gentle fade-in)
+    const timer = setTimeout(() => {
       setTransitionState("idle");
-    }, 550);
+    }, 280);
 
-    // 2. Global Link Click Interceptor for Smooth Page-to-Page Exits
+    // 2. Intercept internal links for a clean, quick exit fade
     const handleDocumentClick = (event: MouseEvent) => {
-      // Don't intercept if modifier keys are pressed (e.g. open in new tab)
       if (
         event.defaultPrevented ||
         event.button !== 0 ||
@@ -27,7 +24,6 @@ export default function PageTransition() {
         return;
       }
 
-      // Find closest <a> tag
       const target = event.target as HTMLElement | null;
       const anchor = target?.closest("a") as HTMLAnchorElement | null;
 
@@ -36,38 +32,24 @@ export default function PageTransition() {
       const href = anchor.getAttribute("href");
       if (!href) return;
 
-      // Ignore external links, mailto, tel, javascript, download, or new tabs
+      // Ignore external, hash jumps, mailto, tel, downloads
       if (
         anchor.target === "_blank" ||
-        href.startsWith("http://") ||
-        href.startsWith("https://") ||
         href.startsWith("mailto:") ||
         href.startsWith("tel:") ||
         href.startsWith("javascript:") ||
+        href.startsWith("#") ||
         anchor.hasAttribute("download")
       ) {
-        // If it is an absolute URL pointing to current origin, we can still handle it
-        if (
-          (href.startsWith("http://") || href.startsWith("https://")) &&
-          !href.startsWith(window.location.origin)
-        ) {
-          return;
-        }
-      }
-
-      // Ignore pure anchor jumps on the same page (e.g., #Mission, #Team, #labs)
-      if (href.startsWith("#")) {
         return;
       }
 
-      // Compute target URL path and hash
-      let targetPath = href;
+      // Check URL
       try {
         const parsed = new URL(anchor.href, window.location.href);
-        // If external origin, skip
         if (parsed.origin !== window.location.origin) return;
 
-        // If exact same path, search, and hash, do nothing
+        // Same page check
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search &&
@@ -76,7 +58,7 @@ export default function PageTransition() {
           return;
         }
 
-        // If same path but only hash change (e.g. /#labs from /), allow standard scroll
+        // Same page with hash jump
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search &&
@@ -85,39 +67,30 @@ export default function PageTransition() {
           return;
         }
 
-        targetPath = parsed.pathname + parsed.search + parsed.hash;
+        // Clean quick transition
+        event.preventDefault();
+        setTransitionState("exiting");
+
+        setTimeout(() => {
+          window.location.href = parsed.pathname + parsed.search + parsed.hash;
+        }, 180);
       } catch {
-        // Fallback for relative paths
+        // Ignore fallback
       }
-
-      // Intercept and trigger smooth exit transition
-      event.preventDefault();
-      setTransitionState("exiting");
-
-      // After curtain sweeps in, navigate to next page
-      setTimeout(() => {
-        window.location.href = targetPath;
-      }, 420);
     };
 
     document.addEventListener("click", handleDocumentClick, true);
 
-    // 3. Handle Back/Forward Cache (pageshow event)
-    const handlePageShow = (event: PageTransitionEvent) => {
-      if (event.persisted) {
-        setTransitionState("idle");
-      }
+    const handlePageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) setTransitionState("idle");
     };
-
-    const handlePopState = () => {
-      setTransitionState("idle");
-    };
+    const handlePopState = () => setTransitionState("idle");
 
     window.addEventListener("pageshow", handlePageShow);
     window.addEventListener("popstate", handlePopState);
 
     return () => {
-      clearTimeout(enterTimer);
+      clearTimeout(timer);
       document.removeEventListener("click", handleDocumentClick, true);
       window.removeEventListener("pageshow", handlePageShow);
       window.removeEventListener("popstate", handlePopState);
@@ -126,22 +99,10 @@ export default function PageTransition() {
 
   return (
     <div
-      ref={overlayRef}
-      className={`singularity-page-transition-overlay state-${transitionState}`}
+      className={`singularity-simple-transition state-${transitionState}`}
       aria-hidden="true"
     >
-      <div className="transition-curtain-bg"></div>
-      <div className="transition-glow-line"></div>
-      <div className="transition-center-content">
-        <div className="transition-logo-badge">
-          <img
-            src="/images/singularity_logo.webp"
-            alt=""
-            className="transition-logo-icon"
-          />
-          <span className="transition-logo-text">SINGULARITY</span>
-        </div>
-      </div>
+      <div className="simple-transition-bar"></div>
     </div>
   );
 }
