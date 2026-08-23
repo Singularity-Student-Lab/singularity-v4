@@ -768,7 +768,9 @@ const HEAD_STYLES = `
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
     letter-spacing: 0.01em;
-    /* 3 Crypto Vectors (Open Columns, No Boxes) */
+  }
+
+  /* 3 Crypto Vectors (Open Columns, No Boxes) */
   .crypto-vectors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
