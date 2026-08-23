@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'Lastik';
-  src: url('/fonts/LastikFreeFont-Free.woff2') format('woff2'),
-       url('/fonts/LastikFreeFont-Free.woff') format('woff');
+  src: url('/fonts/Lastik-Regular.woff2') format('woff2'),
+       url('/fonts/Lastik-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -249,19 +249,35 @@ html.w-mod-js:not(.w-mod-ix3) :is(.testimonials-section, [data-wf-target*='["697
   white-space: nowrap;
 }
 
+.logo-first {
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+}
+
 .nav-brand-icon {
-  width: 22px;
-  height: 22px;
+  width: 32px !important;
+  height: 32px !important;
   object-fit: contain;
-  margin-right: 8px;
-  filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
+  margin-right: 12px !important;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.45));
   vertical-align: middle;
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.top-text.logo {
+  font-family: var(--font-tech) !important;
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  line-height: 1 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
 }
 
 .logo-first:hover .nav-brand-icon {
-  transform: rotate(15deg) scale(1.15);
+  transform: rotate(12deg) scale(1.12);
 }
 
 .left-nav-links a:hover .navigation-text-main { opacity: 0.7; }

@@ -52,8 +52,8 @@ const BODY_HTML = `
           <div class="social-menu-wrapper">
             <div class="social-content for-footer"><a href="https://www.instagram.com/thesingularity.srmap" target="_blank"
                 class="social-wrapper w-inline-block" title="Instagram"><img width="18" loading="lazy" alt="Instagram"
-                  src="images/instagram-20-5-.webp" class="social-icon" /><img width="18" loading="lazy" alt="Instagram"
-                  src="images/instagram-20-5-.webp" class="social-icon" /></a><a href="https://www.linkedin.com/company/singularity-student-lab-srmap/"
+                  src="images/instagram-icon.webp" class="social-icon" /><img width="18" loading="lazy" alt="Instagram"
+                  src="images/instagram-icon.webp" class="social-icon" /></a><a href="https://www.linkedin.com/company/singularity-student-lab-srmap/"
                 target="_blank" class="social-wrapper w-inline-block" title="LinkedIn"><img width="18" loading="lazy" alt="LinkedIn"
                   src="images/linkedin-icon.svg" class="social-icon second" /><img width="18" loading="lazy" alt="LinkedIn"
                   src="images/linkedin-icon.svg" class="social-icon second" /></a></div>
@@ -463,7 +463,7 @@ const BODY_HTML = `
               <div class="margin-20">
                 <div class="social-menu-wrapper" style="display: flex; gap: 1rem;">
                   <a href="https://www.instagram.com/thesingularity.srmap" target="_blank" class="social-wrapper w-inline-block" title="Instagram" style="opacity: 0.8; transition: opacity 0.3s ease; width: 50px; height: 50px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <img width="22" loading="lazy" alt="Instagram" src="images/instagram-20-5-.webp" class="social-icon" />
+                    <img width="22" loading="lazy" alt="Instagram" src="images/instagram-icon.webp" class="social-icon" />
                   </a>
                   <a href="https://www.linkedin.com/company/singularity-student-lab-srmap/" target="_blank" class="social-wrapper w-inline-block" title="LinkedIn" style="opacity: 0.8; transition: opacity 0.3s ease; width: 50px; height: 50px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                     <img width="22" loading="lazy" alt="LinkedIn" src="images/linkedin-icon.svg" class="social-icon" />
@@ -651,19 +651,35 @@ const HEAD_STYLES = `
       white-space: nowrap;
     }
 
+    .logo-first {
+      display: inline-flex !important;
+      align-items: center !important;
+      text-decoration: none !important;
+    }
+
     .nav-brand-icon {
-      width: 22px;
-      height: 22px;
+      width: 34px !important;
+      height: 34px !important;
       object-fit: contain;
-      margin-right: 8px;
-      filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
+      margin-right: 12px !important;
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.45));
       vertical-align: middle;
       display: inline-block;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .top-text.logo {
+      font-family: var(--font-tech) !important;
+      font-size: clamp(1.25rem, 1.8vw, 1.55rem) !important;
+      font-weight: 700 !important;
+      letter-spacing: 3px !important;
+      line-height: 1 !important;
+      color: #ffffff !important;
+      margin: 0 !important;
     }
 
     .logo-first:hover .nav-brand-icon {
-      transform: rotate(15deg) scale(1.15);
+      transform: rotate(12deg) scale(1.12);
     }
   
 
@@ -813,10 +829,10 @@ const HEAD_SCRIPTS = [
 
 const BODY_SCRIPTS = [
   "/js/jquery.js?site=697344b93b0e03014bb98903",
-  "/js/webflow.schunk.f2efb3c5440a81cf.js",
-  "/js/webflow.schunk.e660ac82af0c6ce9.js",
-  "/js/webflow.schunk.dac51c455b7e76af.js",
-  "/js/webflow-script.js",
+  "/js/runtime-core.js",
+  "/js/runtime-interactions.js",
+  "/js/runtime-vendor.js",
+  "/js/singularity-core.js",
   "/js/gsap.min.js",
   "/js/splittext.min.js",
   "/js/scrolltrigger.min.js",
@@ -879,11 +895,11 @@ export default function Home() {
       // Hold jQuery ready so chunk ready handlers don't fire until ALL chunks are loaded
       (window as any).jQuery.holdReady(true);
 
-      // Load all Webflow chunks (they register modules but won't fire ready handlers yet)
-      await loadScript("/js/webflow.schunk.f2efb3c5440a81cf.js");
-      await loadScript("/js/webflow.schunk.e660ac82af0c6ce9.js");
-      await loadScript("/js/webflow.schunk.dac51c455b7e76af.js");
-      await loadScript("/js/webflow-script.js");
+      // Load runtime chunks
+      await loadScript("/js/runtime-core.js");
+      await loadScript("/js/runtime-interactions.js");
+      await loadScript("/js/runtime-vendor.js");
+      await loadScript("/js/singularity-core.js");
 
       // Load GSAP suite
       await loadScript("/js/gsap.min.js");

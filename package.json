@@ -1,6 +1,7 @@
 {
-  "name": "nextjs-app",
-  "version": "0.1.0",
+  "name": "singularity-website",
+  "version": "1.0.0",
+  "description": "Official website and research lab portal for Singularity Student Lab at SRM University-AP",
   "private": true,
   "scripts": {
     "dev": "next dev",
