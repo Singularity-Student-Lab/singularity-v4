@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Singularity - Student Research & Innovation Lab | SRM AP",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <link href="/css/editorial-styles.css" rel="stylesheet" type="text/css" />
       </head>
       <body suppressHydrationWarning>
+        <PageTransition />
         {children}
       </body>
     </html>
