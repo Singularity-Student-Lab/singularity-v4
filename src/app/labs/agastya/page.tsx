@@ -296,23 +296,22 @@ const BODY_HTML = `
                 <p class="leader-category-tag" style="color: #FB923C;">LAB MEMBERS (2)</p>
                 
                 <div class="members-editorial-table">
-                  <!-- Member 1: M. Hruday -->
+                  <!-- Member 1: Hriday Lath -->
                   <div class="member-row">
                     <div class="member-col-idx">01</div>
-                    <div class="member-col-name">M. Hruday</div>
+                    <div class="member-col-name">Hriday Lath</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/hruday-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/hruday-m-19a9a328a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://www.linkedin.com/in/hridaylath" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 2: Samhita K -->
+                  <!-- Member 2: Yandava Abhishek -->
                   <div class="member-row">
                     <div class="member-col-idx">02</div>
-                    <div class="member-col-name">Samhita K</div>
+                    <div class="member-col-name">Yandava Abhishek</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/samhita-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/samhita-k-381b8928a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/abhishekyandava7-png" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/abhishek-yandava-557333352" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
                 </div>

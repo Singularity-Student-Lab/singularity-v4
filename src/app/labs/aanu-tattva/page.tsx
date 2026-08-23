@@ -311,7 +311,7 @@ const BODY_HTML = `
                   <!-- Member 3 -->
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
-                    <div class="member-col-name">Srivastava Sri Harsha Gampa</div>
+                    <div class="member-col-name">Sri Vastava Sri Harsha Gampa</div>
                     <div class="member-col-links">
                       <a href="https://github.com/SRIVASTAVASRIHARSHA" target="_blank" rel="noopener noreferrer" class="member-link-pill">
                         GitHub &nearr;

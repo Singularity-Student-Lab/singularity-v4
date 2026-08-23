@@ -394,7 +394,7 @@ const BODY_HTML = `
                   <!-- Member 8 -->
                   <div class="member-row">
                     <div class="member-col-idx">08</div>
-                    <div class="member-col-name">Surya Teja Evuri</div>
+                    <div class="member-col-name">Surya Teja E</div>
                     <div class="member-col-links">
                       <a href="https://github.com/sonic-08/" target="_blank" rel="noopener noreferrer" class="member-link-pill">
                         GitHub &nearr;
@@ -422,7 +422,7 @@ const BODY_HTML = `
                   <!-- Member 10 -->
                   <div class="member-row">
                     <div class="member-col-idx">10</div>
-                    <div class="member-col-name">Yedru Naga Pragnesh</div>
+                    <div class="member-col-name">Y Naga Pragnesh</div>
                     <div class="member-col-links">
                       <a href="https://www.gitHub.com/Pragnesh-10" target="_blank" rel="noopener noreferrer" class="member-link-pill">
                         GitHub &nearr;

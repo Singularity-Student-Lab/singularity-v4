@@ -283,17 +283,17 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Executive 2: Praneeth K -->
+                  <!-- Executive 2: Praneeth -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/praneeth.png"
-                      alt="Praneeth K"
+                      alt="Praneeth"
                       class="executive-avatar"
                       style="border-color: rgba(16, 185, 129, 0.4);"
                       loading="lazy"
                     />
                     <div class="executive-info">
-                      <h3 class="executive-name">Praneeth K</h3>
+                      <h3 class="executive-name">Praneeth</h3>
                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                       <div class="executive-links">
                         <a href="https://github.com/praneeth-k24" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
@@ -318,63 +318,63 @@ const BODY_HTML = `
                 <p class="leader-category-tag" style="color: #34D399;">LAB MEMBERS (6)</p>
                 
                 <div class="members-editorial-table">
-                  <!-- Member 1: Neehal G R -->
+                  <!-- Member 1: Arnav Mehar -->
                   <div class="member-row">
                     <div class="member-col-idx">01</div>
-                    <div class="member-col-name">Neehal G R</div>
+                    <div class="member-col-name">Arnav Mehar</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/neehalgr" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/neehal-g-r-366a6a286" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/Arnavmehar-5" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/arnavmehar" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 2: Yashraj -->
+                  <!-- Member 2: Avantika Singh -->
                   <div class="member-row">
                     <div class="member-col-idx">02</div>
-                    <div class="member-col-name">Yashraj</div>
+                    <div class="member-col-name">Avantika Singh</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/yashraj-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/yashraj-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/avantika770" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/avantika-space" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 3: Junaid Ahmed -->
+                  <!-- Member 3: Jignesh Setty -->
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
-                    <div class="member-col-name">Junaid Ahmed</div>
+                    <div class="member-col-name">Jignesh Setty</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/junaid-2004" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/junaid-ahmed-a48a91289" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/JIGNESH-SETTY" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/jignesh-setty-957620380" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 4: Vamsi Krishna -->
+                  <!-- Member 4: Sunkara Purna Jaswanth -->
                   <div class="member-row">
                     <div class="member-col-idx">04</div>
-                    <div class="member-col-name">Vamsi Krishna</div>
+                    <div class="member-col-name">Sunkara Purna Jaswanth</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/vamsikrishna2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/vamsi-krishna-2782b7289" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/purnajaswanth-dev" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://linkedin.com/in/sunkara-purna-jaswanth" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 5: Aravind Kumar -->
+                  <!-- Member 5: Vinay Sathwik Motakatla -->
                   <div class="member-row">
                     <div class="member-col-idx">05</div>
-                    <div class="member-col-name">Aravind Kumar</div>
+                    <div class="member-col-name">Vinay Sathwik Motakatla</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/aravind-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/aravind-kumar-1b29a228a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/vinaysathwik-ai" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/motakatla-vinay-sathwik-387b94392/" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
-                  <!-- Member 6: Devineni Gopi Chand -->
+                  <!-- Member 6: Yash Jaiswal -->
                   <div class="member-row">
                     <div class="member-col-idx">06</div>
-                    <div class="member-col-name">Devineni Gopi Chand</div>
+                    <div class="member-col-name">Yash Jaiswal</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/gopichand-devineni" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/gopi-chand-devineni-124b8928a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/Yash-programs16" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/yash-jaiswal-78390739b" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
                 </div>
