@@ -9,7 +9,7 @@ const BODY_HTML = `
   <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
-      data-animation-type="lottie" data-src="/js/hamburger-20animation.json" data-loop="1" data-direction="1"
+      data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
       data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"
       data-ix2-initial-state="25"></div>
   </div>
