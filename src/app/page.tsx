@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
@@ -30,7 +31,7 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _03"><a href="/work/work-1" class="button-with-line w-inline-block">
+        <div class="menu-item _03"><a href="/#First" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
               <div class="button-text">Work</div>
               <div class="button-text">work</div>
@@ -39,10 +40,10 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _05"><a href="/contact/contact-1" class="button-with-line w-inline-block">
+        <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
-              <div class="button-text">contact</div>
-              <div class="button-text">contact</div>
+              <div class="button-text">Join</div>
+              <div class="button-text">Join</div>
             </div>
             <div class="button-line-first">
               <div class="button-line-overlay"></div>
@@ -772,8 +773,8 @@ const PROJECT_DATA = `{
         "depth": true,
         "uniforms": {},
         "isBackground": false,
-        "heightSegments": 500,
-        "widthSegments": 500
+        "heightSegments": 128,
+        "widthSegments": 128
       },
       "id": "bulge_/_pinch"
     },
@@ -810,7 +811,7 @@ const PROJECT_DATA = `{
   "options": {
     "name": "SINGULARITY",
     "fps": 60,
-    "dpi": 1.5,
+    "dpi": 1,
     "scale": 1,
     "includeLogo": false,
     "isProduction": false,
@@ -827,46 +828,23 @@ const HEAD_SCRIPTS = [
   "/js/unicornStudio.umd.js",
 ];
 
-const BODY_SCRIPTS = [
-  "/js/jquery.js?site=697344b93b0e03014bb98903",
-  "/js/runtime-core.js",
-  "/js/runtime-interactions.js",
-  "/js/runtime-vendor.js",
-  "/js/singularity-core.js",
-  "/js/gsap.min.js",
-  "/js/splittext.min.js",
-  "/js/scrolltrigger.min.js",
-];
-
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.type = "text/javascript";
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
-    document.body.appendChild(script);
-  });
-}
-
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
 
-  // First effect: just flip mounted to true (triggers client-only render)
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Second effect: once HTML is in the DOM, inject styles and load scripts
+  // Initialize enhancements after the server-rendered page is visible.
   useEffect(() => {
     if (!mounted) return;
 
-    // 1. Inject styles into head
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
+    // 1. Inject styles into head
     // 2. Inject singularityProjectData into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
@@ -989,7 +967,6 @@ export default function Home() {
     };
   }, [mounted]);
 
-  // Return null during SSR to avoid hydration mismatch entirely
   if (!mounted) return null;
 
   return (

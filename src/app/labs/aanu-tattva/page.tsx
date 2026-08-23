@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
   <!-- Atmospheric Scanlines & Film Grain Overlay -->
@@ -1220,8 +1221,8 @@ const PROJECT_DATA = `{
         "depth": true,
         "uniforms": {},
         "isBackground": false,
-        "heightSegments": 500,
-        "widthSegments": 500
+        "heightSegments": 128,
+        "widthSegments": 128
       },
       "id": "bulge_/_pinch"
     },
@@ -1258,7 +1259,7 @@ const PROJECT_DATA = `{
   "options": {
     "name": "SINGULARITY",
     "fps": 60,
-    "dpi": 1.5,
+    "dpi": 1,
     "scale": 1,
     "includeLogo": false,
     "isProduction": false,
@@ -1275,17 +1276,6 @@ const HEAD_SCRIPTS = [
   "/js/unicornStudio.umd.js",
 ];
 
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.type = "text/javascript";
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
-    document.body.appendChild(script);
-  });
-}
-
 export default function AanuTattvaLabPage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
@@ -1297,11 +1287,11 @@ export default function AanuTattvaLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
-    // 1. Inject styles into head
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
+    // 1. Inject styles into head
     // 2. Inject UnicornStudio Project Data into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";

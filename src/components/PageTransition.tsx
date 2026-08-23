@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function PageTransition() {
   const [transitionState, setTransitionState] = useState<"entering" | "idle" | "exiting">("entering");
+  const router = useRouter();
 
   useEffect(() => {
     // 1. Initial Page Enter (smooth gentle fade-in)
@@ -71,8 +73,10 @@ export default function PageTransition() {
         event.preventDefault();
         setTransitionState("exiting");
 
+        const destination = parsed.pathname + parsed.search + parsed.hash;
         setTimeout(() => {
-          window.location.href = parsed.pathname + parsed.search + parsed.hash;
+          router.push(destination);
+          setTimeout(() => setTransitionState("idle"), 280);
         }, 180);
       } catch {
         // Ignore fallback
@@ -95,7 +99,7 @@ export default function PageTransition() {
       window.removeEventListener("pageshow", handlePageShow);
       window.removeEventListener("popstate", handlePopState);
     };
-  }, []);
+  }, [router]);
 
   return (
     <div

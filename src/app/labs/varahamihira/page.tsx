@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
   <!-- Atmospheric Scanlines & Film Grain Overlay -->
@@ -1246,8 +1247,8 @@ const PROJECT_DATA = `{
         "depth": true,
         "uniforms": {},
         "isBackground": false,
-        "heightSegments": 500,
-        "widthSegments": 500
+        "heightSegments": 128,
+        "widthSegments": 128
       },
       "id": "bulge_/_pinch"
     },
@@ -1284,7 +1285,7 @@ const PROJECT_DATA = `{
   "options": {
     "name": "SINGULARITY",
     "fps": 60,
-    "dpi": 1.5,
+    "dpi": 1,
     "scale": 1,
     "includeLogo": false,
     "isProduction": false,
@@ -1299,17 +1300,6 @@ const HEAD_SCRIPTS = [
   "https://unpkg.com/lenis@1.3.4/dist/lenis.min.js",
   "/js/unicornStudio.umd.js",
 ];
-
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.type = "text/javascript";
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
-    document.body.appendChild(script);
-  });
-}
 
 export default function VarahamihiraLabPage() {
   const containerRef = useRef<HTMLDivElement>(null);
