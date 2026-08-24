@@ -4,45 +4,33 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
+  <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button" role="button" aria-label="Close navigation menu" tabindex="0">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
       data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"
       data-ix2-initial-state="25"></div>
   </div>
-  <div class="menu-wrapper">
+  <div class="menu-wrapper" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="navigation-wrapper">
       <div class="navigation-content">
-        <div class="menu-item _01"><a href="/" class="button-with-line w-inline-block">
+        <div class="menu-item _01"><a href="/" class="button-with-line w-inline-block" aria-label="Navigate to Home">
             <div class="button-text-wrapper">
-              <div class="button-text">Home</div>
               <div class="button-text">Home</div>
             </div>
             <div class="button-line-first">
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _02"><a href="/about" class="button-with-line w-inline-block">
+        <div class="menu-item _02"><a href="/about" class="button-with-line w-inline-block" aria-label="Navigate to About Us">
             <div class="button-text-wrapper">
-              <div class="button-text">About</div>
               <div class="button-text">About</div>
             </div>
             <div class="button-line-first">
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _03"><a href="/#First" class="button-with-line w-inline-block">
+        <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block" aria-label="Navigate to Join Lab">
             <div class="button-text-wrapper">
-              <div class="button-text">Work</div>
-              <div class="button-text">work</div>
-            </div>
-            <div class="button-line-first">
-              <div class="button-line-overlay"></div>
-            </div>
-          </a></div>
-        <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block">
-            <div class="button-text-wrapper">
-              <div class="button-text">Join</div>
               <div class="button-text">Join</div>
             </div>
             <div class="button-line-first">
@@ -51,13 +39,16 @@ const BODY_HTML = `
           </a></div>
         <div class="margin-20">
           <div class="social-menu-wrapper">
-            <div class="social-content for-footer"><a href="https://www.instagram.com/thesingularity.srmap" target="_blank"
-                class="social-wrapper w-inline-block" title="Instagram"><img width="18" loading="lazy" alt="Instagram"
-                  src="images/instagram-icon.webp" class="social-icon" /><img width="18" loading="lazy" alt="Instagram"
-                  src="images/instagram-icon.webp" class="social-icon" /></a><a href="https://www.linkedin.com/company/singularity-student-lab-srmap/"
-                target="_blank" class="social-wrapper w-inline-block" title="LinkedIn"><img width="18" loading="lazy" alt="LinkedIn"
-                  src="images/linkedin-icon.svg" class="social-icon second" /><img width="18" loading="lazy" alt="LinkedIn"
-                  src="images/linkedin-icon.svg" class="social-icon second" /></a></div>
+            <div class="social-content for-footer">
+              <a href="https://www.instagram.com/thesingularity.srmap" target="_blank" rel="noopener noreferrer"
+                class="social-wrapper w-inline-block" title="Instagram" aria-label="Visit Singularity on Instagram">
+                <img width="18" height="18" loading="lazy" decoding="async" alt="Instagram logo" src="/images/instagram-icon.webp" class="social-icon" />
+              </a>
+              <a href="https://www.linkedin.com/company/singularity-student-lab-srmap/" target="_blank" rel="noopener noreferrer"
+                class="social-wrapper w-inline-block" title="LinkedIn" aria-label="Visit Singularity on LinkedIn">
+                <img width="18" height="18" loading="lazy" decoding="async" alt="LinkedIn logo" src="/images/linkedin-icon.svg" class="social-icon second" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -68,30 +59,45 @@ const BODY_HTML = `
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
         <!-- Logo -->
-        <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" aria-current="page" class="logo-first w-inline-block w--current">
-          <img src="images/singularity_logo.webp" alt="Singularity" class="nav-brand-icon" />
+        <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" aria-current="page" class="logo-first w-inline-block w--current" aria-label="Singularity Home">
+          <img src="/images/singularity_logo.webp" width="34" height="34" alt="Singularity emblem" class="nav-brand-icon" />
           <p class="top-text logo">SINGULARITY</p>
         </a>
 
         <!-- Right Links -->
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
-          <nav role="navigation" class="nav-menu first w-nav-menu">
-            <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
-              <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="images/circle.webp" class="nav-arrow-move" /></div>
+          <nav role="navigation" aria-label="Main Navigation" class="nav-menu first w-nav-menu">
+            <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="About Us">
+              <div class="social-circle-small"><img width="256" height="256" loading="lazy" decoding="async" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">ABOUT US</div>
             </a>
-            <a href="/join" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
-              <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="images/circle.webp" class="nav-arrow-move" /></div>
+            <a href="/join" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="Join Singularity Lab">
+              <div class="social-circle-small"><img width="256" height="256" loading="lazy" decoding="async" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">JOIN</div>
             </a>
           </nav>
         </div>
 
-        <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365547-2336553d" class="last-part"><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div>
+        <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365547-2336553d" class="last-part">
+          <div class="menu-button w-nav-button" role="button" aria-label="Open navigation menu" aria-expanded="false" tabindex="0">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="top-main">
       <div class="hero">
+        <div class="container down nm">
+          <div class="right-studio-text">
+            <img src="/images/singularity_scene-1-.png" width="1232" height="403" alt="Singularity Student Lab"
+              sizes="(max-width: 1919px) 100vw, 1232px"
+              srcset="/images/singularity_scene-1-p-500.png 500w, /images/singularity_scene-1-p-800.png 800w, /images/singularity_scene-1-p-1080.png 1080w, /images/singularity_scene-1-.png 1996w"
+              class="logo-main" fetchpriority="high" />
+            <div class="max-w-center _300">
+              <h2 class="about-title small">We explore, build, and innovate through research, engineering, and deep technology.</h2>
+            </div>
+          </div>
+        </div>
         <div data-w-id="fa34d70a-0972-fc85-5e22-95a787cde496" class="container-bottom">
           <div class="bottom-grid _2">
             <div id="w-node-_00bfeab6-765b-29fd-be56-e5a7f1043c12-4bb988f6">
@@ -113,61 +119,50 @@ const BODY_HTML = `
             </div>
           </div>
         </div>
-        <div class="container down nm">
-          <div class="right-studio-text"><img src="images/singularity_scene-1-.png" loading="lazy" width="1232"
-              sizes="(max-width: 1919px) 100vw, 1232px" alt=""
-              srcset="images/singularity_scene-1-p-500.png 500w, images/singularity_scene-1-p-800.png 800w, images/singularity_scene-1-p-1080.png 1080w, images/singularity_scene-1-.png 1996w"
-              class="logo-main" />
-            <div class="max-w-center _300">
-              <h2
-                data-wf-target="[[[&quot;697344b93b0e03014bb988f6&quot;,&quot;acdba564-5114-c746-a53b-a772c0bc1daf&quot;],[]]]"
-                class="about-title small">We explore, build, and innovate through research, engineering, and deep technology.</h2>
-            </div>
-          </div>
-        </div>
         <div data-us-project-src="singularityProjectData" class="absolute-effect"></div>
       </div>
     </div>
-    <div data-w-id="2c75e975-8645-c1b5-d51e-88781d3693c8"  class="section-content">
+    <div data-w-id="2c75e975-8645-c1b5-d51e-88781d3693c8" class="section-content">
       <div class="work-banner style-3 page-content">
-<div class="line-left-wrapper w-hidden-small w-hidden-tiny">
-          <a href="#First" class="menu-link-block w-inline-block">
+        <div class="line-left-wrapper w-hidden-small w-hidden-tiny">
+          <a href="#First" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 01">
             <div style="opacity:0" class="menu-item-text">01</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Second" class="menu-link-block w-inline-block">
+          <a href="#Second" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 02">
             <div style="opacity:0" class="menu-item-text">02</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Third" class="menu-link-block w-inline-block">
+          <a href="#Third" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 03">
             <div style="opacity:0" class="menu-item-text">03</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Fourth" class="menu-link-block w-inline-block">
+          <a href="#Fourth" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 04">
             <div style="opacity:0" class="menu-item-text">04</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Fifth" class="menu-link-block w-inline-block">
+          <a href="#Fifth" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 05">
             <div style="opacity:0" class="menu-item-text">05</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Sixth" class="menu-link-block w-inline-block">
+          <a href="#Sixth" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 06">
             <div style="opacity:0" class="menu-item-text">06</div>
             <div class="menu-line"></div>
           </a>
-          <a href="#Seventh" class="menu-link-block w-inline-block">
+          <a href="#Seventh" class="menu-link-block w-inline-block" aria-label="Scroll to Lab 07">
             <div style="opacity:0" class="menu-item-text">07</div>
             <div class="menu-line"></div>
           </a>
         </div>
 
+        <!-- LAB 01 -->
         <div id="First" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/prajna-kritrima"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/prajna-kritrima" class="work-wrapper-main w-inline-block" aria-label="Explore Prajna Kritrima Lab - AI/ML & GenAI">
                   <div class="circle-center">
-                    <img src="images/aiml_lab_bg.jpg" alt="Prajna Kritrima Lab" class="work-photo-first" />
+                    <img src="/images/aiml_lab_bg.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Prajna Kritrima Lab Artificial Intelligence Research" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -179,17 +174,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 01</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 02 -->
         <div id="Second" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/aanu-tattva"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/aanu-tattva" class="work-wrapper-main w-inline-block" aria-label="Explore Aanu Tattva Lab - Quantum Computing">
                   <div class="circle-center">
-                    <img src="images/quantum_lab_bg.jpg" alt="Aanu Tattva Lab" class="work-photo-first" />
+                    <img src="/images/quantum_lab_bg.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Aanu Tattva Lab Quantum Computing Research" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -201,17 +199,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 02</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 03 -->
         <div id="Third" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/chitra-darshan"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/chitra-darshan" class="work-wrapper-main w-inline-block" aria-label="Explore Chitra Darshan Lab - AR/VR & Game Dev">
                   <div class="circle-center">
-                    <img src="images/gamedev_lab_bg.png" alt="Chitra Darshan Lab" class="work-photo-first" />
+                    <img src="/images/gamedev_lab_bg.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Chitra Darshan Lab Spatial Computing and Game Development" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -223,17 +224,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 03</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 04 -->
         <div id="Fourth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/varahamihira"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/varahamihira" class="work-wrapper-main w-inline-block" aria-label="Explore Varahamihira Lab - Cybersecurity & Blockchain">
                   <div class="circle-center">
-                    <img src="images/cybersec_lab_bg.png" alt="Varahamihira Lab" class="work-photo-first" />
+                    <img src="/images/cybersec_lab_bg.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Varahamihira Lab Cybersecurity and Cryptography Research" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -245,17 +249,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 04</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 05 -->
         <div id="Fifth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/bhaskaracharya"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/bhaskaracharya" class="work-wrapper-main w-inline-block" aria-label="Explore Bhaskaracharya Lab - Cloud & Web Systems">
                   <div class="circle-center">
-                    <img src="images/cloud_lab_bg.jpg" alt="Bhaskaracharya Lab" class="work-photo-first" />
+                    <img src="/images/cloud_lab_bg.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Bhaskaracharya Lab Cloud Architecture and Distributed Systems" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -267,17 +274,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 05</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 06 -->
         <div id="Sixth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/agastya"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/agastya" class="work-wrapper-main w-inline-block" aria-label="Explore Agastya Lab - Robotics & Embedded IoT">
                   <div class="circle-center">
-                    <img src="images/iot_lab_bg.jpg" alt="Agastya Lab" class="work-photo-first" />
+                    <img src="/images/iot_lab_bg.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Agastya Lab Robotics, Autonomous Hardware and Embedded Systems" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -289,17 +299,20 @@ const BODY_HTML = `
                       <p class="top-text">Lab 06</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- LAB 07 -->
         <div id="Seventh" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="project-full-item w-dyn-item"><a href="/labs/navya-vigyan"
-                  class="work-wrapper-main w-inline-block">
+              <div role="listitem" class="project-full-item w-dyn-item">
+                <a href="/labs/navya-vigyan" class="work-wrapper-main w-inline-block" aria-label="Explore Navya Vigyan Lab - Interdisciplinary Tech">
                   <div class="circle-center">
-                    <img src="images/interdisciplinary_lab_bg.jpg" alt="Navya Vigyan Lab" class="work-photo-first" />
+                    <img src="/images/interdisciplinary_lab_bg.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Navya Vigyan Lab Interdisciplinary Science and Cross-Domain Research" class="work-photo-first" />
                   </div>
                   <div class="work-overlay first half"></div>
                   <div class="view-more">Explore Lab</div>
@@ -311,19 +324,21 @@ const BODY_HTML = `
                       <p class="top-text">Lab 07</p>
                     </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- SINGULARITY COLLABORATION & RESEARCH METRICS SECTION -->
       <section class="section double">
         <div class="container">
           <div class="grid-goals">
             <div class="max-w-center left">
-              <h2 data-w-id="e3a3f7fb-e766-d0aa-b107-460abdcaa337" class="h1 effect second" style="font-family: var(--font-heading); font-size: clamp(2.2rem, 4.2vw, 3.8rem); font-weight: 700; line-height: 1.1; text-transform: uppercase; word-break: keep-all; overflow-wrap: normal; white-space: normal; letter-spacing: -0.01em;">Built by students.<br />Driven by research.</h2>
+              <h2 data-w-id="e3a3f7fb-e766-d0aa-b107-460abdcaa337" class="h1 effect second">Built by students.<br />Driven by research.</h2>
               <div class="max-w-center lf">
-                <p data-w-id="e3a3f7fb-e766-d0aa-b107-460abdcaa33a" class="about-title effect small" style="font-family: var(--font-body); font-size: clamp(0.95rem, 1.25vw, 1.15rem); line-height: 1.65; color: rgba(255, 255, 255, 0.85); font-weight: 300;">
+                <p data-w-id="e3a3f7fb-e766-d0aa-b107-460abdcaa33a" class="about-title effect small">
                   From fundamental theory to live deployment — we innovate across all 7 research disciplines at SRM University-AP.</p>
               </div>
             </div>
@@ -333,8 +348,7 @@ const BODY_HTML = `
                   <p class="p-chat">SR-209 Lab &bull; 23:42<br /></p>
                 </div>
                 <div class="flex-chat">
-                  <div class="bubble-first _01 absolute"><img src="images/three-dots.svg" loading="lazy" width="30"
-                      alt="" /></div>
+                  <div class="bubble-first _01 absolute"><img src="/images/three-dots.svg" width="30" height="30" loading="lazy" decoding="async" alt="Chat indicator" /></div>
                   <div class="bubble-first _02">
                     <p class="p-chat white">Hey team! How is the neural training run? 🧠<br /></p>
                   </div>
@@ -350,12 +364,10 @@ const BODY_HTML = `
                   </div>
                 </div>
                 <div class="time-top add-top">
-                  <p style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                    class="p-chat _01">SR-209 Lab &bull; 23:45<br /></p>
+                  <p class="p-chat _01">SR-209 Lab &bull; 23:45<br /></p>
                 </div>
                 <div class="flex-chat right">
-                  <div class="bubble-first _05 green absolute"><img src="images/three-dots.svg" loading="lazy"
-                      width="30" alt="" /></div>
+                  <div class="bubble-first _05 green absolute"><img src="/images/three-dots.svg" width="30" height="30" loading="lazy" decoding="async" alt="Chat indicator" /></div>
                   <div class="bubble-first _06 green">
                     <p class="p-chat white">Deploying to the Bhaskaracharya cloud cluster now 🔥<br /></p>
                   </div>
@@ -371,51 +383,52 @@ const BODY_HTML = `
                   </div>
                 </div>
               </div>
-              <div class="photo-wrapper"><img loading="lazy" src="images/group-discussion-scene.webp" alt="Singularity Research Team"
-                  class="work-photo-first" /></div>
+              <div class="photo-wrapper"><img loading="lazy" decoding="async" width="800" height="600" src="/images/group-discussion-scene.webp" alt="Singularity Student Researchers collaborating in SR-209 laboratory" class="work-photo-first" /></div>
             </div>
           </div>
           <div class="margin-100">
             <div data-w-id="a0960034-c8d1-d137-9f08-7b4be3fdd731" class="snapshot-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; text-align: center;">
-              
               <!-- Metric 1: 07 Research Labs -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">07</div>
-                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Research Labs</p>
+                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Research Labs</p>
               </div>
 
               <!-- Metric 2: 25+ Student Researchers -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">25+</div>
-                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Student Researchers</p>
+                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Student Researchers</p>
               </div>
 
               <!-- Metric 3: 14+ Flagship Projects -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">14+</div>
-                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Flagship Projects</p>
+                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Flagship Projects</p>
               </div>
 
               <!-- Metric 4: 20+ Open Repositories -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">20+</div>
-                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Open Repositories</p>
+                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Open Repositories</p>
               </div>
 
               <!-- Metric 5: 100% Student Driven -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">100%</div>
-                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Student Driven</p>
+                <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Student Driven</p>
               </div>
             </div>
           </div>
         </div>
-      </section><div class="footer" style="padding-top: 6rem; padding-bottom: 2rem;">
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer" style="padding-top: 6rem; padding-bottom: 2rem;" role="contentinfo">
         <div class="container">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 6rem;">
             <!-- Left Column: Contact -->
             <div class="footer-left">
-              <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.85rem; letter-spacing: 2px;">CONTACT US</p>
+              <p class="top-text" style="color: rgba(255,255,255,0.75); font-size: 0.85rem; letter-spacing: 2px;">CONTACT US</p>
               <div class="margin-20">
                 <h2 class="about-title effect small" style="font-family: var(--font--second-font); font-size: 1.2rem; line-height: 1.6; color: #fff;">
                   Singularity Lab<br />
@@ -424,163 +437,61 @@ const BODY_HTML = `
                 </h2>
               </div>
               <div class="margin-20">
-                <a href="tel:+918632343000" style="text-decoration: none;">
-                  <h2 class="about-title effect small" style="font-family: var(--font--second-font); font-size: 1.2rem; color: #fff; transition: opacity 0.3s ease;">+91 863 234 3000</h2>
+                <a href="mailto:contact@thesingularity.in" style="text-decoration: none;" aria-label="Email Singularity Lab">
+                  <p class="p-chat" style="color: rgba(255,255,255,0.92); font-size: 1.1rem; font-family: var(--font--second-font); letter-spacing: 1px;">contact@thesingularity.in</p>
                 </a>
               </div>
-              <div class="margin-20">
-                <a href="mailto:singularitylab@srmap.edu.in" style="text-decoration: none;">
-                  <h2 class="about-title effect small" style="font-family: var(--font--second-font); font-size: 1.2rem; color: #fff; transition: opacity 0.3s ease;">singularitylab@srmap.edu.in</h2>
-                </a>
-              </div>
-            </div>
-
-            <!-- Middle Column: Quick Links -->
-            <div class="footer-left">
-              <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.85rem; letter-spacing: 2px;">QUICK LINKS</p>
-              <div class="margin-20 flx-ft" style="display: flex; flex-direction: column; gap: 1.2rem;">
-                <a href="/" class="footer-quick-link">
-                  <span class="footer-quick-dot"></span>
-                  <span class="footer-quick-text">Home</span>
-                </a>
-                <a href="/about" class="footer-quick-link">
-                  <span class="footer-quick-dot"></span>
-                  <span class="footer-quick-text">About Lab</span>
-                </a>
-                <a href="/join" class="footer-quick-link">
-                  <span class="footer-quick-dot"></span>
-                  <span class="footer-quick-text">Join Us</span>
-                </a>
-                <a href="/#labs" class="footer-quick-link">
-                  <span class="footer-quick-dot"></span>
-                  <span class="footer-quick-text">Our Labs</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Right Column: Socials & Copyright -->
-            <div class="footer-left">
-              <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.85rem; letter-spacing: 2px;">SOCIAL</p>
-              <div class="margin-20">
-                <div class="social-menu-wrapper" style="display: flex; gap: 1rem;">
-                  <a href="https://www.instagram.com/thesingularity.srmap" target="_blank" class="social-wrapper w-inline-block" title="Instagram" style="opacity: 0.8; transition: opacity 0.3s ease; width: 50px; height: 50px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <img width="22" loading="lazy" alt="Instagram" src="images/instagram-icon.webp" class="social-icon" />
+              <div class="margin-20" style="margin-top: 2rem;">
+                <div class="social-content for-footer" style="display: flex; gap: 1rem;">
+                  <a href="https://www.instagram.com/thesingularity.srmap" target="_blank" rel="noopener noreferrer"
+                    class="social-wrapper w-inline-block" title="Instagram" aria-label="Singularity on Instagram" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center;">
+                    <img width="16" height="16" loading="lazy" decoding="async" alt="Instagram logo" src="/images/instagram-icon.webp" class="social-icon" />
                   </a>
-                  <a href="https://www.linkedin.com/company/singularity-student-lab-srmap/" target="_blank" class="social-wrapper w-inline-block" title="LinkedIn" style="opacity: 0.8; transition: opacity 0.3s ease; width: 50px; height: 50px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <img width="22" loading="lazy" alt="LinkedIn" src="images/linkedin-icon.svg" class="social-icon" />
+                  <a href="https://www.linkedin.com/company/singularity-student-lab-srmap/" target="_blank" rel="noopener noreferrer"
+                    class="social-wrapper w-inline-block" title="LinkedIn" aria-label="Singularity on LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center;">
+                    <img width="16" height="16" loading="lazy" decoding="async" alt="LinkedIn logo" src="/images/linkedin-icon.svg" class="social-icon second" />
                   </a>
                 </div>
               </div>
-              <div class="margin-40" style="margin-top: 4rem;">
-                <p class="p-footer" style="color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.5;">© 2026 Singularity Student Lab<br/>SRM University-AP</p>
+            </div>
+
+            <!-- Right Column: Quick Links -->
+            <div class="footer-right" style="display: flex; flex-direction: column; justify-content: flex-start;">
+              <p class="top-text" style="color: rgba(255,255,255,0.75); font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 1.5rem;">QUICK LINKS</p>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <a href="/about" class="button-link w-inline-block" aria-label="Learn about Singularity" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                  <div class="social-circle-small" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></div>
+                  <div class="navigation-text-main" style="text-transform: uppercase; font-size: 1.2rem; color: #fff; font-family: var(--font--second-font);">ABOUT US</div>
+                </a>
+                <a href="/join" class="button-link w-inline-block" aria-label="Join Singularity Lab" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                  <div class="social-circle-small" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></div>
+                  <div class="navigation-text-main" style="text-transform: uppercase; font-size: 1.2rem; color: #fff; font-family: var(--font--second-font);">JOIN THE LAB</div>
+                </a>
               </div>
             </div>
           </div>
 
-<style>
-.footer-left a:hover h2 { opacity: 0.7 !important; }
-.footer-left .button-link:hover { transform: translateX(10px) !important; }
-.footer-left .social-wrapper:hover { opacity: 1 !important; border-color: rgba(255,255,255,0.5) !important; }
-</style>
-          <!-- The HUGE Singularity Wordmark -->
+          <!-- Singularity 3D Emblem & Grand Wordmark -->
           <div class="singularity-footer-wrap">
+            <div class="singularity-emblem-holder">
+              <div class="singularity-emblem-glow"></div>
+              <img src="/images/singularity_logo.webp" width="140" height="140" loading="lazy" decoding="async" alt="Singularity Emblem" class="singularity-footer-emblem" />
+            </div>
             <h1 class="singularity-footer-wordmark">SINGULARITY</h1>
           </div>
-          
+
+          <!-- Bottom Meta / Legal Bar -->
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <p class="top-text" style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">&copy; ${new Date().getFullYear()} SINGULARITY STUDENT RESEARCH LAB. ALL RIGHTS RESERVED.</p>
+            <p class="top-text" style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">SRM UNIVERSITY-AP, AMARAVATI</p>
+          </div>
         </div>
-      </div>
-<div class="absolute-main"></div>
+      </footer>
+    </div>
   </div>
-
-  
-  
-  
-  
-  
-  
-  
-  <!-- Lenis setup -->
-  
-
-  
-  
 `;
 
 const HEAD_STYLES = `
-    @media (min-width:992px) {
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="fa34d70a-0972-fc85-5e22-95a787cde496"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="5133389f-a6ab-567c-a30e-eba9454d9470"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="351e57d5-6072-8036-a947-608cfdeae359"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="9f58a389-38f5-d1df-d057-c11a01f8c673"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="4087aa29-ac7d-f7a2-c538-546571bef595"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="aaa22f73-7a8c-4fc3-cb2b-0e3beb7a3b94"] {
-        opacity: 0;
-      }
-
-      html.w-mod-js:not(.w-mod-ix) [data-w-id="fdaebbe9-d2fe-bacc-d7a3-f8bc717aea30"] {
-        opacity: 0;
-      }
-    }
-      .container.down.nm {
-      top: clamp(14vh, 18vh, 22vh) !important;
-    }
-
-    .right-studio-text {
-      grid-row-gap: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      z-index: 5;
-    }
-
-    .max-w-center._300 {
-      max-width: 520px;
-      margin: 2rem auto 0 auto;
-      text-align: center;
-      position: relative;
-      z-index: 10;
-    }
-
-    .max-w-center._300 .about-title.small {
-      font-size: clamp(0.95rem, 1.25vw, 1.2rem);
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.85);
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      text-align: center;
-      margin: 0;
-    }
-
-  
-
-    html.w-mod-js:not(.w-mod-ix3) :is(.testimonials-section, [data-wf-target*='["697344b93b0e03014bb988f6","acdba564-5114-c746-a53b-a772c0bc1daf"]'], [data-wf-target*='["697344b93b0e03014bb988f6","22be040a-0b57-5058-5772-5dd92eb3fd4a"]']) {
-      visibility: hidden !important;
-    }
-  
-
     .singularity-emblem-holder {
       position: relative;
       margin-bottom: 2rem;
@@ -656,43 +567,73 @@ const HEAD_STYLES = `
       display: inline-flex !important;
       align-items: center !important;
       text-decoration: none !important;
+      gap: 10px !important;
     }
 
     .nav-brand-icon {
-      width: 34px !important;
-      height: 34px !important;
+      width: 24px !important;
+      height: 24px !important;
       object-fit: contain;
-      margin-right: 12px !important;
-      filter: drop-shadow(0 0 10px rgba(255,255,255,0.45));
+      margin: 0 !important;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.45));
       vertical-align: middle;
       display: inline-block;
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .top-text.logo {
       font-family: var(--font-tech) !important;
-      font-size: clamp(1.25rem, 1.8vw, 1.55rem) !important;
-      font-weight: 700 !important;
-      letter-spacing: 3px !important;
+      font-size: 1.05rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 2px !important;
       line-height: 1 !important;
       color: #ffffff !important;
       margin: 0 !important;
     }
 
     .logo-first:hover .nav-brand-icon {
-      transform: rotate(12deg) scale(1.12);
+      transform: rotate(12deg) scale(1.1);
     }
   
+    .left-nav-links a:hover .navigation-text-main { opacity: 0.7; }
 
-.left-nav-links a:hover .navigation-text-main { opacity: 0.7; }
-
-
-@media (min-width: 992px) {
-  .nav-menu.first.w-nav-menu { display: flex !important; flex-direction: row; gap: 1rem; align-items: center; justify-content: flex-end; }
-}
-@media (max-width: 991px) {
-  .nav-menu.first.w-nav-menu { display: none !important; }
-}
+    @media (min-width: 992px) {
+      .navbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 3% !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        min-height: auto !important;
+      }
+      .make-grid.hide-mobile {
+        display: flex !important;
+        margin-left: auto !important;
+      }
+      .nav-menu.first.w-nav-menu {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1.85rem !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+      }
+    }
+    @media (max-width: 991px) {
+      .navbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .make-grid.hide-mobile,
+      .nav-menu.first.w-nav-menu {
+        display: none !important;
+      }
+    }
 `;
 
 const PROJECT_DATA = `{
@@ -821,10 +762,10 @@ const PROJECT_DATA = `{
   "id": "rr40leL2y23o0QnzrPWs"
 }`;
 
-// External scripts to load in order (head scripts first, then body scripts)
+// External and local scripts to load in order
 const HEAD_SCRIPTS = [
   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
-  "https://unpkg.com/lenis@1.3.4/dist/lenis.min.js",
+  "/js/lenis.min.js",
   "/js/unicornStudio.umd.js",
 ];
 
@@ -836,7 +777,6 @@ export default function Home() {
     setMounted(true);
   }, []);
 
-  // Initialize enhancements after the server-rendered page is visible.
   useEffect(() => {
     if (!mounted) return;
 
@@ -844,21 +784,20 @@ export default function Home() {
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
-    // 1. Inject styles into head
-    // 2. Inject singularityProjectData into head
+    // 1. Inject singularityProjectData into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
     dataScript.type = "application/json";
     dataScript.textContent = PROJECT_DATA;
     document.head.appendChild(dataScript);
 
-    // 3. Load head scripts first (WebFont, Lenis, UnicornStudio)
+    // 2. Load head scripts (WebFont, local Lenis, UnicornStudio)
     (async () => {
       for (const src of HEAD_SCRIPTS) {
         await loadScript(src);
       }
 
-      // Initialize WebFont after it's loaded
+      // Initialize WebFont
       if ((window as any).WebFont) {
         (window as any).WebFont.load({
           google: {
@@ -867,10 +806,9 @@ export default function Home() {
         });
       }
 
-      // 4. Load jQuery first
+      // 3. Load jQuery
       await loadScript("/js/jquery.js?site=697344b93b0e03014bb98903");
 
-      // Hold jQuery ready so chunk ready handlers don't fire until ALL chunks are loaded
       (window as any).jQuery.holdReady(true);
 
       // Load runtime chunks
@@ -884,84 +822,78 @@ export default function Home() {
       await loadScript("/js/splittext.min.js");
       await loadScript("/js/scrolltrigger.min.js");
 
-      // NOW release jQuery ready — all chunks are loaded and their modules are defined
       (window as any).jQuery.holdReady(false);
 
-      // Force Webflow to initialize on the newly loaded DOM
+      // Force Webflow initialization
       if ((window as any).Webflow) {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
         if (ix2) ix2.init();
         
-        // Dispatch synthetic events to trigger Webflow's "Page Load" animations
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
       }
 
-      // 5. After all external scripts, run inline scripts
-      const inlineScripts: (() => Promise<void>)[] = [
-      () => new Promise<void>((resolve) => { const s = document.createElement("script"); s.textContent = `(function(){// Initialize Lenis
-    const lenis = new Lenis({
-      smooth: true,
-      lerp: 0.1,
-      wheelMultiplier: 1,
-      infinite: false,
-    });
+      // 4. Run non-blocking enhancements
+      const scheduleTask = (fn: () => void) => {
+        if ('requestIdleCallback' in window) {
+          (window as any).requestIdleCallback(fn, { timeout: 1500 });
+        } else {
+          setTimeout(fn, 50);
+        }
+      };
 
-    // Use requestAnimationFrame to continuously update the scroll
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+      scheduleTask(() => {
+        // Initialize Lenis kinetic scroll with singleton guard
+        if ((window as any).__lenisInstance) {
+          try {
+            (window as any).__lenisInstance.destroy();
+          } catch (e) {}
+        }
 
-    requestAnimationFrame(raf);})();`; document.body.appendChild(s); resolve(); }),
-      () => new Promise<void>((resolve) => { const s = document.createElement("script"); s.textContent = `(function(){
-        if (window.UnicornStudio && window.UnicornStudio.init) {
-          UnicornStudio.init();
-          var resizeTimer;
+        if (typeof (window as any).Lenis !== 'undefined') {
+          const lenis = new (window as any).Lenis({
+            duration: 0.9,
+            easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            syncTouch: false, // Never intercept native mobile touch events
+            touchMultiplier: 1,
+            wheelMultiplier: 1,
+            autoResize: true,
+            prevent: (node: HTMLElement) => {
+              return node?.closest?.('.menu-wrapper') !== null || node?.closest?.('[data-lenis-prevent]') !== null;
+            }
+          });
+          (window as any).__lenisInstance = lenis;
+
+          let rafId: number;
+          function raf(time: number) {
+            lenis.raf(time);
+            rafId = requestAnimationFrame(raf);
+          }
+          rafId = requestAnimationFrame(raf);
+        }
+
+        // Initialize UnicornStudio WebGL
+        if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
+          (window as any).UnicornStudio.init();
+          var resizeTimer: any;
           window.addEventListener("resize", function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
-              if (window.UnicornStudio && window.UnicornStudio.init) {
-                UnicornStudio.init();
+              if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
+                (window as any).UnicornStudio.init();
               }
             }, 100);
-          });
+          }, { passive: true });
         }
-      })();`; document.body.appendChild(s); resolve(); }),
-      () => new Promise<void>((resolve) => { const s = document.createElement("script"); s.textContent = `(function(){
-      const modal = document.querySelector(".modal");
-      const closeBtn = document.querySelector(".remove-modal");
-      const overlay = document.querySelector(".blur-overlay");
-
-      if (modal) {
-        if (!localStorage.getItem("modalShown")) {
-          modal.style.display = "flex";
-        } else {
-          modal.style.display = "none";
-        }
-      }
-
-      function closeModal() {
-        if (modal) {
-          modal.style.display = "none";
-          localStorage.setItem("modalShown", "true");
-        }
-      }
-
-      if (closeBtn) closeBtn.addEventListener("click", closeModal);
-      if (overlay) overlay.addEventListener("click", closeModal);
-    })();`; document.body.appendChild(s); resolve(); }),
-      ];
-
-      for (const fn of inlineScripts) {
-        await fn();
-      }
+      });
     })();
 
     return () => {
-      // Cleanup
       styleEl.remove();
       dataScript.remove();
     };
@@ -970,10 +902,9 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div
+    <main
       ref={containerRef}
       dangerouslySetInnerHTML={{ __html: BODY_HTML }}
     />
   );
 }
-

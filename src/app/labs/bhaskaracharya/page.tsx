@@ -37,19 +37,10 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _03"><a href="/labs/bhaskaracharya" aria-current="page" class="button-with-line w-inline-block w--current">
+        <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
-              <div class="button-text">Labs</div>
-              <div class="button-text">Labs</div>
-            </div>
-            <div class="button-line-first">
-              <div class="button-line-overlay"></div>
-            </div>
-          </a></div>
-        <div class="menu-item _05"><a href="/contact/contact-1" class="button-with-line w-inline-block">
-            <div class="button-text-wrapper">
-              <div class="button-text">Contact</div>
-              <div class="button-text">Contact</div>
+              <div class="button-text">Join</div>
+              <div class="button-text">Join</div>
             </div>
             <div class="button-line-first">
               <div class="button-line-overlay"></div>
@@ -1286,7 +1277,7 @@ const PROJECT_DATA = `{
 
 const HEAD_SCRIPTS = [
   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
-  "https://unpkg.com/lenis@1.3.4/dist/lenis.min.js",
+  "/js/lenis.min.js",
   "/js/unicornStudio.umd.js",
 ];
 
@@ -1361,13 +1352,29 @@ export default function BhaskaracharyaLabPage() {
         });
       }
 
-      if ((window as any).Lenis) {
+      // Initialize Lenis smooth scroll with singleton guard
+      if ((window as any).__lenisInstance) {
+        try {
+          (window as any).__lenisInstance.destroy();
+        } catch (e) {}
+      }
+
+      if (typeof (window as any).Lenis !== 'undefined') {
         const lenis = new (window as any).Lenis({
-          smooth: true,
-          lerp: 0.1,
+          duration: 0.9,
+          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          orientation: 'vertical',
+          gestureOrientation: 'vertical',
+          smoothWheel: true,
+          syncTouch: false,
+          touchMultiplier: 1,
           wheelMultiplier: 1,
-          infinite: false,
+          autoResize: true,
+          prevent: (node: HTMLElement) => {
+            return node?.closest?.('.menu-wrapper') !== null || node?.closest?.('[data-lenis-prevent]') !== null;
+          }
         });
+        (window as any).__lenisInstance = lenis;
 
         function raf(time: number) {
           lenis.raf(time);

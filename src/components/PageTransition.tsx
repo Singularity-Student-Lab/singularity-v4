@@ -13,7 +13,58 @@ export default function PageTransition() {
       setTransitionState("idle");
     }, 280);
 
-    // 2. Intercept internal links for a clean, quick exit fade
+    // 2. Universal Navigation Drawer Controller (Mobile & Desktop)
+    const handleMenuClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (!target) return;
+
+      // Check if clicked menu open button (hamburger, nav button, circle menu)
+      const openTrigger = target.closest(".menu-button, .w-nav-button, .w-icon-nav-menu, .circle-menu");
+      if (openTrigger) {
+        event.preventDefault();
+        event.stopPropagation();
+        const menu = document.querySelector(".menu-wrapper");
+        const isOpen = document.body.classList.contains("menu-open") || menu?.classList.contains("is-open");
+        if (isOpen) {
+          document.body.classList.remove("menu-open");
+          menu?.classList.remove("is-open");
+        } else {
+          document.body.classList.add("menu-open");
+          menu?.classList.add("is-open");
+        }
+        return;
+      }
+
+      // Check if clicked close button
+      const closeTrigger = target.closest(".fixed-close-button, .lottie-x");
+      if (closeTrigger) {
+        event.preventDefault();
+        event.stopPropagation();
+        document.body.classList.remove("menu-open");
+        document.querySelector(".menu-wrapper")?.classList.remove("is-open");
+        return;
+      }
+
+      // If menu is open and clicked on background (outside navigation-content)
+      const menuWrapper = target.closest(".menu-wrapper");
+      if (menuWrapper && !target.closest(".navigation-content")) {
+        document.body.classList.remove("menu-open");
+        menuWrapper.classList.remove("is-open");
+        return;
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        document.body.classList.remove("menu-open");
+        document.querySelector(".menu-wrapper")?.classList.remove("is-open");
+      }
+    };
+
+    document.addEventListener("click", handleMenuClick, true);
+    document.addEventListener("keydown", handleKeyDown);
+
+    // 3. Intercept internal links for a clean, quick exit fade
     const handleDocumentClick = (event: MouseEvent) => {
       if (
         event.defaultPrevented ||
@@ -40,10 +91,15 @@ export default function PageTransition() {
         href.startsWith("mailto:") ||
         href.startsWith("tel:") ||
         href.startsWith("javascript:") ||
-        href.startsWith("#") ||
         anchor.hasAttribute("download")
       ) {
         return;
+      }
+
+      // If clicked inside menu, close menu immediately
+      if (anchor.closest(".menu-wrapper")) {
+        document.body.classList.remove("menu-open");
+        document.querySelector(".menu-wrapper")?.classList.remove("is-open");
       }
 
       // Check URL
@@ -51,20 +107,24 @@ export default function PageTransition() {
         const parsed = new URL(anchor.href, window.location.href);
         if (parsed.origin !== window.location.origin) return;
 
-        // Same page check
-        if (
-          parsed.pathname === window.location.pathname &&
-          parsed.search === window.location.search &&
-          parsed.hash === window.location.hash
-        ) {
-          return;
-        }
-
-        // Same page with hash jump
+        // Hash jump on same page
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search &&
           parsed.hash
+        ) {
+          const hashTarget = document.querySelector(parsed.hash);
+          if (hashTarget) {
+            event.preventDefault();
+            hashTarget.scrollIntoView({ behavior: "smooth" });
+          }
+          return;
+        }
+
+        // Same page without hash
+        if (
+          parsed.pathname === window.location.pathname &&
+          parsed.search === window.location.search
         ) {
           return;
         }
@@ -86,15 +146,25 @@ export default function PageTransition() {
     document.addEventListener("click", handleDocumentClick, true);
 
     const handlePageShow = (e: PageTransitionEvent) => {
-      if (e.persisted) setTransitionState("idle");
+      if (e.persisted) {
+        setTransitionState("idle");
+        document.body.classList.remove("menu-open");
+        document.querySelector(".menu-wrapper")?.classList.remove("is-open");
+      }
     };
-    const handlePopState = () => setTransitionState("idle");
+    const handlePopState = () => {
+      setTransitionState("idle");
+      document.body.classList.remove("menu-open");
+      document.querySelector(".menu-wrapper")?.classList.remove("is-open");
+    };
 
     window.addEventListener("pageshow", handlePageShow);
     window.addEventListener("popstate", handlePopState);
 
     return () => {
       clearTimeout(timer);
+      document.removeEventListener("click", handleMenuClick, true);
+      document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleDocumentClick, true);
       window.removeEventListener("pageshow", handlePageShow);
       window.removeEventListener("popstate", handlePopState);
