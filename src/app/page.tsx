@@ -342,48 +342,48 @@ const BODY_HTML = `
                   From fundamental theory to live deployment — we innovate across all 7 research disciplines at SRM University-AP.</p>
               </div>
             </div>
-            <div class="grid-goal">
-              <div data-w-id="360a5edb-c801-0266-9048-5867023afedb" class="goal-card white">
-                <div class="time-top">
-                  <p class="p-chat">SR-209 Lab &bull; 23:42<br /></p>
-                </div>
-                <div class="flex-chat">
-                  <div class="bubble-first _01 absolute"><img src="/images/three-dots.svg" width="30" height="30" loading="lazy" decoding="async" alt="Chat indicator" /></div>
-                  <div class="bubble-first _02">
-                    <p class="p-chat white">Hey team! How is the neural training run? 🧠<br /></p>
-                  </div>
-                </div>
-                <div class="flex-chat">
-                  <div class="bubble-first _03">
-                    <p class="p-chat white">Prajna Kritrima model converged — 99.4% accuracy! ⚡<br /></p>
-                  </div>
-                </div>
-                <div class="flex-chat">
-                  <div class="bubble-first _04">
-                    <p class="p-chat white">LoRa mesh node from Agastya is transmitting across campus 📡<br /></p>
-                  </div>
-                </div>
-                <div class="time-top add-top">
-                  <p class="p-chat _01">SR-209 Lab &bull; 23:45<br /></p>
-                </div>
-                <div class="flex-chat right">
-                  <div class="bubble-first _05 green absolute"><img src="/images/three-dots.svg" width="30" height="30" loading="lazy" decoding="async" alt="Chat indicator" /></div>
-                  <div class="bubble-first _06 green">
-                    <p class="p-chat white">Deploying to the Bhaskaracharya cloud cluster now 🔥<br /></p>
-                  </div>
-                </div>
-                <div class="flex-chat right">
-                  <div class="bubble-first _07 green">
-                    <p class="p-chat white">All 7 research labs synchronized.<br /></p>
-                  </div>
-                </div>
-                <div class="flex-chat">
-                  <div class="bubble-first _08">
-                    <p class="p-chat white">Singularity is live! 🚀<br /></p>
-                  </div>
+            <div class="big-typography-marquee-wrap" aria-label="Research disciplines and laboratory marquee">
+              <!-- Track 1: Research Domains (Scrolling Left) -->
+              <div class="marquee-track-row">
+                <div class="marquee-track-inner move-left">
+                  <span class="marquee-bold-text">ARTIFICIAL INTELLIGENCE <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">QUANTUM COMPUTING <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">ASTROPHYSICS <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">ROBOTICS &amp; IOT <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">DEEP TECHNOLOGY <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">CLOUD SYSTEMS <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">NANOTECHNOLOGY <span class="marquee-dot">•</span></span>
+                  <!-- Infinite Duplicate Track -->
+                  <span class="marquee-bold-text">ARTIFICIAL INTELLIGENCE <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">QUANTUM COMPUTING <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">ASTROPHYSICS <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">ROBOTICS &amp; IOT <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">DEEP TECHNOLOGY <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">CLOUD SYSTEMS <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text">NANOTECHNOLOGY <span class="marquee-dot">•</span></span>
                 </div>
               </div>
-              <div class="photo-wrapper"><img loading="lazy" decoding="async" width="800" height="600" src="/images/group-discussion-scene.webp" alt="Singularity Student Researchers collaborating in SR-209 laboratory" class="work-photo-first" /></div>
+
+              <!-- Track 2: 7 Laboratories / Taglines (Scrolling Right) -->
+              <div class="marquee-track-row">
+                <div class="marquee-track-inner move-right">
+                  <span class="marquee-bold-text text-outline">PRAJNA KRITRIMA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">AANU TATTVA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">CHITRA DARSHAN <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">VARAHAMIHIRA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">BHASKARACHARYA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">AGASTYA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">NAVYA VIGYAN <span class="marquee-dot">•</span></span>
+                  <!-- Infinite Duplicate Track -->
+                  <span class="marquee-bold-text text-outline">PRAJNA KRITRIMA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">AANU TATTVA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">CHITRA DARSHAN <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">VARAHAMIHIRA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">BHASKARACHARYA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">AGASTYA <span class="marquee-dot">•</span></span>
+                  <span class="marquee-bold-text text-outline">NAVYA VIGYAN <span class="marquee-dot">•</span></span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="margin-100">
@@ -481,9 +481,12 @@ const BODY_HTML = `
           </div>
 
           <!-- Bottom Meta / Legal Bar -->
-          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <p class="top-text" style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">&copy; ${new Date().getFullYear()} SINGULARITY STUDENT RESEARCH LAB. ALL RIGHTS RESERVED.</p>
-            <p class="top-text" style="color: rgba(255,255,255,0.65); font-size: 0.8rem;">SRM UNIVERSITY-AP, AMARAVATI</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+            <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">&copy; ${new Date().getFullYear()} SINGULARITY STUDENT RESEARCH LAB. ALL RIGHTS RESERVED.</p>
+            <p class="top-text footer-creator-mark" style="color: rgba(255,255,255,0.4); font-size: 0.75rem; margin: 0; letter-spacing: 0.02em;">
+              Created by <a href="/labs/bhaskaracharya" class="footer-credit-link" style="color: rgba(255,255,255,0.55); text-decoration: none;">Bhaskaracharya Lab</a> (<a href="https://github.com/yuvraj-singh-s" target="_blank" rel="noopener noreferrer" class="footer-credit-link" style="color: rgba(255,255,255,0.55); text-decoration: none;">Yuvraj Singh</a>)
+            </p>
+            <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">SRM UNIVERSITY-AP, AMARAVATI</p>
           </div>
         </div>
       </footer>
@@ -551,16 +554,20 @@ const HEAD_STYLES = `
     }
 
     .singularity-footer-wordmark {
-      font-family: var(--font-heading);
-      font-size: clamp(2.5rem, 8.5vw, 8.5rem);
-      font-weight: 700;
-      line-height: 0.9;
-      letter-spacing: -0.01em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin: 0;
-      text-align: center;
-      white-space: nowrap;
+      font-family: var(--font-heading) !important;
+      font-size: clamp(1.8rem, 8vw, 7rem) !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      letter-spacing: 0.02em !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      margin: 0 !important;
+      text-align: center !important;
+      white-space: nowrap !important;
+      word-break: keep-all !important;
+      overflow-wrap: normal !important;
+      max-width: 100% !important;
+      display: block !important;
     }
 
     .logo-first {
@@ -598,6 +605,24 @@ const HEAD_STYLES = `
     .left-nav-links a:hover .navigation-text-main { opacity: 0.7; }
 
     @media (min-width: 992px) {
+      .sticky-element {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        z-index: 999 !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        pointer-events: none !important;
+      }
       .navbar {
         display: flex !important;
         justify-content: space-between !important;
@@ -608,6 +633,8 @@ const HEAD_STYLES = `
         box-sizing: border-box !important;
         height: auto !important;
         min-height: auto !important;
+        background: transparent !important;
+        pointer-events: auto !important;
       }
       .make-grid.hide-mobile {
         display: flex !important;
@@ -622,19 +649,376 @@ const HEAD_STYLES = `
       }
     }
     @media (max-width: 991px) {
+      .menu-button,
+      .w-nav-button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 28px !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: none !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+        outline: none !important;
+        transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease !important;
+      }
+      .menu-button:active,
+      .w-nav-button:active {
+        transform: scale(0.9) !important;
+        background: rgba(255, 255, 255, 0.22) !important;
+        border: none !important;
+      }
+      .menu-button .w-icon-nav-menu {
+        font-size: 13px !important;
+        color: #ffffff !important;
+        line-height: 1 !important;
+      }
+      .sticky-element {
+        position: fixed !important;
+        top: 8px !important;
+        left: 12px !important;
+        right: 12px !important;
+        width: auto !important;
+        max-width: calc(100% - 24px) !important;
+        margin: 0 auto !important;
+        z-index: 99999 !important;
+        background: rgba(10, 12, 18, 0.28) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        border: none !important;
+        border-radius: 9999px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+        padding: 0.35rem 0.85rem !important;
+        pointer-events: auto !important;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
       .navbar {
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
         width: 100% !important;
         padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+      }
+      .navbar .logo-first {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        text-decoration: none !important;
+      }
+      .navbar .nav-brand-icon {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 0 !important;
+        filter: drop-shadow(0 0 8px rgba(255,255,255,0.5)) !important;
+      }
+      .navbar .top-text.logo {
+        font-size: 0.82rem !important;
+        letter-spacing: 1.5px !important;
+        font-weight: 700 !important;
+        line-height: 1 !important;
       }
       .make-grid.hide-mobile,
       .nav-menu.first.w-nav-menu {
         display: none !important;
       }
+      .main-hero {
+        min-height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        position: relative !important;
+        overflow: visible !important;
+        padding-top: 56px !important;
+        padding-bottom: 0 !important;
+      }
+      .top-main {
+        position: relative !important;
+        z-index: 4 !important;
+        width: 100% !important;
+        flex: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        overflow: hidden !important;
+      }
+      .hero {
+        position: relative !important;
+        min-height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 1.5rem 0 0.5rem 0 !important;
+        gap: 1.25rem !important;
+      }
+      .container.down.nm {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin: 0 auto !important;
+        padding: 1.25rem 1.25rem 0.5rem 1.25rem !important;
+        z-index: 5 !important;
+        text-align: center !important;
+      }
+      .container-bottom {
+        position: relative !important;
+        bottom: auto !important;
+        margin-top: 0.5rem !important;
+        padding: 0.5rem 1.25rem !important;
+        width: 100% !important;
+        z-index: 6 !important;
+      }
+      .section-content {
+        overflow: visible !important;
+        position: relative !important;
+      }
+      .work-banner.style-3 {
+        margin-top: 0 !important;
+        padding: 1rem 1.25rem 3.5rem 1.25rem !important;
+        display: block !important;
+        position: relative !important;
+        overflow: visible !important;
+      }
+      .project-big-parallax {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: clamp(68px, 10vh, 78px) !important;
+        height: clamp(500px, 78svh, 660px) !important;
+        min-height: 480px !important;
+        margin-bottom: 2.5rem !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
+        background-color: #0b0e12 !important;
+        border: 1px solid rgba(255, 255, 255, 0.14) !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+        box-shadow: 0 -14px 35px rgba(0, 0, 0, 0.8), 0 25px 50px rgba(0, 0, 0, 0.95) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        will-change: transform;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+      }
+      #First.project-big-parallax, .project-big-parallax:nth-of-type(1) { z-index: 10 !important; }
+      #Second.project-big-parallax, .project-big-parallax:nth-of-type(2) { z-index: 11 !important; }
+      #Third.project-big-parallax, .project-big-parallax:nth-of-type(3) { z-index: 12 !important; }
+      #Fourth.project-big-parallax, .project-big-parallax:nth-of-type(4) { z-index: 13 !important; }
+      #Fifth.project-big-parallax, .project-big-parallax:nth-of-type(5) { z-index: 14 !important; }
+      #Sixth.project-big-parallax, .project-big-parallax:nth-of-type(6) { z-index: 15 !important; }
+      #Seventh.project-big-parallax, .project-big-parallax:nth-of-type(7) { z-index: 16 !important; }
+      .project-big-parallax:last-child { margin-bottom: 3.5rem !important; }
+
+      /* Centered Mobile Footer */
+      .footer {
+        padding: 3.5rem 1.25rem 2rem 1.25rem !important;
+        text-align: center !important;
+      }
+      .footer .container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .footer .container > div:first-child,
+      .footer div[style*="grid-template-columns"],
+      .footer .grid-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 2.5rem !important;
+        margin-bottom: 3.5rem !important;
+        width: 100% !important;
+      }
+      .footer-left,
+      .footer-right,
+      .footer-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 480px !important;
+        margin: 0 auto !important;
+      }
+      .footer-left .about-title.effect.small,
+      .footer-left .about-title,
+      .footer-left .p-chat,
+      .footer-right .top-text,
+      .footer-left .top-text {
+        text-align: center !important;
+      }
+      .social-content.for-footer,
+      .social-menu-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 1rem !important;
+      }
+      .footer-right > div,
+      .footer-links-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+      }
+      .footer-right .button-link,
+      .footer-quick-link {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .singularity-footer-wrap {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 2rem 0.5rem 1.5rem 0.5rem !important;
+        text-align: center !important;
+        overflow: visible !important;
+      }
+      .singularity-footer-wordmark {
+        font-family: var(--font-heading) !important;
+        font-size: clamp(1.6rem, 7.8vw, 3.8rem) !important;
+        font-weight: 700 !important;
+        line-height: 1 !important;
+        letter-spacing: 0.02em !important;
+        text-transform: uppercase !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        max-width: 100% !important;
+        display: block !important;
+      }
+      .singularity-footer-emblem {
+        width: clamp(70px, 16vw, 110px) !important;
+        margin-bottom: -0.5rem !important;
+      }
+      .footer div[style*="border-top"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 0.6rem !important;
+        width: 100% !important;
+        padding-top: 1.5rem !important;
+      }
+      .footer div[style*="border-top"] p {
+        text-align: center !important;
+        margin: 0 !important;
+      }
     }
-`;
+    .footer-credit-link {
+      transition: color 0.2s ease !important;
+      display: inline !important;
+    }
+    .footer-credit-link:hover {
+      color: rgba(255, 255, 255, 0.95) !important;
+      text-decoration: underline !important;
+      text-underline-offset: 2px !important;
+    }
+    /* =========================================================
+       BIG TYPOGRAPHY DUAL INFINITE MARQUEE
+       ========================================================= */
+    .big-typography-marquee-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      padding: 1.85rem 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, transparent 100%);
+      mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, transparent 100%);
+    }
+
+    .marquee-track-row {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .marquee-track-inner {
+      display: flex;
+      flex-shrink: 0;
+      gap: 1.5rem;
+      align-items: center;
+      will-change: transform;
+    }
+
+    .marquee-track-inner.move-left {
+      animation: marqueeScrollLeft 26s linear infinite;
+    }
+
+    .marquee-track-inner.move-right {
+      animation: marqueeScrollRight 30s linear infinite;
+    }
+
+    .big-typography-marquee-wrap:hover .marquee-track-inner {
+      animation-play-state: paused;
+    }
+
+    @keyframes marqueeScrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes marqueeScrollRight {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+
+    .marquee-bold-text {
+      font-family: 'Oswald', var(--font-heading), -apple-system, sans-serif !important;
+      font-size: clamp(2.2rem, 5.2vw, 4.8rem) !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      white-space: nowrap !important;
+      letter-spacing: -0.01em !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 1.5rem !important;
+    }
+
+    .marquee-bold-text.text-outline {
+      color: transparent !important;
+      -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.65) !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .marquee-bold-text.text-outline:hover {
+      color: #ffffff !important;
+      -webkit-text-stroke: 1.5px #ffffff !important;
+    }
+
+    .marquee-dot {
+      color: #60a5fa !important;
+      -webkit-text-stroke: 0 !important;
+      font-size: 0.7em !important;
+      vertical-align: middle !important;
+      display: inline-block !important;
+      opacity: 0.85 !important;
+    }
+  `;
 
 const PROJECT_DATA = `{
   "history": [

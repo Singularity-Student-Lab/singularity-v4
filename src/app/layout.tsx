@@ -202,8 +202,8 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/Lastik-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/images/singularity_scene-1-.png" as="image" type="image/png" fetchPriority="high" />
         <link rel="preload" href="/images/singularity_logo.webp" as="image" type="image/webp" fetchPriority="high" />
-        <link href="/css/singularity-theme.css" rel="stylesheet" type="text/css" />
-        <link href="/css/editorial-styles.css" rel="stylesheet" type="text/css" />
+        <link href="/css/singularity-theme.css?v=12.0" rel="stylesheet" type="text/css" />
+        <link href="/css/editorial-styles.css?v=12.0" rel="stylesheet" type="text/css" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_SCHEMA) }}
