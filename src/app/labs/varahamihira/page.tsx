@@ -270,11 +270,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Anmol Sharma</h3>
                       <p class="executive-role" style="color: #93C5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/Anmolsharma2005" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://github.com/Gostmennnnn" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #60A5FA;"></div>
                           <span>GitHub &nearr;</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/anmol-sharma-b13192233" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://www.linkedin.com/in/Anmol-sharma-ba0b6a387" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #60A5FA;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>
@@ -295,11 +295,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Aditya Joshi</h3>
                       <p class="executive-role" style="color: #93C5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/adityajoshi20" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://github.com/adityajoshi18vk-art" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #60A5FA;"></div>
                           <span>GitHub &nearr;</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/adityajoshi-20" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://www.linkedin.com/in/aditya-joshi-659001350/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #60A5FA;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>
@@ -322,8 +322,8 @@ const BODY_HTML = `
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">Ayush Agnihotri</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/AyushAgnihotri2025" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/ayush-agnihotri-500b1428a/" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/ayushagnihotrii" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
+                      <a href="https://www.linkedin.com/in/ayush-agnihotri-b3719b380" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
                     </div>
                   </div>
 
@@ -332,8 +332,7 @@ const BODY_HTML = `
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Tanishq Yadav</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Tanishq0926" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/tanishq-yadav-7a091428a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <!-- No links on file -->
                     </div>
                   </div>
 
@@ -342,8 +341,7 @@ const BODY_HTML = `
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Ishan Jha</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Ishan-2005" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/ishan-jha-54153928a" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <!-- No links on file -->
                     </div>
                   </div>
 
@@ -352,8 +350,7 @@ const BODY_HTML = `
                     <div class="member-col-idx">04</div>
                     <div class="member-col-name">Yugal Sunil Patil</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/YugalPatil24" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/yugal-patil-349071295" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <!-- No links on file -->
                     </div>
                   </div>
                 </div>

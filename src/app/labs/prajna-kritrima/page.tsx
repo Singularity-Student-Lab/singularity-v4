@@ -289,9 +289,9 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- MEMBERS GRID (7) -->
+              <!-- MEMBERS GRID (10) -->
               <div class="editorial-members-row">
-                <p class="leader-category-tag" style="color: #A78BFA;">LAB MEMBERS (7)</p>
+                <p class="leader-category-tag" style="color: #A78BFA;">LAB MEMBERS (10)</p>
 
                 <div class="members-editorial-table">
                   
@@ -314,7 +314,7 @@ const BODY_HTML = `
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Akash Pandey</div>
                     <div class="member-col-links">
-                      <!-- No links provided -->
+                      <!-- No links on file -->
                     </div>
                   </div>
 
@@ -323,7 +323,7 @@ const BODY_HTML = `
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Jameela Muskaan</div>
                     <div class="member-col-links">
-                      <!-- No links provided -->
+                      <!-- No links on file -->
                     </div>
                   </div>
 
@@ -376,6 +376,51 @@ const BODY_HTML = `
                     <div class="member-col-links">
                       <a href="https://github.com/Shashanka25" target="_blank" rel="noopener noreferrer" class="member-link-pill">
                         GitHub &nearr;
+                      </a>
+                      <a href="https://www.linkedin.com/in/shashanka-biswas-b09967395" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        LinkedIn &nearr;
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Member 8 -->
+                  <div class="member-row">
+                    <div class="member-col-idx">08</div>
+                    <div class="member-col-name">Surya Teja E</div>
+                    <div class="member-col-links">
+                      <a href="https://github.com/sonic-08/" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        GitHub &nearr;
+                      </a>
+                      <a href="https://www.linkedin.com/in/surya-teja-evuri-3bb1933b1" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        LinkedIn &nearr;
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Member 9 -->
+                  <div class="member-row">
+                    <div class="member-col-idx">09</div>
+                    <div class="member-col-name">Tarun Karma</div>
+                    <div class="member-col-links">
+                      <a href="https://github.com/HackerZ-app" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        GitHub &nearr;
+                      </a>
+                      <a href="https://www.linkedin.com/in/tarun-karma-581a043b9" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        LinkedIn &nearr;
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Member 10 -->
+                  <div class="member-row">
+                    <div class="member-col-idx">10</div>
+                    <div class="member-col-name">Y Naga Pragnesh</div>
+                    <div class="member-col-links">
+                      <a href="https://www.gitHub.com/Pragnesh-10" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        GitHub &nearr;
+                      </a>
+                      <a href="https://www.linkedin.com/in/yedrunagapragnesh" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        LinkedIn &nearr;
                       </a>
                     </div>
                   </div>

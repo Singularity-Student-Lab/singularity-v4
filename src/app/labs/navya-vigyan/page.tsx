@@ -260,14 +260,7 @@ const BODY_HTML = `
                       <p class="leader-title" style="color: #FCA5A5; font-size: 0.95rem; margin: 0.2rem 0 0.5rem 0;">Executive</p>
                     </div>
                     <div class="leader-links-row">
-                      <a href="https://github.com/Supreet-kothuri" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small" style="background: #F87171;"></div>
-                        <span>GitHub &nearr;</span>
-                      </a>
-                      <a href="https://www.linkedin.com/in/supreet-kothuri-90714728a" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small" style="background: #F87171;"></div>
-                        <span>LinkedIn &nearr;</span>
-                      </a>
+                      <!-- No links on file -->
                     </div>
                   </div>
                 </div>

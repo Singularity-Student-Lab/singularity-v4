@@ -266,14 +266,7 @@ const BODY_HTML = `
                       <h3 class="executive-name">Agastya Pandey</h3>
                       <p class="executive-role" style="color: #FDBA74;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/Agastya-2005" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #FB923C;"></div>
-                          <span>GitHub &nearr;</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/agastya-pandey-416b23287" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #FB923C;"></div>
-                          <span>LinkedIn &nearr;</span>
-                        </a>
+                        <!-- No links on file -->
                       </div>
                     </div>
                   </div>

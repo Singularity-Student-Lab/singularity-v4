@@ -265,14 +265,7 @@ const BODY_HTML = `
                       <h3 class="executive-name">Pranav Sikka</h3>
                       <p class="executive-role" style="color: #F9A8D4;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/PRANAV-SIKKA" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #F472B6;"></div>
-                          <span>GitHub &nearr;</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pranav-sikka-2736b4287" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #F472B6;"></div>
-                          <span>LinkedIn &nearr;</span>
-                        </a>
+                        <!-- No links on file -->
                       </div>
                     </div>
                   </div>
@@ -290,11 +283,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Shambo Chakraborty</h3>
                       <p class="executive-role" style="color: #F9A8D4;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/Shamb0" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://github.com/shambochakraborty10-stack" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #F472B6;"></div>
                           <span>GitHub &nearr;</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/shamb0" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://www.linkedin.com/in/shambo-chakraborty-480747395" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #F472B6;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>

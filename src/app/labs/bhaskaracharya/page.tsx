@@ -263,11 +263,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Yuvraj Singh</h3>
                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/yuvraj-singh-s" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #34D399;"></div>
                           <span>GitHub &nearr;</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/yuvrajsinghsrm" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #34D399;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>
@@ -288,11 +288,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Praneeth</h3>
                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/praneeth-k24" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #34D399;"></div>
                           <span>GitHub &nearr;</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/praneeth-k-a110a228a" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                        <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #34D399;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>
