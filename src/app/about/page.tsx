@@ -1103,7 +1103,7 @@ const HEAD_STYLES = `
   }
 
   .theme-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-body);
     font-size: clamp(0.95rem, 1.2vw, 1.15rem);
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.8);
@@ -1249,7 +1249,7 @@ const HEAD_STYLES = `
   }
 
   .top-text.logo {
-    font-family: var(--font--second-font) !important;
+    font-family: var(--font-tech) !important;
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     letter-spacing: 2px !important;

@@ -460,7 +460,7 @@ const BODY_HTML = `
           <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
             <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">&copy; ${new Date().getFullYear()} SINGULARITY STUDENT RESEARCH LAB. ALL RIGHTS RESERVED.</p>
             <p class="top-text footer-creator-mark" style="color: rgba(255,255,255,0.4); font-size: 0.75rem; margin: 0; letter-spacing: 0.02em;">
-              Created by <a href="/labs/bhaskaracharya" class="footer-credit-link" style="color: rgba(255,255,255,0.55); text-decoration: none;">Bhaskaracharya Lab</a> (<a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="footer-credit-link" style="color: rgba(255,255,255,0.55); text-decoration: none;">Yuvraj Singh</a>)
+              Created by <a href="/labs/bhaskaracharya" class="footer-credit-link" style="color: rgba(255,255,255,0.55); text-decoration: none;">Bhaskaracharya Lab</a>
             </p>
             <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">SRM UNIVERSITY-AP, AMARAVATI</p>
           </div>

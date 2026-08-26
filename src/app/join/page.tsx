@@ -1056,7 +1056,7 @@ const HEAD_STYLES = `
   }
 
   .top-text.logo {
-    font-family: var(--font--second-font) !important;
+    font-family: var(--font-tech) !important;
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     letter-spacing: 2px !important;
