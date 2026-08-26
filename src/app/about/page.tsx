@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,17 +64,14 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <!-- Logo -->
         <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" class="logo-first w-inline-block">
           <img src="/images/singularity_logo.webp" alt="Singularity" class="nav-brand-icon" />
           <p class="top-text logo">SINGULARITY</p>
         </a>
 
-        <!-- Right Links -->
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
           <nav role="navigation" class="nav-menu first w-nav-menu">
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block w--current">
@@ -97,36 +91,28 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. HERO SECTION -->
     <div id="Hero" class="top-main hero-wrapper-responsive">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Ambient Glow Aura -->
       <div class="singularity-emblem-glow hero-ambient-glow"></div>
 
-      <!-- Main Hero Content -->
       <div class="container hero-content-container">
         
-        <!-- 3D Floating Singularity Emblem -->
         <div class="singularity-emblem-holder hero-emblem-wrap">
           <img src="/images/singularity_logo.webp" alt="Singularity" class="singularity-3d-emblem" />
         </div>
 
-        <!-- Overline -->
         <div class="location-wrapper hero-overline-wrap">
           <p class="top-text hero-overline-text">
             DECODE // INNOVATE // TRANSFORM
           </p>
         </div>
 
-        <!-- Hero Main Title -->
         <h1 class="about-title effect split-reveal hero-main-heading">
           About Singularity Student Lab
         </h1>
 
-        <!-- Subtitle / Tagline -->
         <div class="max-w-center _300 hero-subtitle-wrap">
           <p class="about-title small hero-subtitle-text">
             A premier student research &amp; deep technology innovation ecosystem at SRM University-AP.
@@ -136,7 +122,6 @@ const BODY_HTML = `
         <div class="hero-accent-divider"></div>
       </div>
 
-      <!-- Hero Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div id="w-node-_00bfeab6-765b-29fd-be56-e5a7f1043c12-4bb988f6">
@@ -155,15 +140,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN PAGE CONTENT (Clean Editorial Flow) -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. VISION & 3. MISSION SECTION -->
       <section id="Vision" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label">01 // NORTH STAR</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -171,10 +153,8 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- Vision -->
               <div class="editorial-statement-block">
                 <div class="statement-overline">
                   <span class="statement-index">01</span>
@@ -187,7 +167,6 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- Mission -->
               <div class="editorial-statement-block">
                 <div class="statement-overline">
                   <span class="statement-index">02</span>
@@ -201,7 +180,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num">07</div>
@@ -224,12 +202,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 4. FOUNDING STUDENT & 5-7. LEADERSHIP & ADVISORS -->
       <section id="Leadership" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label">02 // GOVERNANCE</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -237,10 +213,8 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- Row 1: Founding Student -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag">FOUNDING STUDENT</p>
                 <div class="leader-profile-unit">
@@ -283,7 +257,6 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- Row 2: Founding Faculty -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag">FOUNDING FACULTY</p>
                 <div class="leader-dual-grid">
@@ -316,7 +289,6 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- Row 3: Advisory & Executive -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag">ADVISORY &amp; OPERATIONS</p>
                 <div class="leader-dual-grid">
@@ -355,7 +327,6 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 8. WHY SINGULARITY -->
       <section id="Why" class="editorial-section">
         <div class="editorial-container">
           
@@ -368,7 +339,6 @@ const BODY_HTML = `
 
           <div class="why-editorial-grid" data-scroll-fade>
             
-            <!-- Point 1 -->
             <div class="why-editorial-col">
               <div class="why-num-top">01</div>
               <h3 class="why-title">Learn by Doing</h3>
@@ -377,7 +347,6 @@ const BODY_HTML = `
               </p>
             </div>
 
-            <!-- Point 2 -->
             <div class="why-editorial-col">
               <div class="why-num-top">02</div>
               <h3 class="why-title">Multi-Domain Labs</h3>
@@ -386,7 +355,6 @@ const BODY_HTML = `
               </p>
             </div>
 
-            <!-- Point 3 -->
             <div class="why-editorial-col">
               <div class="why-num-top">03</div>
               <h3 class="why-title">Collaborate with the Best</h3>
@@ -395,7 +363,6 @@ const BODY_HTML = `
               </p>
             </div>
 
-            <!-- Point 4 -->
             <div class="why-editorial-col">
               <div class="why-num-top">04</div>
               <h3 class="why-title">Research with Impact</h3>
@@ -409,7 +376,6 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 9. AN OPTIMISTIC APPROACH -->
       <section id="Themes" class="editorial-section" style="padding-bottom: clamp(6rem, 10vw, 11rem);">
         <div class="editorial-container">
           
@@ -422,7 +388,6 @@ const BODY_HTML = `
 
           <div class="themes-editorial-list" data-scroll-fade>
             
-            <!-- Theme 1 -->
             <div class="theme-editorial-row">
               <div class="theme-col-meta">
                 <span class="theme-idx">01</span>
@@ -436,7 +401,6 @@ const BODY_HTML = `
               </div>
             </div>
 
-            <!-- Theme 2 -->
             <div class="theme-editorial-row">
               <div class="theme-col-meta">
                 <span class="theme-idx">02</span>
@@ -450,7 +414,6 @@ const BODY_HTML = `
               </div>
             </div>
 
-            <!-- Theme 3 -->
             <div class="theme-editorial-row">
               <div class="theme-col-meta">
                 <span class="theme-idx">03</span>
@@ -464,7 +427,6 @@ const BODY_HTML = `
               </div>
             </div>
 
-            <!-- Theme 4 -->
             <div class="theme-editorial-row">
               <div class="theme-col-meta">
                 <span class="theme-idx">04</span>
@@ -478,7 +440,6 @@ const BODY_HTML = `
               </div>
             </div>
 
-            <!-- Theme 5 -->
             <div class="theme-editorial-row">
               <div class="theme-col-meta">
                 <span class="theme-idx">05</span>
@@ -499,11 +460,9 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 10. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
-          <!-- Left Column: Contact -->
           <div class="footer-left">
             <p class="top-text footer-col-label">CONTACT US</p>
             <div class="margin-20">
@@ -525,7 +484,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Middle Column: Quick Links -->
           <div class="footer-left">
             <p class="top-text footer-col-label">QUICK LINKS</p>
             <div class="margin-20 flx-ft footer-links-stack">
@@ -548,7 +506,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Right Column: Socials & Copyright -->
           <div class="footer-left">
             <p class="top-text footer-col-label">SOCIAL</p>
             <div class="margin-20">
@@ -573,7 +530,6 @@ const BODY_HTML = `
           .footer-social-btn:hover { opacity: 1 !important; border-color: rgba(255,255,255,0.6) !important; }
         </style>
 
-        <!-- The HUGE Singularity Wordmark (Fluidly sized & centered) -->
         <div class="singularity-footer-wrap">
           <h1 class="singularity-footer-wordmark">SINGULARITY</h1>
         </div>
@@ -1516,21 +1472,20 @@ export default function AboutPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
-    // 1. Inject styles into head
-    // 2. Inject UnicornStudio Project Data into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
     dataScript.type = "application/json";
     dataScript.textContent = PROJECT_DATA;
     document.head.appendChild(dataScript);
 
-    // 3. Load scripts pipeline
     (async () => {
-      // Load head scripts first (WebFont, Lenis, UnicornStudio)
       for (const src of HEAD_SCRIPTS) {
         await loadScript(src);
       }
@@ -1543,27 +1498,21 @@ export default function AboutPage() {
         });
       }
 
-      // Load jQuery
       await loadScript("/js/jquery.js?site=697344b93b0e03014bb98903");
 
-      // Hold jQuery ready
       (window as any).jQuery.holdReady(true);
 
-      // Load runtime chunks
       await loadScript("/js/runtime-core.js");
       await loadScript("/js/runtime-interactions.js");
       await loadScript("/js/runtime-vendor.js");
       await loadScript("/js/singularity-core.js");
 
-      // Load GSAP suite
       await loadScript("/js/gsap.min.js");
       await loadScript("/js/splittext.min.js");
       await loadScript("/js/scrolltrigger.min.js");
 
-      // Release jQuery ready
       (window as any).jQuery.holdReady(false);
 
-      // Force Webflow to initialize
       if ((window as any).Webflow) {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
@@ -1574,21 +1523,20 @@ export default function AboutPage() {
         window.dispatchEvent(new Event('load'));
       }
 
-      // Initialize UnicornStudio WebGL interactive shader
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1614,19 +1562,17 @@ export default function AboutPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
-      // GSAP Animations & Interactive Triggers
       if ((window as any).gsap && (window as any).ScrollTrigger) {
         const gsap = (window as any).gsap;
         const ScrollTrigger = (window as any).ScrollTrigger;
         const SplitText = (window as any).SplitText;
         gsap.registerPlugin(ScrollTrigger);
 
-        // 1. SplitText Heading Reveal Animation
         if (SplitText) {
           const splitTitles = document.querySelectorAll(".split-reveal");
           splitTitles.forEach((title) => {
@@ -1651,7 +1597,6 @@ export default function AboutPage() {
           });
         }
 
-        // 2. Fade Up Entrance for Editorial Sections
         const fadeElements = document.querySelectorAll("[data-scroll-fade]");
         fadeElements.forEach((el) => {
           gsap.fromTo(
@@ -1677,6 +1622,15 @@ export default function AboutPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,7 +64,6 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -95,23 +91,17 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. LAB 04 HERO: CRYPTOGRAPHIC DEFENSE ENCLAVE -->
     <div id="Hero" class="crypto-hero-wrapper">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Color Ambient Shield Glow (#3B82F6) -->
       <div class="crypto-shield-glow"></div>
 
-      <!-- Cryptographic Vertical Defense Rails -->
       <div class="crypto-rail-left"></div>
       <div class="crypto-rail-right"></div>
 
-      <!-- Main Content -->
       <div class="crypto-content-container">
         
-        <!-- Levitating Crypto Shield Emblem -->
         <div class="crypto-emblem-wrap">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -120,19 +110,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Security Enclave Taxonomy -->
         <div class="crypto-taxonomy-bar">
           <span class="crypto-hash-tag">ENCLAVE // 04</span>
           <span class="crypto-tag-divider">&bull;</span>
           <span class="crypto-field-text">CYBERSECURITY &bull; BLOCKCHAIN &bull; DIGITAL DEFENSE</span>
         </div>
 
-        <!-- Lab Main Title -->
         <h1 class="about-title effect split-reveal crypto-main-heading">
           Varahamihira Lab
         </h1>
 
-        <!-- Enclave Polymath Etymology Box -->
         <div class="crypto-enclave-box">
           <div class="crypto-status-line">
             <span class="crypto-live-indicator"></span>
@@ -145,7 +132,6 @@ const BODY_HTML = `
 
       </div>
 
-      <!-- Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div>
@@ -162,15 +148,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. MISSION & DEFENSE PILLARS -->
       <section id="Mission" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #60A5FA;">01 // DEFENSE CHARTER</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -178,7 +161,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content -->
             <div class="editorial-right-col">
               
               <div class="editorial-statement-block">
@@ -191,7 +173,6 @@ const BODY_HTML = `
                 </h3>
               </div>
 
-              <!-- 3 Defense Vectors (Open Columns, No Boxes) -->
               <div class="crypto-vectors-grid">
                 <div class="crypto-vector-col">
                   <span class="crypto-vector-num">01. PROTOCOLS</span>
@@ -213,7 +194,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num" style="color: #60A5FA;">04</div>
@@ -236,12 +216,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. TEAM SECTION (Executives + Members) -->
       <section id="Team" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade style="margin-bottom: 4rem;">
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #60A5FA;">02 // LAB TEAM</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -249,15 +227,12 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- EXECUTIVES (2) -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag" style="color: #60A5FA;">LAB EXECUTIVES (2)</p>
                 
                 <div class="executives-grid">
-                  <!-- Executive 1: Anmol Sharma -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/anmol.png"
@@ -282,7 +257,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Executive 2: Aditya Joshi -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/aditya.png"
@@ -312,12 +286,10 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- MEMBERS (4) -->
               <div class="editorial-members-row">
                 <p class="leader-category-tag" style="color: #60A5FA;">LAB MEMBERS (4)</p>
                 
                 <div class="members-editorial-table">
-                  <!-- Member 1: Ayush Agnihotri -->
                   <div class="member-row">
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">Ayush Agnihotri</div>
@@ -327,30 +299,24 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 2: Tanishq Yadav -->
                   <div class="member-row">
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Tanishq Yadav</div>
                     <div class="member-col-links">
-                      <!-- No links on file -->
                     </div>
                   </div>
 
-                  <!-- Member 3: Ishan Jha -->
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Ishan Jha</div>
                     <div class="member-col-links">
-                      <!-- No links on file -->
                     </div>
                   </div>
 
-                  <!-- Member 4: Yugal Sunil Patil -->
                   <div class="member-row">
                     <div class="member-col-idx">04</div>
                     <div class="member-col-name">Yugal Sunil Patil</div>
                     <div class="member-col-links">
-                      <!-- No links on file -->
                     </div>
                   </div>
                 </div>
@@ -365,7 +331,6 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 4. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
@@ -1337,6 +1302,9 @@ export default function VarahamihiraLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
@@ -1387,17 +1355,17 @@ export default function VarahamihiraLabPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1423,9 +1391,9 @@ export default function VarahamihiraLabPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
       if ((window as any).gsap && (window as any).ScrollTrigger) {
@@ -1483,6 +1451,15 @@ export default function VarahamihiraLabPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

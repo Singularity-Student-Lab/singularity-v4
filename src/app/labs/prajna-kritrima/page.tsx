@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,17 +64,14 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <!-- Logo -->
         <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" class="logo-first w-inline-block">
           <img src="/images/singularity_logo.webp" alt="Singularity" class="nav-brand-icon" />
           <p class="top-text logo">SINGULARITY</p>
         </a>
 
-        <!-- Right Links -->
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
           <nav role="navigation" class="nav-menu first w-nav-menu">
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
@@ -97,19 +91,14 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. LAB HERO SECTION -->
     <div id="Hero" class="top-main hero-wrapper-responsive">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Color Ambient Glow Aura (#8B5CF6) -->
       <div class="lab-accent-glow"></div>
 
-      <!-- Main Hero Content -->
       <div class="container hero-content-container">
         
-        <!-- Lab Logo -->
         <div class="lab-logo-holder">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -118,19 +107,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Editorial Taxonomy Overline (Pure Typography, No Box) -->
         <div class="lab-editorial-header">
           <span class="lab-index-tag">01 <span class="lab-slash-sep">/</span> 07</span>
           <span class="lab-divider-dot">&bull;</span>
           <span class="lab-field-tag">AI/ML &bull; DEEP LEARNING &bull; GENERATIVE AI</span>
         </div>
 
-        <!-- Lab Main Title -->
         <h1 class="about-title effect split-reveal lab-main-heading">
           Prajna Kritrima Lab
         </h1>
 
-        <!-- Lab Meaning & Description -->
         <div class="max-w-center lab-description-wrap">
           <p class="about-title small lab-description-text">
             <strong>Prajna Kritrima</strong> — Sanskrit for Artificial Intelligence (<em>Prajna</em> = wisdom, <em>Kritrima</em> = man-made) — is where brains meet bytes! As the AI, ML, and DL wing of the Singularity Student Research Lab, we tinker, train, and twist neural nets into life. From wild AI agents to deep learning experiments, it's where curiosity codes intelligence!
@@ -140,7 +126,6 @@ const BODY_HTML = `
         <div class="hero-accent-divider"></div>
       </div>
 
-      <!-- Hero Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div id="w-node-_00bfeab6-765b-29fd-be56-e5a7f1043c12-4bb988f6">
@@ -159,15 +144,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN PAGE CONTENT (Clean Swiss Editorial Flow) -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. MISSION SECTION -->
       <section id="Mission" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label">01 // CORE DIRECTIVE</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -175,10 +157,8 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- Mission Statement Block -->
               <div class="editorial-statement-block">
                 <div class="statement-overline">
                   <span class="statement-index">01</span>
@@ -192,7 +172,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num" style="color: #A78BFA;">01</div>
@@ -215,12 +194,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. TEAM SECTION (Executives + Members) -->
       <section id="Team" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade style="margin-bottom: 4rem;">
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #A78BFA;">02 // LAB TEAM</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -228,15 +205,12 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- EXECUTIVES (2) -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag" style="color: #A78BFA;">LAB EXECUTIVES (2)</p>
                 
                 <div class="executives-grid">
-                  <!-- Executive 1: B Md Fawaz -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073654/team/fawaz.png"
@@ -260,7 +234,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Executive 2: Lavjeet Kumar Rai -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/lavjeet.png"
@@ -289,13 +262,11 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- MEMBERS GRID (10) -->
               <div class="editorial-members-row">
                 <p class="leader-category-tag" style="color: #A78BFA;">LAB MEMBERS (10)</p>
 
                 <div class="members-editorial-table">
                   
-                  <!-- Member 1 -->
                   <div class="member-row">
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">A Sai Shivanand</div>
@@ -309,25 +280,20 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 2 (No links) -->
                   <div class="member-row">
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Akash Pandey</div>
                     <div class="member-col-links">
-                      <!-- No links on file -->
                     </div>
                   </div>
 
-                  <!-- Member 3 (No links) -->
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Jameela Muskaan</div>
                     <div class="member-col-links">
-                      <!-- No links on file -->
                     </div>
                   </div>
 
-                  <!-- Member 4 -->
                   <div class="member-row">
                     <div class="member-col-idx">04</div>
                     <div class="member-col-name">K Guna Vishnu</div>
@@ -341,7 +307,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 5 -->
                   <div class="member-row">
                     <div class="member-col-idx">05</div>
                     <div class="member-col-name">Priyanshu</div>
@@ -355,7 +320,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 6 -->
                   <div class="member-row">
                     <div class="member-col-idx">06</div>
                     <div class="member-col-name">Ritabbrata Chakraborty</div>
@@ -369,7 +333,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 7 -->
                   <div class="member-row">
                     <div class="member-col-idx">07</div>
                     <div class="member-col-name">Shashanka Biswas</div>
@@ -383,7 +346,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 8 -->
                   <div class="member-row">
                     <div class="member-col-idx">08</div>
                     <div class="member-col-name">Surya Teja E</div>
@@ -397,7 +359,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 9 -->
                   <div class="member-row">
                     <div class="member-col-idx">09</div>
                     <div class="member-col-name">Tarun Karma</div>
@@ -411,7 +372,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 10 -->
                   <div class="member-row">
                     <div class="member-col-idx">10</div>
                     <div class="member-col-name">Y Naga Pragnesh</div>
@@ -437,11 +397,9 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 4. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
-          <!-- Left Column: Contact -->
           <div class="footer-left">
             <p class="top-text footer-col-label">CONTACT US</p>
             <div class="margin-20">
@@ -463,7 +421,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Middle Column: Quick Links -->
           <div class="footer-left">
             <p class="top-text footer-col-label">QUICK LINKS</p>
             <div class="margin-20 flx-ft footer-links-stack">
@@ -486,7 +443,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Right Column: Socials & Copyright -->
           <div class="footer-left">
             <p class="top-text footer-col-label">SOCIAL</p>
             <div class="margin-20">
@@ -511,7 +467,6 @@ const BODY_HTML = `
           .footer-social-btn:hover { opacity: 1 !important; border-color: rgba(255,255,255,0.6) !important; }
         </style>
 
-        <!-- The HUGE Singularity Wordmark -->
         <div class="singularity-footer-wrap">
           <h1 class="singularity-footer-wordmark">SINGULARITY</h1>
         </div>
@@ -1426,21 +1381,20 @@ export default function PrajnaKritrimaLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
-    // 1. Inject styles into head
-    // 2. Inject UnicornStudio Project Data into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
     dataScript.type = "application/json";
     dataScript.textContent = PROJECT_DATA;
     document.head.appendChild(dataScript);
 
-    // 3. Load scripts pipeline
     (async () => {
-      // Load head scripts first (WebFont, Lenis, UnicornStudio)
       for (const src of HEAD_SCRIPTS) {
         await loadScript(src);
       }
@@ -1453,27 +1407,21 @@ export default function PrajnaKritrimaLabPage() {
         });
       }
 
-      // Load jQuery
       await loadScript("/js/jquery.js?site=697344b93b0e03014bb98903");
 
-      // Hold jQuery ready
       (window as any).jQuery.holdReady(true);
 
-      // Load runtime chunks
       await loadScript("/js/runtime-core.js");
       await loadScript("/js/runtime-interactions.js");
       await loadScript("/js/runtime-vendor.js");
       await loadScript("/js/singularity-core.js");
 
-      // Load GSAP suite
       await loadScript("/js/gsap.min.js");
       await loadScript("/js/splittext.min.js");
       await loadScript("/js/scrolltrigger.min.js");
 
-      // Release jQuery ready
       (window as any).jQuery.holdReady(false);
 
-      // Force Webflow to initialize
       if ((window as any).Webflow) {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
@@ -1484,21 +1432,20 @@ export default function PrajnaKritrimaLabPage() {
         window.dispatchEvent(new Event('load'));
       }
 
-      // Initialize UnicornStudio WebGL interactive shader
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function () {
+        resizeHandler = function () {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function () {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1524,19 +1471,17 @@ export default function PrajnaKritrimaLabPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
-      // GSAP Animations & Interactive Triggers
       if ((window as any).gsap && (window as any).ScrollTrigger) {
         const gsap = (window as any).gsap;
         const ScrollTrigger = (window as any).ScrollTrigger;
         const SplitText = (window as any).SplitText;
         gsap.registerPlugin(ScrollTrigger);
 
-        // 1. SplitText Heading Reveal Animation
         if (SplitText) {
           const splitTitles = document.querySelectorAll(".split-reveal");
           splitTitles.forEach((title) => {
@@ -1561,7 +1506,6 @@ export default function PrajnaKritrimaLabPage() {
           });
         }
 
-        // 2. Fade Up Entrance for Editorial Sections
         const fadeElements = document.querySelectorAll("[data-scroll-fade]");
         fadeElements.forEach((el) => {
           gsap.fromTo(
@@ -1587,6 +1531,15 @@ export default function PrajnaKritrimaLabPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

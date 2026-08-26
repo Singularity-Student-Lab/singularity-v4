@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,7 +64,6 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -95,19 +91,14 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. LAB 07 HERO: MONUMENTAL MODERN SCIENCE MANIFESTO -->
     <div id="Hero" class="modernist-hero-wrapper">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Color Ambient Red Core (#EF4444) -->
       <div class="modernist-ambient-glow"></div>
 
-      <!-- Main Content -->
       <div class="modernist-content-container">
         
-        <!-- Levitating Modern Science Emblem -->
         <div class="modernist-emblem-wrap">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -116,19 +107,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Interdisciplinary Taxonomy Bar -->
         <div class="modernist-taxonomy-bar">
           <span class="modernist-node-tag">MANIFESTO // 07</span>
           <span class="modernist-tag-divider">&bull;</span>
           <span class="modernist-field-text">INTERDISCIPLINARY &bull; EXPERIMENTAL TECH &bull; STRATEGY</span>
         </div>
 
-        <!-- Lab Main Title -->
         <h1 class="about-title effect split-reveal modernist-main-heading">
           Navya Vigyan Lab
         </h1>
 
-        <!-- Modernist Manifesto Statement -->
         <div class="modernist-manifesto-box">
           <p class="modernist-manifesto-text">
             <strong>Navya Vigyan Lab</strong>, meaning <em>'Modern Science'</em> in Sanskrit, is the Interdisciplinary and Management division of the Singularity Student Research Lab at SRM University AP. It's where innovation meets organization — students blend technology with strategy, exploring intersections of research, entrepreneurship, and leadership.
@@ -137,7 +125,6 @@ const BODY_HTML = `
 
       </div>
 
-      <!-- Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div>
@@ -154,15 +141,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. MISSION & MANIFESTO PILLARS -->
       <section id="Mission" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #F87171;">01 // SYNTHESIS CHARTER</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -170,7 +154,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content -->
             <div class="editorial-right-col">
               
               <div class="editorial-statement-block">
@@ -183,7 +166,6 @@ const BODY_HTML = `
                 </h3>
               </div>
 
-              <!-- 3 Synthesis Vectors -->
               <div class="modernist-vectors-grid">
                 <div class="modernist-vector-col">
                   <span class="modernist-vector-num">01. STRATEGY</span>
@@ -205,7 +187,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num" style="color: #F87171;">07</div>
@@ -228,12 +209,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. TEAM SECTION (Executive Profile) -->
       <section id="Team" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade style="margin-bottom: 4rem;">
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #F87171;">02 // LAB TEAM</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -241,7 +220,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content: Supreet Kothuri Lead Profile -->
             <div class="editorial-right-col">
               
               <div class="editorial-leader-row">
@@ -260,7 +238,6 @@ const BODY_HTML = `
                       <p class="leader-title" style="color: #FCA5A5; font-size: 0.95rem; margin: 0.2rem 0 0.5rem 0;">Executive</p>
                     </div>
                     <div class="leader-links-row">
-                      <!-- No links on file -->
                     </div>
                   </div>
                 </div>
@@ -280,7 +257,6 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 4. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
@@ -1158,6 +1134,9 @@ export default function NavyaVigyanLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
@@ -1208,17 +1187,17 @@ export default function NavyaVigyanLabPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1244,9 +1223,9 @@ export default function NavyaVigyanLabPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
       if ((window as any).gsap && (window as any).ScrollTrigger) {
@@ -1304,6 +1283,15 @@ export default function NavyaVigyanLabPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

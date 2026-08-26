@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,7 +64,6 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -95,19 +91,14 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. LAB 05 HERO: DISTRIBUTED CLOUD ARCHITECTURE MATRIX -->
     <div id="Hero" class="cloud-hero-wrapper">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Color Ambient Green Aura (#10B981) -->
       <div class="cloud-ambient-glow"></div>
 
-      <!-- Main Content -->
       <div class="cloud-content-container">
         
-        <!-- Levitating Cloud Matrix Emblem -->
         <div class="cloud-emblem-wrap">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -116,19 +107,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Distributed Taxonomy Bar -->
         <div class="cloud-taxonomy-bar">
           <span class="cloud-node-tag">CLUSTER // 05</span>
           <span class="cloud-tag-divider">&bull;</span>
           <span class="cloud-field-text">WEB DEVELOPMENT &bull; CLOUD COMPUTING &bull; DISTRIBUTED SYSTEMS</span>
         </div>
 
-        <!-- Lab Main Title -->
         <h1 class="about-title effect split-reveal cloud-main-heading">
           Bhaskaracharya Lab
         </h1>
 
-        <!-- Distributed Systems Statement -->
         <div class="cloud-matrix-box">
           <p class="cloud-matrix-text">
             <strong>Bhaskaracharya Lab</strong>, named after the legendary mathematician and astronomer, is the Web Development and Cloud Computing division of the Singularity Student Research Lab at SRM University AP. It's where design meets logic and creativity meets code — students craft resilient web architectures, scalable cloud platforms, and digital experiences that speak innovation.
@@ -137,7 +125,6 @@ const BODY_HTML = `
 
       </div>
 
-      <!-- Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div>
@@ -154,15 +141,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. MISSION & CLOUD PILLARS -->
       <section id="Mission" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #34D399;">01 // ARCHITECTURE CHARTER</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -170,7 +154,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content -->
             <div class="editorial-right-col">
               
               <div class="editorial-statement-block">
@@ -183,8 +166,6 @@ const BODY_HTML = `
                 </h3>
               </div>
 
-              <!-- 3 Cloud Infrastructure Vectors -->
-              <!-- 3 Cloud Infrastructure Vectors (Open Columns, No Boxes) -->
               <div class="cloud-vectors-grid">
                 <div class="cloud-vector-col">
                   <span class="cloud-vector-num">01. CLOUD</span>
@@ -206,7 +187,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num" style="color: #34D399;">05</div>
@@ -229,12 +209,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. TEAM SECTION (Executives + Members) -->
       <section id="Team" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade style="margin-bottom: 4rem;">
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #34D399;">02 // LAB TEAM</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -242,15 +220,12 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content Rows -->
             <div class="editorial-right-col">
               
-              <!-- EXECUTIVES (2) -->
               <div class="editorial-leader-row">
                 <p class="leader-category-tag" style="color: #34D399;">LAB EXECUTIVES (2)</p>
                 
                 <div class="executives-grid">
-                  <!-- Executive 1: Yuvraj Singh -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/yuvraj.png"
@@ -275,7 +250,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Executive 2: Praneeth -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/praneeth.png"
@@ -305,12 +279,10 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <!-- MEMBERS (6) -->
               <div class="editorial-members-row">
                 <p class="leader-category-tag" style="color: #34D399;">LAB MEMBERS (6)</p>
                 
                 <div class="members-editorial-table">
-                  <!-- Member 1: Arnav Mehar -->
                   <div class="member-row">
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">Arnav Mehar</div>
@@ -320,7 +292,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 2: Avantika Singh -->
                   <div class="member-row">
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Avantika Singh</div>
@@ -330,7 +301,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 3: Jignesh Setty -->
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Jignesh Setty</div>
@@ -340,7 +310,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 4: Sunkara Purna Jaswanth -->
                   <div class="member-row">
                     <div class="member-col-idx">04</div>
                     <div class="member-col-name">Sunkara Purna Jaswanth</div>
@@ -350,7 +319,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 5: Vinay Sathwik Motakatla -->
                   <div class="member-row">
                     <div class="member-col-idx">05</div>
                     <div class="member-col-name">Vinay Sathwik Motakatla</div>
@@ -360,7 +328,6 @@ const BODY_HTML = `
                     </div>
                   </div>
 
-                  <!-- Member 6: Yash Jaiswal -->
                   <div class="member-row">
                     <div class="member-col-idx">06</div>
                     <div class="member-col-name">Yash Jaiswal</div>
@@ -381,7 +348,6 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 4. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
@@ -1329,6 +1295,9 @@ export default function BhaskaracharyaLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
@@ -1379,17 +1348,17 @@ export default function BhaskaracharyaLabPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1415,9 +1384,9 @@ export default function BhaskaracharyaLabPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
       if ((window as any).gsap && (window as any).ScrollTrigger) {
@@ -1475,6 +1444,15 @@ export default function BhaskaracharyaLabPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

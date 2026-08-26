@@ -3869,18 +3869,21 @@ blockquote {
   z-index: 10;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  width: 117px;
-  height: 30px;
+  width: auto;
+  min-width: fit-content;
+  height: 32px;
+  padding: 0 16px;
   font-size: var(--font--h5);
   white-space: nowrap;
-  word-break: break-all;
+  word-break: keep-all;
   background-color: #0003;
-  border-radius: 6px;
+  border-radius: 9999px;
   justify-content: center;
   align-items: center;
   display: flex;
   position: absolute;
-  overflow: hidden;
+  overflow: visible;
+  box-sizing: border-box;
 }
 
 .service-grid {

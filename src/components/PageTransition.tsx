@@ -8,17 +8,14 @@ export default function PageTransition() {
   const router = useRouter();
 
   useEffect(() => {
-    // 1. Initial Page Enter (smooth gentle fade-in)
     const timer = setTimeout(() => {
       setTransitionState("idle");
     }, 280);
 
-    // 2. Universal Navigation Drawer Controller (Mobile & Desktop)
     const handleMenuClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement | null;
       if (!target) return;
 
-      // Check if clicked menu open button (hamburger, nav button, circle menu)
       const openTrigger = target.closest(".menu-button, .w-nav-button, .w-icon-nav-menu, .circle-menu");
       if (openTrigger) {
         event.preventDefault();
@@ -35,7 +32,6 @@ export default function PageTransition() {
         return;
       }
 
-      // Check if clicked close button
       const closeTrigger = target.closest(".fixed-close-button, .lottie-x");
       if (closeTrigger) {
         event.preventDefault();
@@ -45,7 +41,6 @@ export default function PageTransition() {
         return;
       }
 
-      // If menu is open and clicked on background (outside navigation-content)
       const menuWrapper = target.closest(".menu-wrapper");
       if (menuWrapper && !target.closest(".navigation-content")) {
         document.body.classList.remove("menu-open");
@@ -64,7 +59,6 @@ export default function PageTransition() {
     document.addEventListener("click", handleMenuClick, true);
     document.addEventListener("keydown", handleKeyDown);
 
-    // 3. Intercept internal links for a clean, quick exit fade
     const handleDocumentClick = (event: MouseEvent) => {
       if (
         event.defaultPrevented ||
@@ -85,7 +79,6 @@ export default function PageTransition() {
       const href = anchor.getAttribute("href");
       if (!href) return;
 
-      // Ignore external, hash jumps, mailto, tel, downloads
       if (
         anchor.target === "_blank" ||
         href.startsWith("mailto:") ||
@@ -96,18 +89,15 @@ export default function PageTransition() {
         return;
       }
 
-      // If clicked inside menu, close menu immediately
       if (anchor.closest(".menu-wrapper")) {
         document.body.classList.remove("menu-open");
         document.querySelector(".menu-wrapper")?.classList.remove("is-open");
       }
 
-      // Check URL
       try {
         const parsed = new URL(anchor.href, window.location.href);
         if (parsed.origin !== window.location.origin) return;
 
-        // Hash jump on same page
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search &&
@@ -121,7 +111,6 @@ export default function PageTransition() {
           return;
         }
 
-        // Same page without hash
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search
@@ -129,7 +118,6 @@ export default function PageTransition() {
           return;
         }
 
-        // Clean quick transition
         event.preventDefault();
         setTransitionState("exiting");
 
@@ -139,8 +127,7 @@ export default function PageTransition() {
           setTimeout(() => setTransitionState("idle"), 280);
         }, 180);
       } catch {
-        // Ignore fallback
-      }
+              }
     };
 
     document.addEventListener("click", handleDocumentClick, true);
@@ -152,6 +139,7 @@ export default function PageTransition() {
         document.querySelector(".menu-wrapper")?.classList.remove("is-open");
       }
     };
+
     const handlePopState = () => {
       setTransitionState("idle");
       document.body.classList.remove("menu-open");
@@ -176,7 +164,7 @@ export default function PageTransition() {
       className={`singularity-simple-transition state-${transitionState}`}
       aria-hidden="true"
     >
-      <div className="simple-transition-bar"></div>
+      <div className="simple-transition-bar" />
     </div>
   );
 }

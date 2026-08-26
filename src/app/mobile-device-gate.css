@@ -1,7 +1,7 @@
-/* Mobile Device Gate Neutralized for Full Fidelity Experience */
 .device-compatibility-notice {
   display: none !important;
 }
+
 .desktop-experience {
   display: block !important;
 }

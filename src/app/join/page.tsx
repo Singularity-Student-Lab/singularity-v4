@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,17 +64,14 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <!-- Logo -->
         <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" class="logo-first w-inline-block">
           <img src="/images/singularity_logo.webp" alt="Singularity" class="nav-brand-icon" />
           <p class="top-text logo">SINGULARITY</p>
         </a>
 
-        <!-- Right Links -->
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
           <nav role="navigation" class="nav-menu first w-nav-menu">
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
@@ -97,19 +91,14 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. JOIN HERO -->
     <div id="Hero" class="join-hero-wrapper">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Ambient Glow -->
       <div class="join-ambient-glow"></div>
 
-      <!-- Main Content -->
       <div class="join-content-container">
         
-        <!-- Levitating Singularity Emblem -->
         <div class="join-emblem-cluster">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -118,19 +107,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Overline Tag -->
         <div class="join-tag-bar">
           <span class="join-tag-status">RECRUITMENT</span>
           <span class="join-tag-bullet">//</span>
           <span class="join-tag-field">OPENS SOON</span>
         </div>
 
-        <!-- Main Heading -->
         <h1 class="about-title effect split-reveal join-main-heading">
           Join Singularity
         </h1>
 
-        <!-- Subtext -->
         <div class="join-subtext-wrap">
           <p class="join-subtext">
             We don't run open enrollment. Singularity recruits through dedicated drives — a focused window where you apply, get evaluated, and join a lab that matches what you actually want to build.
@@ -139,7 +125,6 @@ const BODY_HTML = `
 
       </div>
 
-      <!-- Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div>
@@ -156,15 +141,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. HOW IT WORKS (3-Step Block) -->
       <section id="HowItWorks" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: rgba(255, 255, 255, 0.5);">01 // THE PROCESS</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -172,12 +154,10 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content: 3 Numbered Steps -->
             <div class="editorial-right-col">
               
               <div class="steps-stack">
                 
-                <!-- Step 1 -->
                 <div class="step-card">
                   <div class="step-num-col">
                     <span class="step-num">01</span>
@@ -190,7 +170,6 @@ const BODY_HTML = `
                   </div>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="step-card">
                   <div class="step-num-col">
                     <span class="step-num">02</span>
@@ -203,7 +182,6 @@ const BODY_HTML = `
                   </div>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="step-card">
                   <div class="step-num-col">
                     <span class="step-num">03</span>
@@ -224,12 +202,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. THE 7 LABS (Grid with accent markers & links) -->
       <section id="Labs" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: rgba(255, 255, 255, 0.5);">02 // CHOOSE YOUR DOMAIN</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -237,12 +213,10 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content: 7 Labs Grid -->
             <div class="editorial-right-col">
               
               <div class="labs-directory-grid">
                 
-                <!-- Lab 1: Prajna Kritrima (#8B5CF6) -->
                 <a href="/labs/prajna-kritrima" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #8B5CF6;"></div>
                   <div class="lab-dir-content">
@@ -253,7 +227,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 2: Aanu Tattva (#06B6D4) -->
                 <a href="/labs/aanu-tattva" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #06B6D4;"></div>
                   <div class="lab-dir-content">
@@ -264,7 +237,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 3: Chitra Darshan (#EC4899) -->
                 <a href="/labs/chitra-darshan" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #EC4899;"></div>
                   <div class="lab-dir-content">
@@ -275,7 +247,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 4: Varahamihira (#3B82F6) -->
                 <a href="/labs/varahamihira" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #3B82F6;"></div>
                   <div class="lab-dir-content">
@@ -286,7 +257,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 5: Bhaskaracharya (#10B981) -->
                 <a href="/labs/bhaskaracharya" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #10B981;"></div>
                   <div class="lab-dir-content">
@@ -297,7 +267,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 6: Agastya (#F97316) -->
                 <a href="/labs/agastya" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #F97316;"></div>
                   <div class="lab-dir-content">
@@ -308,7 +277,6 @@ const BODY_HTML = `
                   </div>
                 </a>
 
-                <!-- Lab 7: Navya Vigyan (#EF4444) -->
                 <a href="/labs/navya-vigyan" class="lab-dir-card">
                   <div class="lab-dir-accent" style="background-color: #EF4444;"></div>
                   <div class="lab-dir-content">
@@ -327,12 +295,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 4. STATUS BLOCK (Direct & Honest) -->
       <section id="Status" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: rgba(255, 255, 255, 0.5);">03 // RECRUITMENT STATUS</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -340,7 +306,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content: Status Card -->
             <div class="editorial-right-col">
               
               <div class="status-announcement-card">
@@ -356,7 +321,6 @@ const BODY_HTML = `
                   The next recruitment drive hasn't been scheduled yet. Follow our Instagram and LinkedIn — that's where it'll be announced first.
                 </p>
 
-                <!-- Social Links -->
                 <div class="status-social-actions">
                   <a
                     href="https://www.instagram.com/thesingularity.srmap"
@@ -388,11 +352,9 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 5. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
-          <!-- Left Column: Contact -->
           <div class="footer-left">
             <p class="top-text footer-col-label">CONTACT US</p>
             <div class="margin-20">
@@ -414,7 +376,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Middle Column: Quick Links -->
           <div class="footer-left">
             <p class="top-text footer-col-label">QUICK LINKS</p>
             <div class="margin-20 flx-ft footer-links-stack">
@@ -437,7 +398,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Right Column: Socials & Copyright -->
           <div class="footer-left">
             <p class="top-text footer-col-label">SOCIAL</p>
             <div class="margin-20">
@@ -1252,6 +1212,9 @@ export default function JoinPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
@@ -1302,17 +1265,17 @@ export default function JoinPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1338,9 +1301,9 @@ export default function JoinPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
       if ((window as any).gsap && (window as any).ScrollTrigger) {
@@ -1398,6 +1361,15 @@ export default function JoinPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

@@ -1,1 +1,31 @@
-/* Globals removed for Webflow template styles */
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.view-more {
+  width: auto !important;
+  min-width: 120px !important;
+  max-width: fit-content !important;
+  height: auto !important;
+  min-height: 32px !important;
+  box-sizing: border-box !important;
+  padding: 0.45rem 1.15rem !important;
+  font-family: var(--font-tech, 'Michroma', sans-serif) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  border-radius: 9999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  overflow: visible !important;
+}

@@ -4,10 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { loadScript } from "@/lib/load-script";
 
 const BODY_HTML = `
-  <!-- Atmospheric Scanlines & Film Grain Overlay -->
   <div class="tv-dots"></div>
 
-  <!-- Hamburger Mobile Close -->
   <div data-w-id="91953398-20e1-8cca-2bd1-effc568176e2" class="fixed-close-button">
     <div data-is-ix2-target="1" class="lottie-x" data-w-id="91953398-20e1-8cca-2bd1-effc568176e3"
       data-animation-type="lottie" data-src="/js/hamburger-animation.json" data-loop="1" data-direction="1"
@@ -15,7 +13,6 @@ const BODY_HTML = `
       data-ix2-initial-state="25"></div>
   </div>
 
-  <!-- Mobile Menu Drawer -->
   <div class="menu-wrapper">
     <div class="navigation-wrapper">
       <div class="navigation-content">
@@ -67,7 +64,6 @@ const BODY_HTML = `
   </div>
 
   <div id="Top" class="main-hero">
-    <!-- Sticky Header / Navbar -->
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -95,23 +91,17 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <!-- 1. LAB 03 HERO: SPATIAL COMPUTING & XR CANVAS -->
     <div id="Hero" class="spatial-hero-wrapper">
       
-      <!-- Interactive WebGL Liquid Shader Background Canvas -->
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
-      <!-- Accent Color Ambient Spatial Glow (#EC4899) -->
       <div class="spatial-ambient-glow"></div>
 
-      <!-- Spatial HUD Markers -->
       <div class="spatial-hud-marker-tl">+ SPATIAL HUD // FOV 110&deg;</div>
       <div class="spatial-hud-marker-tr">[ 03 / 07 &bull; XR CANVAS ]</div>
 
-      <!-- Main Content -->
       <div class="spatial-content-container">
         
-        <!-- Levitating Spatial Emblem -->
         <div class="spatial-emblem-cluster">
           <img
             src="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
@@ -120,19 +110,16 @@ const BODY_HTML = `
           />
         </div>
 
-        <!-- Overline Tag -->
         <div class="spatial-tag-bar">
           <span class="spatial-tag-index">03 / 07</span>
           <span class="spatial-tag-bullet">&bull;</span>
           <span class="spatial-tag-field">GAME DEVELOPMENT &bull; AR &bull; VR &bull; MIXED REALITY</span>
         </div>
 
-        <!-- Lab Main Title -->
         <h1 class="about-title effect split-reveal spatial-main-heading">
           Chitra Darshan Lab
         </h1>
 
-        <!-- Meaning & Vision Statement -->
         <div class="spatial-vision-wrap">
           <p class="spatial-vision-text">
             <strong>Chitra Darshan Lab</strong>, meaning <em>'vision through imagery'</em> in Sanskrit, is the AR, VR, MR, and Game Development division of the Singularity Student Research Lab at SRM University AP. It's where imagination meets immersion — students craft virtual worlds, interactive experiences, and mixed reality applications that blur the line between the real and the digital.
@@ -141,7 +128,6 @@ const BODY_HTML = `
 
       </div>
 
-      <!-- Bottom Status Bar -->
       <div class="container-bottom hero-bottom-bar">
         <div class="bottom-grid _2 hero-bottom-grid">
           <div>
@@ -158,15 +144,12 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="section-content" style="position: relative;">
 
-      <!-- 2. MISSION & IMMERSIVE PILLARS -->
       <section id="Mission" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #F472B6;">01 // IMMERSIVE CHARTER</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -174,7 +157,6 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content -->
             <div class="editorial-right-col">
               
               <div class="editorial-statement-block">
@@ -187,7 +169,6 @@ const BODY_HTML = `
                 </h3>
               </div>
 
-              <!-- 3 Spatial Pillars (Open Columns, No Boxes) -->
               <div class="spatial-pillars-grid">
                 <div class="spatial-pillar-col">
                   <span class="spatial-pillar-num">01. INTERACTION</span>
@@ -209,7 +190,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Metric Numbers Row -->
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num" style="color: #F472B6;">03</div>
@@ -232,12 +212,10 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- 3. TEAM SECTION (Executives) -->
       <section id="Team" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade style="margin-bottom: 4rem;">
-            <!-- Left Header -->
             <div class="editorial-left-col">
               <p class="section-top-label" style="color: #F472B6;">02 // LAB TEAM</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -245,14 +223,12 @@ const BODY_HTML = `
               </h2>
             </div>
 
-            <!-- Right Content: 2 Studio Leads -->
             <div class="editorial-right-col">
               
               <div class="editorial-leader-row">
                 <p class="leader-category-tag" style="color: #F472B6;">LAB EXECUTIVES (2)</p>
                 
                 <div class="executives-grid">
-                  <!-- Lead 1: Pranav Sikka -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/pranav.png"
@@ -265,12 +241,10 @@ const BODY_HTML = `
                       <h3 class="executive-name">Pranav Sikka</h3>
                       <p class="executive-role" style="color: #F9A8D4;">Executive</p>
                       <div class="executive-links">
-                        <!-- No links on file -->
                       </div>
                     </div>
                   </div>
 
-                  <!-- Lead 2: Shambo Chakraborty -->
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/shambo.png"
@@ -306,7 +280,6 @@ const BODY_HTML = `
 
     </div>
 
-    <!-- 4. FOOTER -->
     <div class="footer footer-responsive">
       <div class="container footer-container-responsive">
         <div class="footer-grid-responsive">
@@ -1182,6 +1155,9 @@ export default function ChitraDarshanLabPage() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
@@ -1232,17 +1208,17 @@ export default function ChitraDarshanLabPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        window.addEventListener("resize", function() {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
           }, 100);
-        });
+        };
+        window.addEventListener("resize", resizeHandler, { passive: true });
       }
 
-      // Initialize Lenis smooth scroll with singleton guard
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
@@ -1268,9 +1244,9 @@ export default function ChitraDarshanLabPage() {
 
         function raf(time: number) {
           lenis.raf(time);
-          requestAnimationFrame(raf);
+          rafId = requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
       }
 
       if ((window as any).gsap && (window as any).ScrollTrigger) {
@@ -1328,6 +1304,15 @@ export default function ChitraDarshanLabPage() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 

@@ -58,13 +58,11 @@ const BODY_HTML = `
     <div data-w-id="62bf61a9-91ad-d080-59a9-9d0bda0e906f" class="sticky-element">
       <div data-w-id="00cdae18-38ec-1b3e-ec88-656f2336553d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <!-- Logo -->
         <a href="/" id="w-node-_00cdae18-38ec-1b3e-ec88-656f2336553e-2336553d" aria-current="page" class="logo-first w-inline-block w--current" aria-label="Singularity Home">
           <img src="/images/singularity_logo.webp" width="34" height="34" alt="Singularity emblem" class="nav-brand-icon" />
           <p class="top-text logo">SINGULARITY</p>
         </a>
 
-        <!-- Right Links -->
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
           <nav role="navigation" aria-label="Main Navigation" class="nav-menu first w-nav-menu">
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="About Us">
@@ -155,7 +153,6 @@ const BODY_HTML = `
           </a>
         </div>
 
-        <!-- LAB 01 -->
         <div id="First" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -180,7 +177,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 02 -->
         <div id="Second" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -205,7 +201,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 03 -->
         <div id="Third" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -230,7 +225,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 04 -->
         <div id="Fourth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -255,7 +249,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 05 -->
         <div id="Fifth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -280,7 +273,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 06 -->
         <div id="Sixth" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -305,7 +297,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <!-- LAB 07 -->
         <div id="Seventh" class="project-big-parallax">
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
@@ -331,7 +322,6 @@ const BODY_HTML = `
         </div>
       </div>
 
-      <!-- SINGULARITY COLLABORATION & RESEARCH METRICS SECTION -->
       <section class="section double">
         <div class="container">
           <div class="grid-goals">
@@ -343,7 +333,6 @@ const BODY_HTML = `
               </div>
             </div>
             <div class="big-typography-marquee-wrap" aria-label="Research disciplines and laboratory marquee">
-              <!-- Track 1: Research Domains (Scrolling Left) -->
               <div class="marquee-track-row">
                 <div class="marquee-track-inner move-left">
                   <span class="marquee-bold-text">ARTIFICIAL INTELLIGENCE <span class="marquee-dot">•</span></span>
@@ -353,7 +342,6 @@ const BODY_HTML = `
                   <span class="marquee-bold-text">DEEP TECHNOLOGY <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text">CLOUD SYSTEMS <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text">NANOTECHNOLOGY <span class="marquee-dot">•</span></span>
-                  <!-- Infinite Duplicate Track -->
                   <span class="marquee-bold-text">ARTIFICIAL INTELLIGENCE <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text">QUANTUM COMPUTING <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text">ASTROPHYSICS <span class="marquee-dot">•</span></span>
@@ -364,7 +352,6 @@ const BODY_HTML = `
                 </div>
               </div>
 
-              <!-- Track 2: 7 Laboratories / Taglines (Scrolling Right) -->
               <div class="marquee-track-row">
                 <div class="marquee-track-inner move-right">
                   <span class="marquee-bold-text text-outline">PRAJNA KRITRIMA <span class="marquee-dot">•</span></span>
@@ -374,7 +361,6 @@ const BODY_HTML = `
                   <span class="marquee-bold-text text-outline">BHASKARACHARYA <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text text-outline">AGASTYA <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text text-outline">NAVYA VIGYAN <span class="marquee-dot">•</span></span>
-                  <!-- Infinite Duplicate Track -->
                   <span class="marquee-bold-text text-outline">PRAJNA KRITRIMA <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text text-outline">AANU TATTVA <span class="marquee-dot">•</span></span>
                   <span class="marquee-bold-text text-outline">CHITRA DARSHAN <span class="marquee-dot">•</span></span>
@@ -388,31 +374,26 @@ const BODY_HTML = `
           </div>
           <div class="margin-100">
             <div data-w-id="a0960034-c8d1-d137-9f08-7b4be3fdd731" class="snapshot-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; text-align: center;">
-              <!-- Metric 1: 07 Research Labs -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">07</div>
                 <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Research Labs</p>
               </div>
 
-              <!-- Metric 2: 25+ Student Researchers -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">25+</div>
                 <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Student Researchers</p>
               </div>
 
-              <!-- Metric 3: 14+ Flagship Projects -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">14+</div>
                 <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Flagship Projects</p>
               </div>
 
-              <!-- Metric 4: 20+ Open Repositories -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">20+</div>
                 <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Open Repositories</p>
               </div>
 
-              <!-- Metric 5: 100% Student Driven -->
               <div class="journey-number-wrap" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="clean-metric-num" style="font-family: var(--font-tech); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 700; line-height: 1; color: #ffffff; letter-spacing: -0.01em; margin-bottom: 0.8rem;">100%</div>
                 <p class="p-fun" style="font-family: var(--font-body); font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0;">Student Driven</p>
@@ -422,11 +403,9 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <!-- FOOTER -->
       <footer class="footer" style="padding-top: 6rem; padding-bottom: 2rem;" role="contentinfo">
         <div class="container">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 6rem;">
-            <!-- Left Column: Contact -->
             <div class="footer-left">
               <p class="top-text" style="color: rgba(255,255,255,0.75); font-size: 0.85rem; letter-spacing: 2px;">CONTACT US</p>
               <div class="margin-20">
@@ -455,7 +434,6 @@ const BODY_HTML = `
               </div>
             </div>
 
-            <!-- Right Column: Quick Links -->
             <div class="footer-right" style="display: flex; flex-direction: column; justify-content: flex-start;">
               <p class="top-text" style="color: rgba(255,255,255,0.75); font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 1.5rem;">QUICK LINKS</p>
               <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -471,7 +449,6 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <!-- Singularity 3D Emblem & Grand Wordmark -->
           <div class="singularity-footer-wrap">
             <div class="singularity-emblem-holder">
               <div class="singularity-emblem-glow"></div>
@@ -480,7 +457,6 @@ const BODY_HTML = `
             <h1 class="singularity-footer-wordmark">SINGULARITY</h1>
           </div>
 
-          <!-- Bottom Meta / Legal Bar -->
           <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
             <p class="top-text" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">&copy; ${new Date().getFullYear()} SINGULARITY STUDENT RESEARCH LAB. ALL RIGHTS RESERVED.</p>
             <p class="top-text footer-creator-mark" style="color: rgba(255,255,255,0.4); font-size: 0.75rem; margin: 0; letter-spacing: 0.02em;">
@@ -814,6 +790,45 @@ const HEAD_STYLES = `
       #Seventh.project-big-parallax, .project-big-parallax:nth-of-type(7) { z-index: 16 !important; }
       .project-big-parallax:last-child { margin-bottom: 3.5rem !important; }
 
+      .project-big-parallax .view-more,
+      .view-more {
+        position: absolute !important;
+        top: 1.25rem !important;
+        right: 1.25rem !important;
+        width: auto !important;
+        min-width: 120px !important;
+        max-width: fit-content !important;
+        height: auto !important;
+        min-height: 32px !important;
+        box-sizing: border-box !important;
+        z-index: 4 !important;
+        background: rgba(255, 255, 255, 0.16) !important;
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.35) !important;
+        color: #ffffff !important;
+        font-family: var(--font-tech, 'Michroma', sans-serif) !important;
+        font-size: 0.72rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        white-space: nowrap !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        padding: 0.45rem 1.15rem !important;
+        border-radius: 9999px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        line-height: 1 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        overflow: visible !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+        pointer-events: none !important;
+      }
+
       /* Centered Mobile Footer */
       .footer {
         padding: 3.5rem 1.25rem 2rem 1.25rem !important;
@@ -1146,7 +1161,6 @@ const PROJECT_DATA = `{
   "id": "rr40leL2y23o0QnzrPWs"
 }`;
 
-// External and local scripts to load in order
 const HEAD_SCRIPTS = [
   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
   "/js/lenis.min.js",
@@ -1164,25 +1178,25 @@ export default function Home() {
   useEffect(() => {
     if (!mounted) return;
 
+    let rafId: number | undefined;
+    let resizeHandler: (() => void) | null = null;
+
     const styleEl = document.createElement("style");
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
-    // 1. Inject singularityProjectData into head
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
     dataScript.type = "application/json";
     dataScript.textContent = PROJECT_DATA;
     document.head.appendChild(dataScript);
 
-    // 2. Load head scripts (WebFont, local Lenis, UnicornStudio)
     (async () => {
       for (const src of HEAD_SCRIPTS) {
         await loadScript(src);
       }
 
-      // Initialize WebFont
-      if ((window as any).WebFont) {
+            if ((window as any).WebFont) {
         (window as any).WebFont.load({
           google: {
             families: ["Instrument Sans:400,500,600,700", "Michroma", "Oswald:300,400,500,600,700"]
@@ -1190,26 +1204,22 @@ export default function Home() {
         });
       }
 
-      // 3. Load jQuery
       await loadScript("/js/jquery.js?site=697344b93b0e03014bb98903");
 
       (window as any).jQuery.holdReady(true);
 
-      // Load runtime chunks
-      await loadScript("/js/runtime-core.js");
+            await loadScript("/js/runtime-core.js");
       await loadScript("/js/runtime-interactions.js");
       await loadScript("/js/runtime-vendor.js");
       await loadScript("/js/singularity-core.js");
 
-      // Load GSAP suite
-      await loadScript("/js/gsap.min.js");
+            await loadScript("/js/gsap.min.js");
       await loadScript("/js/splittext.min.js");
       await loadScript("/js/scrolltrigger.min.js");
 
       (window as any).jQuery.holdReady(false);
 
-      // Force Webflow initialization
-      if ((window as any).Webflow) {
+            if ((window as any).Webflow) {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
@@ -1219,7 +1229,6 @@ export default function Home() {
         window.dispatchEvent(new Event('load'));
       }
 
-      // 4. Run non-blocking enhancements
       const scheduleTask = (fn: () => void) => {
         if ('requestIdleCallback' in window) {
           (window as any).requestIdleCallback(fn, { timeout: 1500 });
@@ -1229,8 +1238,7 @@ export default function Home() {
       };
 
       scheduleTask(() => {
-        // Initialize Lenis kinetic scroll with singleton guard
-        if ((window as any).__lenisInstance) {
+                if ((window as any).__lenisInstance) {
           try {
             (window as any).__lenisInstance.destroy();
           } catch (e) {}
@@ -1243,7 +1251,7 @@ export default function Home() {
             orientation: 'vertical',
             gestureOrientation: 'vertical',
             smoothWheel: true,
-            syncTouch: false, // Never intercept native mobile touch events
+            syncTouch: false,
             touchMultiplier: 1,
             wheelMultiplier: 1,
             autoResize: true,
@@ -1253,7 +1261,6 @@ export default function Home() {
           });
           (window as any).__lenisInstance = lenis;
 
-          let rafId: number;
           function raf(time: number) {
             lenis.raf(time);
             rafId = requestAnimationFrame(raf);
@@ -1261,18 +1268,18 @@ export default function Home() {
           rafId = requestAnimationFrame(raf);
         }
 
-        // Initialize UnicornStudio WebGL
-        if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
+                if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
           (window as any).UnicornStudio.init();
-          var resizeTimer: any;
-          window.addEventListener("resize", function() {
+          let resizeTimer: any;
+          resizeHandler = function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
               if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
                 (window as any).UnicornStudio.init();
               }
             }, 100);
-          }, { passive: true });
+          };
+          window.addEventListener("resize", resizeHandler, { passive: true });
         }
       });
     })();
@@ -1280,6 +1287,15 @@ export default function Home() {
     return () => {
       styleEl.remove();
       dataScript.remove();
+      if (rafId) cancelAnimationFrame(rafId);
+      if ((window as any).__lenisInstance) {
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        (window as any).__lenisInstance = null;
+      }
+      if (resizeHandler) window.removeEventListener("resize", resizeHandler);
+      if ((window as any).ScrollTrigger) {
+        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
+      }
     };
   }, [mounted]);
 
