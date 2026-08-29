@@ -1,17 +1,34 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function PageTransition() {
   const [transitionState, setTransitionState] = useState<"entering" | "idle" | "exiting">("entering");
+  const pathname = usePathname();
   const router = useRouter();
 
+  // Handle route change completion
   useEffect(() => {
+    // Reset scroll smoothly to top on route change
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    if ((window as any).__lenisInstance) {
+      try {
+        (window as any).__lenisInstance.scrollTo(0, { immediate: true });
+      } catch {}
+    }
+
     const timer = setTimeout(() => {
       setTransitionState("idle");
-    }, 280);
+      document.body.classList.remove("menu-open");
+      document.querySelector(".menu-wrapper")?.classList.remove("is-open");
+    }, 180);
 
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
+  useEffect(() => {
+    // Close menus on esc or outside click
     const handleMenuClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement | null;
       if (!target) return;
@@ -59,6 +76,7 @@ export default function PageTransition() {
     document.addEventListener("click", handleMenuClick, true);
     document.addEventListener("keydown", handleKeyDown);
 
+    // Intercept internal link navigation for seamless page transitions
     const handleDocumentClick = (event: MouseEvent) => {
       if (
         event.defaultPrevented ||
@@ -98,6 +116,7 @@ export default function PageTransition() {
         const parsed = new URL(anchor.href, window.location.href);
         if (parsed.origin !== window.location.origin) return;
 
+        // In-page hash jump
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search &&
@@ -106,11 +125,16 @@ export default function PageTransition() {
           const hashTarget = document.querySelector(parsed.hash);
           if (hashTarget) {
             event.preventDefault();
-            hashTarget.scrollIntoView({ behavior: "smooth" });
+            if ((window as any).__lenisInstance) {
+              (window as any).__lenisInstance.scrollTo(hashTarget);
+            } else {
+              hashTarget.scrollIntoView({ behavior: "smooth" });
+            }
           }
           return;
         }
 
+        // Same URL, no-op
         if (
           parsed.pathname === window.location.pathname &&
           parsed.search === window.location.search
@@ -124,10 +148,8 @@ export default function PageTransition() {
         const destination = parsed.pathname + parsed.search + parsed.hash;
         setTimeout(() => {
           router.push(destination);
-          setTimeout(() => setTransitionState("idle"), 280);
-        }, 180);
-      } catch {
-              }
+        }, 140);
+      } catch {}
     };
 
     document.addEventListener("click", handleDocumentClick, true);
@@ -150,7 +172,6 @@ export default function PageTransition() {
     window.addEventListener("popstate", handlePopState);
 
     return () => {
-      clearTimeout(timer);
       document.removeEventListener("click", handleMenuClick, true);
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleDocumentClick, true);

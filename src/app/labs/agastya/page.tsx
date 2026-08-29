@@ -1238,21 +1238,21 @@ const HEAD_SCRIPTS = [
 
 export default function AgastyaLabPage() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-
     let rafId: number | undefined;
     let resizeHandler: (() => void) | null = null;
 
+    const existingStyle = document.getElementById("singularityLabStyles");
+    if (existingStyle) existingStyle.remove();
+
     const styleEl = document.createElement("style");
+    styleEl.id = "singularityLabStyles";
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
+
+    const existingData = document.getElementById("singularityProjectData");
+    if (existingData) existingData.remove();
 
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
@@ -1406,13 +1406,12 @@ export default function AgastyaLabPage() {
         (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
       }
     };
-  }, [mounted]);
-
-  if (!mounted) return null;
+  }, []);
 
   return (
-    <div
+    <main
       ref={containerRef}
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: BODY_HTML }}
     />
   );

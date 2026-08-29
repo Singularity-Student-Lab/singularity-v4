@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import PageTransition from "@/components/PageTransition";
+import WebPreload from "@/components/WebPreload";
 
 const SITE_URL = "https://singularity-v4.vercel.app";
 
@@ -196,7 +197,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Michroma&family=Oswald:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Michroma&family=Oswald:wght@300;400;500;600;700&family=Sora:wght@700;800&display=swap"
           rel="stylesheet"
         />
         <link rel="preload" href="/fonts/Lastik-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
@@ -210,6 +211,7 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning>
+        <WebPreload />
         <PageTransition />
         {children}
       </body>

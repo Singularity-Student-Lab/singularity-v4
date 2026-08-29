@@ -1169,21 +1169,21 @@ const HEAD_SCRIPTS = [
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-
     let rafId: number | undefined;
     let resizeHandler: (() => void) | null = null;
 
+    const existingStyle = document.getElementById("singularityHomeStyles");
+    if (existingStyle) existingStyle.remove();
+
     const styleEl = document.createElement("style");
+    styleEl.id = "singularityHomeStyles";
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
+
+    const existingData = document.getElementById("singularityProjectData");
+    if (existingData) existingData.remove();
 
     const dataScript = document.createElement("script");
     dataScript.id = "singularityProjectData";
@@ -1196,7 +1196,7 @@ export default function Home() {
         await loadScript(src);
       }
 
-            if ((window as any).WebFont) {
+      if ((window as any).WebFont) {
         (window as any).WebFont.load({
           google: {
             families: ["Instrument Sans:400,500,600,700", "Michroma", "Oswald:300,400,500,600,700"]
@@ -1208,18 +1208,18 @@ export default function Home() {
 
       (window as any).jQuery.holdReady(true);
 
-            await loadScript("/js/runtime-core.js");
+      await loadScript("/js/runtime-core.js");
       await loadScript("/js/runtime-interactions.js");
       await loadScript("/js/runtime-vendor.js");
       await loadScript("/js/singularity-core.js");
 
-            await loadScript("/js/gsap.min.js");
+      await loadScript("/js/gsap.min.js");
       await loadScript("/js/splittext.min.js");
       await loadScript("/js/scrolltrigger.min.js");
 
       (window as any).jQuery.holdReady(false);
 
-            if ((window as any).Webflow) {
+      if ((window as any).Webflow) {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
@@ -1238,7 +1238,7 @@ export default function Home() {
       };
 
       scheduleTask(() => {
-                if ((window as any).__lenisInstance) {
+        if ((window as any).__lenisInstance) {
           try {
             (window as any).__lenisInstance.destroy();
           } catch (e) {}
@@ -1268,7 +1268,7 @@ export default function Home() {
           rafId = requestAnimationFrame(raf);
         }
 
-                if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
+        if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
           (window as any).UnicornStudio.init();
           let resizeTimer: any;
           resizeHandler = function() {
@@ -1297,13 +1297,12 @@ export default function Home() {
         (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
       }
     };
-  }, [mounted]);
-
-  if (!mounted) return null;
+  }, []);
 
   return (
     <main
       ref={containerRef}
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: BODY_HTML }}
     />
   );
