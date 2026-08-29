@@ -307,15 +307,34 @@ const BODY_HTML = `
                   </div>
                   <div class="leader-item-with-avatar">
                     <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787501604/team/anwar.jpg"
+                      alt="Anwar Faizaan Reza"
+                      class="leader-avatar-md"
+                      loading="lazy"
+                    />
+                    <div>
+                      <p class="sub-role-label">STUDENT ADVISOR</p>
+                      <h3 class="leader-name">Anwar Faizaan Reza</h3>
+                      <p class="leader-title">Student Advisor</p>
+                      <div class="leader-links-row" style="margin-top: 0.5rem;">
+                        <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="leader-item-with-avatar">
+                    <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
                       alt="Supreet Kothuri"
                       class="leader-avatar-md"
                       loading="lazy"
                     />
                     <div>
-                      <p class="sub-role-label">CHIEF EXECUTIVE</p>
+                      <p class="sub-role-label">EXECUTIVE</p>
                       <h3 class="leader-name">Supreet Kothuri</h3>
-                      <p class="leader-title">Chief Executive</p>
+                      <p class="leader-title">Executive</p>
                     </div>
                   </div>
                 </div>
@@ -1518,7 +1537,7 @@ export default function AboutPage() {
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
         if (ix2) ix2.init();
-        
+
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
       }
@@ -1526,9 +1545,9 @@ export default function AboutPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        resizeHandler = function() {
+        resizeHandler = function () {
           clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(function() {
+          resizeTimer = setTimeout(function () {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
@@ -1540,7 +1559,7 @@ export default function AboutPage() {
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
-        } catch (e) {}
+        } catch (e) { }
       }
 
       if (typeof (window as any).Lenis !== 'undefined') {
@@ -1624,7 +1643,7 @@ export default function AboutPage() {
       dataScript.remove();
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
-        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
+        try { (window as any).__lenisInstance.destroy(); } catch (e) { }
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
