@@ -178,7 +178,7 @@ const BODY_HTML = `
               <p class="metric-desc">Lab Identifier</p>
             </div>
             <div class="metric-cell">
-              <div class="metric-big-num">12</div>
+              <div class="metric-big-num">13</div>
               <p class="metric-desc">Team Members</p>
             </div>
             <div class="metric-cell">
@@ -263,7 +263,7 @@ const BODY_HTML = `
               <div class="editorial-hairline"></div>
 
               <div class="editorial-members-row">
-                <p class="leader-category-tag" style="color: #A78BFA;">LAB MEMBERS (10)</p>
+                <p class="leader-category-tag" style="color: #A78BFA;">LAB MEMBERS (11)</p>
 
                 <div class="members-editorial-table">
                   
@@ -289,13 +289,26 @@ const BODY_HTML = `
 
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
+                    <div class="member-col-name">Arijit Das</div>
+                    <div class="member-col-links">
+                      <a href="https://github.com/arijitdas369" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        GitHub &nearr;
+                      </a>
+                      <a href="https://www.linkedin.com/in/arijit-das-891119383" target="_blank" rel="noopener noreferrer" class="member-link-pill">
+                        LinkedIn &nearr;
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="member-row">
+                    <div class="member-col-idx">04</div>
                     <div class="member-col-name">Jameela Muskaan</div>
                     <div class="member-col-links">
                     </div>
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">04</div>
+                    <div class="member-col-idx">05</div>
                     <div class="member-col-name">K Guna Vishnu</div>
                     <div class="member-col-links">
                       <a href="https://github.com/vishnukusi" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -308,7 +321,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">05</div>
+                    <div class="member-col-idx">06</div>
                     <div class="member-col-name">Priyanshu</div>
                     <div class="member-col-links">
                       <a href="https://github.com/Priyanshu-777" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -321,7 +334,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">06</div>
+                    <div class="member-col-idx">07</div>
                     <div class="member-col-name">Ritabbrata Chakraborty</div>
                     <div class="member-col-links">
                       <a href="https://github.com/ChakrabortyRitabbrata-design" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -334,7 +347,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">07</div>
+                    <div class="member-col-idx">08</div>
                     <div class="member-col-name">Shashanka Biswas</div>
                     <div class="member-col-links">
                       <a href="https://github.com/Shashanka25" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -347,7 +360,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">08</div>
+                    <div class="member-col-idx">09</div>
                     <div class="member-col-name">Surya Teja E</div>
                     <div class="member-col-links">
                       <a href="https://github.com/sonic-08/" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -360,7 +373,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">09</div>
+                    <div class="member-col-idx">10</div>
                     <div class="member-col-name">Tarun Karma</div>
                     <div class="member-col-links">
                       <a href="https://github.com/HackerZ-app" target="_blank" rel="noopener noreferrer" class="member-link-pill">
@@ -373,7 +386,7 @@ const BODY_HTML = `
                   </div>
 
                   <div class="member-row">
-                    <div class="member-col-idx">10</div>
+                    <div class="member-col-idx">11</div>
                     <div class="member-col-name">Y Naga Pragnesh</div>
                     <div class="member-col-links">
                       <a href="https://www.gitHub.com/Pragnesh-10" target="_blank" rel="noopener noreferrer" class="member-link-pill">
