@@ -308,7 +308,7 @@ const BODY_HTML = `
 
                   <div class="member-row">
                     <div class="member-col-idx">03</div>
-                    <div class="member-col-name">Ishan Jha</div>
+                    <div class="member-col-name">Zen Vats</div>
                     <div class="member-col-links">
                     </div>
                   </div>
