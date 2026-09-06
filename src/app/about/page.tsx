@@ -318,38 +318,6 @@ const BODY_HTML = `
                       <p class="leader-title">Associate Head of Department, CSE</p>
                     </div>
                   </div>
-                  <div class="leader-item-with-avatar">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787501604/team/anwar.jpg"
-                      alt="Anwar Faizaan Reza"
-                      class="leader-avatar-md"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p class="sub-role-label">ADVISOR</p>
-                      <h3 class="leader-name">Anwar Faizaan Reza</h3>
-                      <p class="leader-title">Advisor</p>
-                      <div class="leader-links-row" style="margin-top: 0.5rem;">
-                        <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>LinkedIn &nearr;</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="leader-item-with-avatar">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
-                      alt="Supreet Kothuri"
-                      class="leader-avatar-md"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p class="sub-role-label">EXECUTIVE</p>
-                      <h3 class="leader-name">Supreet Kothuri</h3>
-                      <p class="leader-title">Executive</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 

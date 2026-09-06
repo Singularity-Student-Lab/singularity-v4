@@ -450,25 +450,39 @@ const BODY_HTML = `
 
               <div class="editorial-hairline"></div>
 
-              <div class="editorial-leader-row">
-                <p class="leader-category-tag">LAB 07 // NAVYA VIGYAN</p>
-                
-                <div class="executives-grid single-exec">
-                  <div class="executive-card">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
-                      alt="Supreet Kothuri"
-                      class="executive-avatar"
-                      style="border-color: rgba(248, 113, 113, 0.4);"
-                      loading="lazy"
-                    />
-                    <div class="executive-info">
-                      <h3 class="executive-name">Supreet Kothuri</h3>
-                      <p class="executive-role" style="color: #FCA5A5;">Executive</p>
+                <div class="editorial-leader-row">
+                  <p class="leader-category-tag">LAB 07 // NAVYA VIGYAN</p>
+                  
+                  <div class="executives-grid">
+                    <div class="executive-card">
+                      <img
+                        src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/akshita.png"
+                        alt="Akshita Kanche"
+                        class="executive-avatar"
+                        style="border-color: rgba(236, 72, 153, 0.4);"
+                        loading="lazy"
+                      />
+                      <div class="executive-info">
+                        <h3 class="executive-name">Akshita Kanche</h3>
+                        <p class="executive-role" style="color: #F9A8D4;">Executive</p>
+                      </div>
+                    </div>
+
+                    <div class="executive-card">
+                      <img
+                        src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/dhriti.png"
+                        alt="Dhriti Tandon"
+                        class="executive-avatar"
+                        style="border-color: rgba(236, 72, 153, 0.4);"
+                        loading="lazy"
+                      />
+                      <div class="executive-info">
+                        <h3 class="executive-name">Dhriti Tandon</h3>
+                        <p class="executive-role" style="color: #F9A8D4;">Executive</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
             </div>
           </div>
