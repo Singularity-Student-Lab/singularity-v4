@@ -34,6 +34,15 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
+        <div class="menu-item _03"><a href="/teams" class="button-with-line w-inline-block">
+            <div class="button-text-wrapper">
+              <div class="button-text">Teams</div>
+              <div class="button-text">Teams</div>
+            </div>
+            <div class="button-line-first">
+              <div class="button-line-overlay"></div>
+            </div>
+          </a></div>
         <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
               <div class="button-text">Join</div>
@@ -77,6 +86,10 @@ const BODY_HTML = `
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">ABOUT US</div>
+            </a>
+            <a href="/teams" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
+              <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
+              <div class="navigation-text-main" style="text-transform: uppercase;">TEAMS</div>
             </a>
             <a href="/join" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
@@ -444,6 +457,10 @@ const BODY_HTML = `
               <a href="/about" class="footer-quick-link">
                 <span class="footer-quick-dot"></span>
                 <span class="footer-quick-text">About Lab</span>
+              </a>
+              <a href="/teams" class="footer-quick-link">
+                <span class="footer-quick-dot"></span>
+                <span class="footer-quick-text">Teams</span>
               </a>
               <a href="/join" class="footer-quick-link">
                 <span class="footer-quick-dot"></span>

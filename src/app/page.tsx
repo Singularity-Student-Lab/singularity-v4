@@ -29,6 +29,14 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
+        <div class="menu-item _03"><a href="/teams" class="button-with-line w-inline-block" aria-label="Navigate to Teams">
+            <div class="button-text-wrapper">
+              <div class="button-text">Teams</div>
+            </div>
+            <div class="button-line-first">
+              <div class="button-line-overlay"></div>
+            </div>
+          </a></div>
         <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block" aria-label="Navigate to Join Lab">
             <div class="button-text-wrapper">
               <div class="button-text">Join</div>
@@ -68,6 +76,10 @@ const BODY_HTML = `
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="About Us">
               <div class="social-circle-small"><img width="256" height="256" loading="lazy" decoding="async" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">ABOUT US</div>
+            </a>
+            <a href="/teams" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="Meet the Team">
+              <div class="social-circle-small"><img width="256" height="256" loading="lazy" decoding="async" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
+              <div class="navigation-text-main" style="text-transform: uppercase;">TEAMS</div>
             </a>
             <a href="/join" data-wf--button-arrow--variant="dark" class="button-link w-inline-block" aria-label="Join Singularity Lab">
               <div class="social-circle-small"><img width="256" height="256" loading="lazy" decoding="async" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
@@ -440,6 +452,10 @@ const BODY_HTML = `
                 <a href="/about" class="button-link w-inline-block" aria-label="Learn about Singularity" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
                   <div class="social-circle-small" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></div>
                   <div class="navigation-text-main" style="text-transform: uppercase; font-size: 1.2rem; color: #fff; font-family: var(--font--second-font);">ABOUT US</div>
+                </a>
+                <a href="/teams" class="button-link w-inline-block" aria-label="Meet the Team" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                  <div class="social-circle-small" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></div>
+                  <div class="navigation-text-main" style="text-transform: uppercase; font-size: 1.2rem; color: #fff; font-family: var(--font--second-font);">TEAMS</div>
                 </a>
                 <a href="/join" class="button-link w-inline-block" aria-label="Join Singularity Lab" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
                   <div class="social-circle-small" style="width: 8px; height: 8px; border-radius: 50%; background-color: #fff;"></div>
