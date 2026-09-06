@@ -34,6 +34,15 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
+        <div class="menu-item _03"><a href="/teams" class="button-with-line w-inline-block">
+            <div class="button-text-wrapper">
+              <div class="button-text">Teams</div>
+              <div class="button-text">Teams</div>
+            </div>
+            <div class="button-line-first">
+              <div class="button-line-overlay"></div>
+            </div>
+          </a></div>
         <div class="menu-item _05"><a href="/join" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
               <div class="button-text">Join</div>
@@ -77,6 +86,10 @@ const BODY_HTML = `
             <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">ABOUT US</div>
+            </a>
+            <a href="/teams" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
+              <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
+              <div class="navigation-text-main" style="text-transform: uppercase;">TEAMS</div>
             </a>
             <a href="/join" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
@@ -222,62 +235,105 @@ const BODY_HTML = `
 
             <div class="editorial-right-col">
               
-              <div class="editorial-leader-row">
-                <p class="leader-category-tag" style="color: #34D399;">LAB EXECUTIVES (2)</p>
-                
-                <div class="executives-grid">
-                  <div class="executive-card">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/yuvraj.png"
-                      alt="Yuvraj Singh"
-                      class="executive-avatar"
-                      style="border-color: rgba(16, 185, 129, 0.4);"
-                      loading="lazy"
-                    />
-                    <div class="executive-info">
-                      <h3 class="executive-name">Yuvraj Singh</h3>
-                      <p class="executive-role" style="color: #6EE7B7;">Executive</p>
-                      <div class="executive-links">
-                        <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>GitHub &nearr;</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+               <div class="editorial-leader-row">
+                 <p class="leader-category-tag" style="color: #34D399;">LAB EXECUTIVES (3)</p>
+                 
+                 <div class="executives-grid">
+                   <div class="executive-card">
+                     <img
+                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/yuvraj.png"
+                       alt="Yuvraj Singh"
+                       class="executive-avatar"
+                       style="border-color: rgba(16, 185, 129, 0.4);"
+                       loading="lazy"
+                     />
+                     <div class="executive-info">
+                       <h3 class="executive-name">Yuvraj Singh</h3>
+                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                       <div class="executive-links">
+                         <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                           <div class="social-circle-small" style="background: #34D399;"></div>
+                           <span>GitHub &nearr;</span>
+                         </a>
+                         <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                           <div class="social-circle-small" style="background: #34D399;"></div>
+                           <span>LinkedIn &nearr;</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="executive-card">
+                     <img
+                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/praneeth.png"
+                       alt="Praneeth"
+                       class="executive-avatar"
+                       style="border-color: rgba(16, 185, 129, 0.4);"
+                       loading="lazy"
+                     />
+                     <div class="executive-info">
+                       <h3 class="executive-name">Praneeth</h3>
+                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                       <div class="executive-links">
+                         <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                           <div class="social-circle-small" style="background: #34D399;"></div>
+                           <span>GitHub &nearr;</span>
+                         </a>
+                         <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                           <div class="social-circle-small" style="background: #34D399;"></div>
+                           <span>LinkedIn &nearr;</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="executive-card">
+                     <img
+                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
+                       alt="Supreet Kothuri"
+                       class="executive-avatar"
+                       style="border-color: rgba(16, 185, 129, 0.4);"
+                       loading="lazy"
+                     />
+                     <div class="executive-info">
+                       <h3 class="executive-name">Supreet Kothuri</h3>
+                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                     </div>
+                   </div>
+                 </div>
+
+               </div>
+
+               <div class="editorial-hairline"></div>
+
+               <div class="editorial-leader-row">
+                 <p class="leader-category-tag" style="color: #34D399;">LAB ADVISORY</p>
+                 
+                 <div class="leader-dual-grid">
+                   <div class="leader-item-with-avatar">
+                     <img
+                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787501604/team/anwar.jpg"
+                       alt="Anwar Faizaan Reza"
+                       class="leader-avatar-md"
+                       loading="lazy"
+                     />
+                     <div>
+<p class="sub-role-label">ADVISOR</p>
+                      <h3 class="leader-name">Anwar Faizaan Reza</h3>
+                      <p class="leader-title">Advisor</p>
+                      <div class="leader-links-row" style="margin-top: 0.5rem;">
+                        <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
                           <div class="social-circle-small" style="background: #34D399;"></div>
                           <span>LinkedIn &nearr;</span>
                         </a>
                       </div>
                     </div>
-                  </div>
+                   </div>
+                 </div>
 
-                  <div class="executive-card">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/praneeth.png"
-                      alt="Praneeth"
-                      class="executive-avatar"
-                      style="border-color: rgba(16, 185, 129, 0.4);"
-                      loading="lazy"
-                    />
-                    <div class="executive-info">
-                      <h3 class="executive-name">Praneeth</h3>
-                      <p class="executive-role" style="color: #6EE7B7;">Executive</p>
-                      <div class="executive-links">
-                        <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>GitHub &nearr;</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>LinkedIn &nearr;</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               </div>
 
-              </div>
-
-              <div class="editorial-hairline"></div>
+               <div class="editorial-hairline"></div>
 
               <div class="editorial-members-row">
                 <p class="leader-category-tag" style="color: #34D399;">LAB MEMBERS (6)</p>
@@ -382,6 +438,10 @@ const BODY_HTML = `
               <a href="/about" class="footer-quick-link">
                 <span class="footer-quick-dot"></span>
                 <span class="footer-quick-text">About Lab</span>
+              </a>
+              <a href="/teams" class="footer-quick-link">
+                <span class="footer-quick-dot"></span>
+                <span class="footer-quick-text">Teams</span>
               </a>
               <a href="/join" class="footer-quick-link">
                 <span class="footer-quick-dot"></span>

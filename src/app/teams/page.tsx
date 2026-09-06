@@ -25,7 +25,7 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _02"><a href="/about" aria-current="page" class="button-with-line w-inline-block w--current">
+        <div class="menu-item _02"><a href="/about" class="button-with-line w-inline-block">
             <div class="button-text-wrapper">
               <div class="button-text">About</div>
               <div class="button-text">About</div>
@@ -34,7 +34,7 @@ const BODY_HTML = `
               <div class="button-line-overlay"></div>
             </div>
           </a></div>
-        <div class="menu-item _03"><a href="/teams" class="button-with-line w-inline-block">
+        <div class="menu-item _03"><a href="/teams" class="button-with-line w-inline-block w--current">
             <div class="button-text-wrapper">
               <div class="button-text">Teams</div>
               <div class="button-text">Teams</div>
@@ -83,11 +83,11 @@ const BODY_HTML = `
 
         <div id="w-node-_00cdae18-38ec-1b3e-ec88-656f23365540-2336553d" class="make-grid hide-mobile">
           <nav role="navigation" class="nav-menu first w-nav-menu">
-            <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block w--current">
+            <a href="/about" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">ABOUT US</div>
             </a>
-            <a href="/teams" data-wf--button-arrow--variant="dark" class="button-link w-inline-block">
+            <a href="/teams" data-wf--button-arrow--variant="dark" class="button-link w-inline-block w--current">
               <div class="social-circle-small"><img width="256" loading="lazy" alt="" src="/images/circle.webp" class="nav-arrow-move" /></div>
               <div class="navigation-text-main" style="text-transform: uppercase;">TEAMS</div>
             </a>
@@ -104,7 +104,7 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <div id="Hero" class="top-main hero-wrapper-responsive">
+    <div id="Hero" class="main-hero-wrapper">
       
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
@@ -118,17 +118,17 @@ const BODY_HTML = `
 
         <div class="location-wrapper hero-overline-wrap">
           <p class="top-text hero-overline-text">
-            DECODE // INNOVATE // TRANSFORM
+            PEOPLE // LEADERSHIP // MENTORSHIP
           </p>
         </div>
 
         <h1 class="about-title effect split-reveal hero-main-heading">
-          About Singularity Student Lab
+          Singularity Teams
         </h1>
 
         <div class="max-w-center _300 hero-subtitle-wrap">
           <p class="about-title small hero-subtitle-text">
-            A premier student research &amp; deep technology innovation ecosystem at SRM University-AP.
+            Meet the researchers, builders, and mentors driving innovation across our seven specialized labs.
           </p>
         </div>
 
@@ -139,14 +139,14 @@ const BODY_HTML = `
         <div class="bottom-grid _2 hero-bottom-grid">
           <div id="w-node-_00bfeab6-765b-29fd-be56-e5a7f1043c12-4bb988f6">
             <div class="location-wrapper">
-              <p class="top-text big">R&amp;D ECOSYSTEM <span class="lighter-color">/ 07 DOMAINS</span></p>
+              <p class="top-text big">TEAM ECOSYSTEM <span class="lighter-color">/ 07 LABS</span></p>
             </div>
           </div>
-          <div id="w-node-fa34d70a-0972-fc85-5e22-95a787cde49d-4bb988f6" class="hide-mobile">
-            <p class="top-text big hero-domain-tags">QUANTUM &bull; AI/ML &bull; CYBERSEC &bull; CLOUD &bull; XR &bull; ROBOTICS</p>
+          <div class="hide-mobile">
+            <p class="top-text big hero-domain-tags">LEADERSHIP &bull; ADVISORY &bull; EXECUTIVES &bull; MEMBERS</p>
           </div>
-          <div id="w-node-_035bf225-78a0-b289-1586-9a8fd9c74b9f-4bb988f6" class="hero-scroll-explore">
-            <p class="top-text"><span class="_w-logo arrow">W</span> &nbsp;Scroll to explore</p>
+          <div class="hero-scroll-explore">
+            <p class="top-text"><span class="_w-logo arrow">W</span> &nbsp;Meet the Team</p>
           </div>
         </div>
       </div>
@@ -155,39 +155,319 @@ const BODY_HTML = `
 
     <div class="section-content" style="position: relative;">
 
-      <section id="Vision" class="editorial-section">
+      <section id="Executives" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
             <div class="editorial-left-col">
-              <p class="section-top-label">01 // NORTH STAR</p>
+              <p class="section-top-label">01 // CURRENT EXECUTIVES</p>
               <h2 class="about-title effect split-reveal section-title-heading">
-                Vision &amp;<br class="hide-mobile-break" />Mission
+                Lab<br class="hide-mobile-break" />Executives
               </h2>
             </div>
 
             <div class="editorial-right-col">
               
-              <div class="editorial-statement-block">
-                <div class="statement-overline">
-                  <span class="statement-index">01</span>
-                  <span class="statement-tag">VISION</span>
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 01 // PRAJNA KRITRIMA</p>
+                
+                <div class="executives-grid">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073654/team/fawaz.png"
+                      alt="B Md Fawaz"
+                      class="executive-avatar"
+                      style="border-color: rgba(167, 139, 250, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">B Md Fawaz</h3>
+                      <p class="executive-role" style="color: #C4B5FD;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/f4w4z" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #A78BFA;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fawaaaaz/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #A78BFA;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/lavjeet.png"
+                      alt="Lavjeet Kumar Rai"
+                      class="executive-avatar"
+                      style="border-color: rgba(167, 139, 250, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Lavjeet Kumar Rai</h3>
+                      <p class="executive-role" style="color: #C4B5FD;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/lavjeetrai" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #A78BFA;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lavjeet-rai/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #A78BFA;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="editorial-quote-text">
-                  "We aim to revolutionize the future of technology by driving groundbreaking research and fostering an environment where innovation knows no bounds. Through inclusive collaboration, we strive to create transformative solutions that bridge the gap between ideas and real-world impact."
-                </h3>
               </div>
 
               <div class="editorial-hairline"></div>
 
-              <div class="editorial-statement-block">
-                <div class="statement-overline">
-                  <span class="statement-index">02</span>
-                  <span class="statement-tag">MISSION</span>
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 02 // AANU TATTVA</p>
+                
+                <div class="executives-grid single-exec">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073657/team/praneeth_gupta.jpg"
+                      alt="Baratam Praneeth Gupta"
+                      class="executive-avatar"
+                      style="border-color: rgba(34, 211, 238, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Baratam Praneeth Gupta</h3>
+                      <p class="executive-role" style="color: #67E8F9;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/Praneeth0910" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #22D3EE;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/baratam-praneeth-gupta-baba24361" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #22D3EE;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="editorial-quote-text">
-                  "To push the limits of technological advancement with cutting-edge tools and research-driven innovation. We are dedicated to knowledge sharing and empowering the next generation of tech leaders, ensuring a future where technology serves all."
-                </h3>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 03 // CHITRA DARSHAN</p>
+                
+                <div class="executives-grid">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/pranav.png"
+                      alt="Pranav Sikka"
+                      class="executive-avatar"
+                      style="border-color: rgba(244, 114, 182, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Pranav Sikka</h3>
+                      <p class="executive-role" style="color: #F9A8D4;">Executive</p>
+                    </div>
+                  </div>
+
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/shambo.png"
+                      alt="Shambo Chakraborty"
+                      class="executive-avatar"
+                      style="border-color: rgba(244, 114, 182, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Shambo Chakraborty</h3>
+                      <p class="executive-role" style="color: #F9A8D4;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/shambochakraborty10-stack" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #F472B6;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shambo-chakraborty-480747395" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #F472B6;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 04 // VARAMIHIRA</p>
+                
+                <div class="executives-grid">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/anmol.png"
+                      alt="Anmol Sharma"
+                      class="executive-avatar"
+                      style="border-color: rgba(59, 130, 246, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Anmol Sharma</h3>
+                      <p class="executive-role" style="color: #93C5FD;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/Gostmennnnn" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #60A5FA;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/Anmol-sharma-ba0b6a387" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #60A5FA;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/aditya.png"
+                      alt="Aditya Joshi"
+                      class="executive-avatar"
+                      style="border-color: rgba(59, 130, 246, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Aditya Joshi</h3>
+                      <p class="executive-role" style="color: #93C5FD;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/adityajoshi18vk-art" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #60A5FA;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aditya-joshi-659001350/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #60A5FA;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 05 // BHASKARACHARYA</p>
+                
+                <div class="executives-grid">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073656/team/yuvraj.png"
+                      alt="Yuvraj Singh"
+                      class="executive-avatar"
+                      style="border-color: rgba(16, 185, 129, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Yuvraj Singh</h3>
+                      <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #34D399;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #34D399;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/praneeth.png"
+                      alt="Praneeth"
+                      class="executive-avatar"
+                      style="border-color: rgba(16, 185, 129, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Praneeth</h3>
+                      <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                      <div class="executive-links">
+                        <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #34D399;"></div>
+                          <span>GitHub &nearr;</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
+                          <div class="social-circle-small" style="background: #34D399;"></div>
+                          <span>LinkedIn &nearr;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
+                      alt="Supreet Kothuri"
+                      class="executive-avatar"
+                      style="border-color: rgba(16, 185, 129, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Supreet Kothuri</h3>
+                      <p class="executive-role" style="color: #6EE7B7;">Executive</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 06 // AGASTYA</p>
+                
+                <div class="executives-grid single-exec">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/agastya.png"
+                      alt="Agastya Pandey"
+                      class="executive-avatar"
+                      style="border-color: rgba(249, 115, 22, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Agastya Pandey</h3>
+                      <p class="executive-role" style="color: #FDBA74;">Executive</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">LAB 07 // NAVYA VIGYAN</p>
+                
+                <div class="executives-grid single-exec">
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
+                      alt="Supreet Kothuri"
+                      class="executive-avatar"
+                      style="border-color: rgba(248, 113, 113, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Supreet Kothuri</h3>
+                      <p class="executive-role" style="color: #FCA5A5;">Executive</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -196,15 +476,15 @@ const BODY_HTML = `
           <div class="editorial-metrics-row" data-scroll-fade>
             <div class="metric-cell">
               <div class="metric-big-num">07</div>
-              <p class="metric-desc">Specialized Labs</p>
+              <p class="metric-desc">Research Labs</p>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-big-num">11+</div>
+              <p class="metric-desc">Current Executives</p>
             </div>
             <div class="metric-cell">
               <div class="metric-big-num">100+</div>
-              <p class="metric-desc">Student Researchers</p>
-            </div>
-            <div class="metric-cell">
-              <div class="metric-big-num">15+</div>
-              <p class="metric-desc">Active R&amp;D Projects</p>
+              <p class="metric-desc">Total Researchers</p>
             </div>
             <div class="metric-cell">
               <div class="metric-big-num">100%</div>
@@ -215,95 +495,21 @@ const BODY_HTML = `
         </div>
       </section>
 
-      <section id="Leadership" class="editorial-section">
+      <section id="Advisory" class="editorial-section">
         <div class="editorial-container">
           
           <div class="editorial-split-layout" data-scroll-fade>
             <div class="editorial-left-col">
-              <p class="section-top-label">02 // GOVERNANCE</p>
+              <p class="section-top-label">02 // ADVISORY PANEL</p>
               <h2 class="about-title effect split-reveal section-title-heading">
-                Leadership &amp;<br class="hide-mobile-break" />Mentorship
+                Advisory &amp;<br class="hide-mobile-break" />Operations
               </h2>
             </div>
 
             <div class="editorial-right-col">
               
               <div class="editorial-leader-row">
-                <p class="leader-category-tag">FOUNDING STUDENT</p>
-                <div class="leader-profile-unit">
-                  <img
-                    src="https://res.cloudinary.com/djtemmctt/image/upload/v1773943803/jayanth_dtqvzg.jpg"
-                    alt="Jayanth Ramakrishnan"
-                    class="leader-avatar-lg"
-                    loading="lazy"
-                  />
-                  <div class="leader-main-content">
-                    <div class="leader-info-block">
-                      <h3 class="leader-name">Jayanth Ramakrishnan</h3>
-                      <p class="leader-title">Founder &amp; Lead</p>
-                    </div>
-                    <div class="leader-links-row">
-                      <a href="https://jayanthramakrishnan.online" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>Website &nearr;</span>
-                      </a>
-                      <a href="https://www.linkedin.com/in/jayanth-ramakrishnan/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>LinkedIn &nearr;</span>
-                      </a>
-                      <a href="https://x.com/jayanth_in" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>X / Twitter &nearr;</span>
-                      </a>
-                      <a href="https://www.instagram.com/thejayanthramakrishnan/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>Instagram &nearr;</span>
-                      </a>
-                      <a href="https://github.com/jayanthoffl" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>GitHub &nearr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="editorial-hairline"></div>
-
-              <div class="editorial-leader-row">
-                <p class="leader-category-tag">FOUNDING FACULTY</p>
-                <div class="leader-dual-grid">
-                  <div class="leader-item-with-avatar">
-                    <img
-                      src="https://res.cloudinary.com/djtemmctt/image/upload/v1774293381/tomy_rbpm0i.jpg"
-                      alt="Prof. CV Tomy"
-                      class="leader-avatar-md"
-                      loading="lazy"
-                    />
-                    <div>
-                      <h3 class="leader-name">Prof. CV Tomy</h3>
-                      <p class="leader-title">Dean, School of Applied Science and Engineering</p>
-                    </div>
-                  </div>
-                  <div class="leader-item-with-avatar">
-                    <img
-                      src="https://res.cloudinary.com/djtemmctt/image/upload/v1774293381/HOD_ztx99a.jpg"
-                      alt="Dr. Murali Krishna Enduri"
-                      class="leader-avatar-md"
-                      loading="lazy"
-                    />
-                    <div>
-                      <h3 class="leader-name">Dr. Murali Krishna Enduri</h3>
-                      <p class="leader-title">Head of Department, Computer Science and Engineering</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="editorial-hairline"></div>
-
-              <div class="editorial-leader-row">
-                <p class="leader-category-tag">ADVISORY &amp; OPERATIONS</p>
+                <p class="leader-category-tag">FACULTY ADVISORS</p>
                 <div class="leader-dual-grid">
                   <div class="leader-item-with-avatar">
                     <img
@@ -318,6 +524,27 @@ const BODY_HTML = `
                       <p class="leader-title">Associate Head of Department, CSE</p>
                     </div>
                   </div>
+                  <div class="leader-item-with-avatar">
+                    <img
+                      src="https://res.cloudinary.com/djtemmctt/image/upload/v1774293381/tomy_rbpm0i.jpg"
+                      alt="Prof. CV Tomy"
+                      class="leader-avatar-md"
+                      loading="lazy"
+                    />
+                    <div>
+                      <p class="sub-role-label">DEAN</p>
+                      <h3 class="leader-name">Prof. CV Tomy</h3>
+                      <p class="leader-title">Dean, School of Applied Science and Engineering</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-hairline"></div>
+
+              <div class="editorial-leader-row">
+                <p class="leader-category-tag">STUDENT ADVISORS</p>
+                <div class="leader-dual-grid">
                   <div class="leader-item-with-avatar">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787501604/team/anwar.jpg"
@@ -337,154 +564,10 @@ const BODY_HTML = `
                       </div>
                     </div>
                   </div>
-                  <div class="leader-item-with-avatar">
-                    <img
-                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073660/team/supreet.png"
-                      alt="Supreet Kothuri"
-                      class="leader-avatar-md"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p class="sub-role-label">EXECUTIVE</p>
-                      <h3 class="leader-name">Supreet Kothuri</h3>
-                      <p class="leader-title">Executive</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
             </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="Why" class="editorial-section">
-        <div class="editorial-container">
-          
-          <div style="margin-bottom: 4.5rem;" data-scroll-fade>
-            <p class="section-top-label">03 // CULTURE &amp; VALUES</p>
-            <h2 class="about-title effect split-reveal section-title-heading">
-              Why Singularity
-            </h2>
-          </div>
-
-          <div class="why-editorial-grid" data-scroll-fade>
-            
-            <div class="why-editorial-col">
-              <div class="why-num-top">01</div>
-              <h3 class="why-title">Learn by Doing</h3>
-              <p class="why-desc">
-                We build, prototype, and explore real-world problems through research-driven projects, hackathons, and innovation sprints.
-              </p>
-            </div>
-
-            <div class="why-editorial-col">
-              <div class="why-num-top">02</div>
-              <h3 class="why-title">Multi-Domain Labs</h3>
-              <p class="why-desc">
-                Whether you're into AI, Quantum, Robotics, Cloud Computing, Cybersecurity &amp; Blockchain, or AR/VR — there's a place for you. Cross-domain projects are encouraged and supported.
-              </p>
-            </div>
-
-            <div class="why-editorial-col">
-              <div class="why-num-top">03</div>
-              <h3 class="why-title">Collaborate with the Best</h3>
-              <p class="why-desc">
-                Work with passionate students, dedicated mentors, and industry leaders. We're supported by the Microsoft Student Community and growing partnerships every semester.
-              </p>
-            </div>
-
-            <div class="why-editorial-col">
-              <div class="why-num-top">04</div>
-              <h3 class="why-title">Research with Impact</h3>
-              <p class="why-desc">
-                From publishing papers to building MVPs — we incubate ideas that can evolve into startups, research publications, or community-focused solutions.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section id="Themes" class="editorial-section" style="padding-bottom: clamp(6rem, 10vw, 11rem);">
-        <div class="editorial-container">
-          
-          <div style="margin-bottom: 4.5rem;" data-scroll-fade>
-            <p class="section-top-label">04 // RESEARCH HORIZONS</p>
-            <h2 class="about-title effect split-reveal section-title-heading">
-              An Optimistic Approach
-            </h2>
-          </div>
-
-          <div class="themes-editorial-list" data-scroll-fade>
-            
-            <div class="theme-editorial-row">
-              <div class="theme-col-meta">
-                <span class="theme-idx">01</span>
-                <span class="theme-category">COMPUTATION &amp; CRYPTOGRAPHY</span>
-              </div>
-              <div class="theme-col-main">
-                <h3 class="theme-title">Quantum Horizons</h3>
-                <p class="theme-text">
-                  Quantum computing is reshaping cybersecurity, AI, and complex problem-solving. We provide tools for students to explore quantum algorithms and real-world applications.
-                </p>
-              </div>
-            </div>
-
-            <div class="theme-editorial-row">
-              <div class="theme-col-meta">
-                <span class="theme-idx">02</span>
-                <span class="theme-category">INFRASTRUCTURE &amp; SCALE</span>
-              </div>
-              <div class="theme-col-main">
-                <h3 class="theme-title">Cloud &amp; Scalable Systems</h3>
-                <p class="theme-text">
-                  Modern web architectures and cloud computing power resilient global systems. We build scalable platforms, microservices, and distributed infrastructures that scale seamlessly.
-                </p>
-              </div>
-            </div>
-
-            <div class="theme-editorial-row">
-              <div class="theme-col-meta">
-                <span class="theme-idx">03</span>
-                <span class="theme-category">SECURITY &amp; WEB3</span>
-              </div>
-              <div class="theme-col-main">
-                <h3 class="theme-title">Cyber Defense &amp; Decentralized Trust</h3>
-                <p class="theme-text">
-                  Cybersecurity and blockchain technologies redefine data ownership, digital defense, and cryptographic trust to secure the internet of tomorrow.
-                </p>
-              </div>
-            </div>
-
-            <div class="theme-editorial-row">
-              <div class="theme-col-meta">
-                <span class="theme-idx">04</span>
-                <span class="theme-category">SPATIAL &amp; INTERACTIVE</span>
-              </div>
-              <div class="theme-col-main">
-                <h3 class="theme-title">Immersive Realities</h3>
-                <p class="theme-text">
-                  By bridging the physical and digital worlds through Mixed Reality (XR), we are creating intuitive, spatial experiences that transform how we learn, interact, and solve problems.
-                </p>
-              </div>
-            </div>
-
-            <div class="theme-editorial-row">
-              <div class="theme-col-meta">
-                <span class="theme-idx">05</span>
-                <span class="theme-category">DEMOCRATIZED INNOVATION</span>
-              </div>
-              <div class="theme-col-main">
-                <h3 class="theme-title">Inclusive Progress</h3>
-                <p class="theme-text">
-                  With low-code and no-code platforms, we enable students from all backgrounds to develop solutions without deep programming expertise. Empowering non-tech innovators is key to our mission.
-                </p>
-              </div>
-            </div>
-
           </div>
 
         </div>
@@ -560,12 +643,6 @@ const BODY_HTML = `
           </div>
         </div>
 
-        <style>
-          .footer-left a:hover h2 { opacity: 0.7 !important; }
-          .footer-nav-item:hover { transform: translateX(10px) !important; }
-          .footer-social-btn:hover { opacity: 1 !important; border-color: rgba(255,255,255,0.6) !important; }
-        </style>
-
         <div class="singularity-footer-wrap">
           <h1 class="singularity-footer-wordmark">SINGULARITY</h1>
         </div>
@@ -601,20 +678,6 @@ const HEAD_STYLES = `
     inset: 0%;
   }
 
-  /* HERO RESPONSIVE STYLES */
-  .hero-wrapper-responsive {
-    position: relative;
-    min-height: 88vh;
-    min-height: 88dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background: #000000;
-    padding: 0 1rem;
-  }
-
   .hero-webgl-canvas {
     position: absolute;
     inset: 0;
@@ -630,6 +693,16 @@ const HEAD_STYLES = `
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.06) 45%, rgba(0, 0, 0, 0) 70%);
+    width: clamp(300px, 50vw, 600px);
+    height: clamp(300px, 50vw, 600px);
+    border-radius: 50%;
+    animation: heroGlowPulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes heroGlowPulse {
+    0% { transform: translate(-50%, -50%) scale(0.85); opacity: 0.5; }
+    100% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.95; }
   }
 
   .hero-content-container {
@@ -642,7 +715,7 @@ const HEAD_STYLES = `
     padding: clamp(90px, 14vh, 150px) clamp(1rem, 3vw, 2rem) clamp(30px, 5vh, 60px) clamp(1rem, 3vw, 2rem);
   }
 
-  .singularity-emblem-holder {
+  .hero-emblem-wrap {
     position: relative;
     margin-bottom: clamp(1.2rem, 2.5vh, 2rem);
     z-index: 5;
@@ -650,21 +723,6 @@ const HEAD_STYLES = `
     align-items: center;
     justify-content: center;
     pointer-events: none;
-  }
-
-  .singularity-emblem-glow {
-    position: absolute;
-    width: clamp(220px, 35vw, 440px);
-    height: clamp(220px, 35vw, 440px);
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.06) 45%, rgba(0, 0, 0, 0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: singularityGlowPulse 4s ease-in-out infinite alternate;
-  }
-
-  @keyframes singularityGlowPulse {
-    0% { transform: scale(0.85); opacity: 0.5; }
-    100% { transform: scale(1.3); opacity: 0.95; }
   }
 
   .singularity-3d-emblem {
@@ -694,7 +752,6 @@ const HEAD_STYLES = `
     font-weight: 500;
   }
 
-  /* SplitText & Headings Word Spacing Fix */
   .split-reveal {
     word-spacing: normal;
   }
@@ -767,7 +824,6 @@ const HEAD_STYLES = `
     text-align: right;
   }
 
-  /* EDITORIAL SECTION & CONTAINER */
   .editorial-section {
     background-color: #000000;
     position: relative;
@@ -782,7 +838,6 @@ const HEAD_STYLES = `
     padding: 0 clamp(1.2rem, 4vw, 3rem);
   }
 
-  /* SPLIT LAYOUT */
   .editorial-split-layout {
     display: grid;
     grid-template-columns: 340px 1fr;
@@ -821,125 +876,31 @@ const HEAD_STYLES = `
     gap: clamp(2.2rem, 4vw, 3.5rem);
   }
 
-  /* STATEMENT BLOCKS */
-  .editorial-statement-block {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .statement-overline {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  .statement-index {
-    font-family: var(--font--second-font);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-
-  .statement-tag {
-    font-size: 0.85rem;
-    letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 600;
-  }
-
-  .editorial-quote-text {
-    font-family: var(--font-display);
-    font-size: clamp(1.15rem, 1.6vw, 1.6rem);
-    line-height: 1.7;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.95);
-    margin: 0;
-    letter-spacing: 0.01em;
-  }
-
-  .editorial-hairline {
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.12);
-  }
-
-  /* METRICS ROW */
-  .editorial-metrics-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    margin-top: clamp(4rem, 6vw, 6rem);
-    padding: clamp(2rem, 3.5vw, 3rem) 0;
-  }
-
-  .metric-cell {
-    padding: 0 clamp(0.8rem, 1.8vw, 1.5rem);
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .metric-cell:last-child {
-    border-right: none;
-  }
-
-  .metric-big-num {
-    font-family: var(--font--second-font);
-    font-size: clamp(2.4rem, 4.2vw, 4.5rem);
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-
-  .metric-desc {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 500;
-  }
-
-  /* LEADERSHIP ROWS & REAL PORTRAITS */
   .editorial-leader-row {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.5rem;
   }
 
   .leader-category-tag {
     font-size: 0.8rem;
     letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.45);
     font-weight: 600;
     margin: 0;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
   }
 
-  .leader-profile-unit {
+  .leader-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .leader-item-with-avatar {
     display: flex;
     align-items: center;
-    gap: clamp(1.5rem, 3vw, 2.5rem);
-    flex-wrap: wrap;
-  }
-
-  .leader-avatar-lg {
-    width: clamp(110px, 14vw, 140px);
-    height: clamp(110px, 14vw, 140px);
-    border-radius: 8px;
-    object-fit: cover;
-    object-position: center top;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-    flex-shrink: 0;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-  }
-
-  .leader-avatar-lg:hover {
-    transform: scale(1.03);
-    border-color: rgba(255, 255, 255, 0.5);
+    gap: 1.2rem;
   }
 
   .leader-avatar-md {
@@ -951,36 +912,20 @@ const HEAD_STYLES = `
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     flex-shrink: 0;
-    transition: transform 0.3s ease, border-color 0.3s ease;
   }
 
-  .leader-avatar-md:hover {
-    transform: scale(1.04);
-    border-color: rgba(255, 255, 255, 0.45);
-  }
-
-  .leader-item-with-avatar {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-  }
-
-  .leader-main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    flex: 1 1 300px;
-  }
-
-  .leader-info-block {
-    flex: 1 1 240px;
+  .sub-role-label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
   }
 
   .leader-name {
     font-family: var(--font--second-font);
-    font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+    font-size: clamp(1.7rem, 2.8vw, 2.6rem);
     color: #ffffff;
     text-transform: uppercase;
     line-height: 1.05;
@@ -1028,127 +973,107 @@ const HEAD_STYLES = `
     flex-shrink: 0;
   }
 
-  .leader-dual-grid {
+  .executives-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(2rem, 3.5vw, 3rem);
-  }
-
-  .sub-role-label {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    text-transform: uppercase;
-  }
-
-  /* WHY SINGULARITY EDITORIAL COLUMNS */
-  .why-editorial-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: clamp(2rem, 3.5vw, 3.5rem);
   }
 
-  .why-editorial-col {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 1.8rem;
+  .executives-grid.single-exec {
+    grid-template-columns: minmax(280px, 320px);
+    justify-content: flex-start;
   }
 
-  .why-num-top {
-    font-family: var(--font--second-font);
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.3);
-    line-height: 1;
-  }
-
-  .why-title {
-    font-family: var(--font--second-font);
-    font-size: clamp(1.4rem, 1.8vw, 1.65rem);
-    color: #ffffff;
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 1.1;
-  }
-
-  .why-desc {
-    font-family: var(--font-body);
-    font-size: clamp(0.92rem, 1.05vw, 1rem);
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.75);
-    font-weight: 300;
-    margin: 0;
-  }
-
-  /* THEMES EDITORIAL ROWS */
-  .themes-editorial-list {
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-
-  .theme-editorial-row {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: clamp(2rem, 4vw, 4rem);
-    padding: clamp(2.2rem, 4vw, 3.5rem) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .theme-editorial-row:hover {
-    transform: translateX(6px);
-  }
-
-  .theme-col-meta {
+  .executive-card {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: clamp(1.2rem, 2vw, 1.8rem);
   }
 
-  .theme-idx {
-    font-family: var(--font--second-font);
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.35);
+  .executive-avatar {
+    width: clamp(85px, 10vw, 115px);
+    height: clamp(85px, 10vw, 115px);
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    flex-shrink: 0;
   }
 
-  .theme-category {
-    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 600;
-  }
-
-  .theme-col-main {
+  .executive-info {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.3rem;
   }
 
-  .theme-title {
+  .executive-name {
     font-family: var(--font--second-font);
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-size: clamp(1.7rem, 2.4vw, 2.3rem);
     color: #ffffff;
     text-transform: uppercase;
     line-height: 1.05;
     margin: 0;
-    letter-spacing: -0.01em;
   }
 
-  .theme-text {
+  .executive-role {
     font-family: var(--font-body);
-    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 300;
-    margin: 0;
-    max-width: 800px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
   }
 
-  /* FOOTER RESPONSIVE */
+  .executive-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .editorial-hairline {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: clamp(2rem, 3.5vw, 3.5rem) 0;
+  }
+
+  .editorial-metrics-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: clamp(4rem, 6vw, 6rem);
+    padding: clamp(2rem, 3.5vw, 3rem) 0;
+  }
+
+  .metric-cell {
+    padding: 0 clamp(0.8rem, 1.8vw, 1.5rem);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .metric-cell:last-child {
+    border-right: none;
+  }
+
+  .metric-big-num {
+    font-family: var(--font--second-font);
+    font-size: clamp(2.4rem, 4.2vw, 4.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .metric-desc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  /* FOOTER */
   .footer-responsive {
     padding-top: clamp(4rem, 7vw, 7rem);
     padding-bottom: 2rem;
@@ -1196,20 +1121,6 @@ const HEAD_STYLES = `
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-  }
-
-  .footer-nav-item {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    transition: transform 0.3s ease;
-  }
-
-  .footer-nav-text {
-    color: #ffffff;
-    font-size: 1.15rem;
-    text-transform: uppercase;
   }
 
   .footer-socials-row {
@@ -1295,10 +1206,6 @@ const HEAD_STYLES = `
   }
 
   @media (max-width: 991px) {
-    .editorial-hero-banner {
-      min-height: 80vh;
-    }
-
     .editorial-split-layout {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -1308,42 +1215,16 @@ const HEAD_STYLES = `
       position: static;
     }
 
-    .why-editorial-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2.5rem 2rem;
-    }
-
-    .theme-editorial-row {
+    .executives-grid {
       grid-template-columns: 1fr;
-      gap: 1.2rem;
-      padding: 2.2rem 0;
     }
 
-    .editorial-footer-grid {
+    .executives-grid.single-exec {
       grid-template-columns: 1fr;
-      gap: 3rem;
-      text-align: center;
     }
 
-    .footer-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .social-content.for-footer {
-      justify-content: center;
-    }
-
-    .footer-links-wrap {
-      align-items: center;
-    }
-
-    .editorial-footer-bottom {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
+    .leader-dual-grid {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -1371,16 +1252,16 @@ const HEAD_STYLES = `
       gap: 2rem;
     }
 
-    .why-editorial-grid {
-      grid-template-columns: 1fr;
-      gap: 2.2rem;
+    .leader-item-with-avatar {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
     }
   }
 
   @media (max-width: 479px) {
     .singularity-footer-wordmark {
       font-size: clamp(1.45rem, 7.6vw, 2.5rem) !important;
-      letter-spacing: 0.01em !important;
     }
 
     .editorial-metrics-row {
@@ -1395,22 +1276,6 @@ const HEAD_STYLES = `
 
     .metric-cell:nth-child(odd) {
       border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
-
-    .leader-links-row {
-      gap: 0.8rem 1.2rem;
-    }
-
-    .leader-profile-unit {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.2rem;
-    }
-
-    .leader-item-with-avatar {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 1rem;
     }
   }
 `;
@@ -1462,12 +1327,11 @@ const PROJECT_DATA = `{
       "animating": false,
       "isMask": 0,
       "compiledFragmentShaders": [
-        "#version 300 es\\nprecision highp float;\\nprecision highp int;in vec2 vTextureCoord;\\nin vec3 vVertexPosition;uniform sampler2D uTexture;\\nuniform sampler2D uPingPongTexture;\\nvec3 blend (int blendMode, vec3 src, vec3 dst) {\\nreturn src + dst;\\n}uvec2 pcg2d(uvec2 v) {\\nv = v * 1664525u + 1013904223u;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nv ^= v >> 16;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nreturn v;\\n}float randFibo(vec2 p) {\\nuvec2 v = floatBitsToUint(p);\\nv = pcg2d(v);\\nuint r = v.x ^ v.y;\\nreturn float(r) / float(0xffffffffu);\\n}const float PI = 3.1415926;out vec4 fragColor;vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}void main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);vec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;if(1 > 0) {\\nvec3 blendedRgb = blend(1, color.rgb + dither, bg.rgb);\\nfragColor = vec4(mix(bg.rgb, blendedRgb, mouseTrail.z), 1.0);\\n} else {\\nfragColor = mix(bg, color, mouseTrail.z);\\n}\\n}",
-        "#version 300 es\\nprecision highp float;in vec3 vVertexPosition;\\nin vec2 vTextureCoord;uniform sampler2D uPingPongTexture;\\nuniform vec2 uPreviousMousePos;\\nuniform float uTime;uniform vec2 uMousePos;\\nuniform vec2 uResolution;const float PI = 3.1415926;\\nconst float TWOPI = 6.2831852;out vec4 fragColor;vec3 hsv2rgb(vec3 c) {\\nvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\\nvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\\nreturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\\n}vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}mat2 rot(float a) {\\nreturn mat2(cos(a), -sin(a), sin(a), cos(a));\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}vec2 liquify(vec2 st, vec2 dir) {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nst.x *= aspectRatio;\\nfloat amplitude = 0.0025;\\nfloat freq = 6.;\\nfor (float i = 1.0; i <= 5.0; i++) {\\nst = st * rot(i / 5.0 * PI * 2.0);\\nst += vec2(\\namplitude * cos(i * freq * st.y + uTime * 0.02 * dir.x),\\namplitude * sin(i * freq * st.x + uTime * 0.02 * dir.y)\\n);\\n}\\nst.x /= aspectRatio;\\nreturn st;\\n}vec3 calculateTrailContribution(vec2 mousePos, vec2 prevMousePos, vec2 uv, vec2 correctedUv, float aspectRatio, float radius) {\\nvec2 dir = (mousePos - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat angle = atan(dir.y, dir.x);\\nif (angle < 0.0) angle += TWOPI;\\nvec2 mouseVec = mousePos - prevMousePos;\\nfloat mouseLen = length(mouseVec);\\nvec2 mouseDir = mouseLen > 0.0 ? mouseVec / mouseLen : vec2(0.0);\\nvec2 posToUv = (correctedUv - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat projection = clamp(dot(posToUv, mouseDir * vec2(aspectRatio, 1.0)), 0.0, mouseLen * aspectRatio);\\nvec2 closestPoint = prevMousePos * vec2(aspectRatio, 1.0) + mouseDir * vec2(aspectRatio, 1.0) * projection;\\nfloat distanceToLine = distance(correctedUv, closestPoint);\\nfloat s = (1.0 + radius)/(distanceToLine + radius) * radius;\\nvec3 color = vec3(angle / TWOPI, 1.0, 1.0);\\nvec3 pointColor = hsv2rgb(color);\\npointColor = pow(pointColor, vec3(2.2));\\nfloat intensity = pow(s, 10.0 * (1. - 0.3000 + 0.1));\\nreturn pointColor * intensity;\\n}void main() {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nvec2 uv = vTextureCoord;\\nvec2 correctedUv = (uv) * vec2(aspectRatio, 1.0);vec3 lastFrameColor = texture(uPingPongTexture, uv).rgb;\\nvec3 lastFrameColorGamma = pow(lastFrameColor, vec3(2.2));\\nvec3 hsv = rgb2hsv(lastFrameColor);\\nvec3 hsvGamma = rgb2hsv(lastFrameColorGamma);\\nvec2 prevDir = angleToDir(hsv.x);\\nfloat prevStrength = hsvGamma.z;\\nvec2 dir = (uMousePos - uPreviousMousePos) * vec2(aspectRatio, 1.0);\\nfloat dist = length(dir);\\nfloat blurAmount = 0.03 * prevStrength;\\nuv = uv - prevDir * blurAmount;\\nuv = mix(uv, liquify(uv - prevDir * 0.005, prevDir), (1. - prevStrength) * 0.2300);\\nlastFrameColor = texture(uPingPongTexture, uv).rgb;\\nlastFrameColor = pow(lastFrameColor, vec3(2.2));\\nint numPoints = int(max(12.0, dist * 24.0));\\nfloat speedFactor = clamp(dist, 0.7, 1.3);\\nfloat radius = mix(0.1, 0.7, 0.3100 * speedFactor);\\nvec3 trailColor = vec3(0.0);\\nint iter = min(numPoints, 24);\\nfor (int i = 0; i <= iter; i++) {\\nfloat t = float(i) / float(numPoints);\\nvec2 interpPos = mix(uPreviousMousePos, uMousePos, t);\\nvec2 prevInterpPos = i > 0 ? mix(uPreviousMousePos, uMousePos, float(i-1) / float(numPoints)) : uPreviousMousePos;\\ntrailColor += calculateTrailContribution(interpPos, prevInterpPos, uv, correctedUv, aspectRatio, radius);\\n}\\ntrailColor = trailColor / float(min(numPoints, 50) + 1);\\nvec3 blurredLastFrame = vec3(0.0);\\nfloat clampedDist = clamp(length(trailColor) * dist, 0.0, 1.0);\\nfloat blurRadius = 0.005;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(blurRadius, 0.0)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(-blurRadius, 0.0)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(0.0, blurRadius)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(0.0, -blurRadius)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += lastFrameColor * 0.2;\\nblurredLastFrame *= pow(0.8000, 0.2);\\nvec3 draw = mix(blurredLastFrame, trailColor, clampedDist);\\ndraw = pow(draw, vec3(1.0/2.2));\\ndraw.r = max(0.0, draw.r - 0.01);\\ndraw.g = max(0.0, draw.g - 0.01);\\ndraw.b = max(0.0, draw.b - 0.01);\\nfragColor = vec4(draw, 1.0);\\n}"
+        "#version 300 es\\nprecision highp float;\\nprecision highp int;in vec2 vTextureCoord;\\nin vec3 vVertexPosition;uniform sampler2D uTexture;\\nuniform sampler2D uPingPongTexture;\\nvec3 blend (int blendMode, vec3 src, vec3 dst) {\\nreturn src + dst;\\n}uvec2 pcg2d(uvec2 v) {\\nv = v * 1664525u + 1013904223u;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nv ^= v >> 16;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nreturn v;\\n}float randFibo(vec2 p) {\\nuvec2 v = floatBitsToUint(p);\\nv = pcg2d(v);\\nuint r = v.x ^ v.y;\\nreturn float(r) / float(0xffffffffu);\\n}const float PI = 3.1415926;out vec4 fragColor;vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}void main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);\\nvec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;if(1 > 0) {\\nvec3 blendedRgb = blend(1, color.rgb + dither, bg.rgb);\\nfragColor = vec4(mix(bg.rgb, blendedRgb, mouseTrail.z), 1.0);\\n} else {\\nfragColor = mix(bg, color, mouseTrail.z);\\n}\\n}",
+        "#version 300 es\\nprecision highp float;in vec3 vVertexPosition;\\nin vec2 vTextureCoord;uniform sampler2D uPingPongTexture;\\nuniform vec2 uPreviousMousePos;\\nuniform float uTime;uniform vec2 uMousePos;\\nuniform vec2 uResolution;const float PI = 3.1415926;\\nconst float TWOPI = 6.2831852;out vec4 fragColor;vec3 hsv2rgb(vec3 c) {\\nvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\\nvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\\nreturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\\n}vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}mat2 rot(float a) {\\nreturn mat2(cos(a), -sin(a), sin(a), cos(a));\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}vec2 liquify(vec2 st, vec2 dir) {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nst.x *= aspectRatio;\\nfloat amplitude = 0.0025;\\nfloat freq = 6.;\\nfor (float i = 1.0; i <= 5.0; i++) {\\nst = st * rot(i / 5.0 * PI * 2.0);\\nst += vec2(\\namplitude * cos(i * freq * st.y + uTime * 0.02 * dir.x),\\namplitude * sin(i * freq * st.x + uTime * 0.02 * dir.y)\\n);\\n}\\nst.x /= aspectRatio;\\nreturn st;\\n}vec3 calculateTrailContribution(vec2 mousePos, vec2 prevMousePos, vec2 uv, vec2 correctedUv, float aspectRatio, float radius) {\\nvec2 dir = (mousePos - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat angle = atan(dir.y, dir.x);\\nif (angle < 0.0) angle += TWOPI;\\nvec2 mouseVec = mousePos - prevMousePos;\\nfloat mouseLen = length(mouseVec);\\nvec2 mouseDir = mouseLen > 0.0 ? mouseVec / mouseLen : vec2(0.0);\\nvec2 posToUv = (correctedUv - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat projection = clamp(dot(posToUv, mouseDir * vec2(aspectRatio, 1.0)), 0.0, mouseLen);\\nfloat invRadius = radius > 0.0 ? 1.0 / radius : 0.0;\\nfloat trailStrength = min(1.0, invRadius * (strength * (1.0 - 0.5) * 0.5));\\nreturn trailStrength;\\n}\\nvoid main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);\\nvec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;\\nfragColor = mix(bg, color, strength * mouseTrail.z * 0.5);\\n}",
       ],
       "compiledVertexShaders": [
-        "#version 300 es\\nprecision highp float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;\\nuniform mat4 uTextureMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = (uTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;\\n}",
-        "#version 300 es\\nprecision highp float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = aTextureCoord;\\n}"
+        "#version 300 es\\nprecision mediump float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;\\nuniform mat4 uTextureMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = (uTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;\\nvTextureCoord = aTextureCoord;\\n}"
       ],
       "data": {
         "depth": false,
@@ -1497,18 +1361,18 @@ const HEAD_SCRIPTS = [
   "/js/unicornStudio.umd.js",
 ];
 
-export default function AboutPage() {
+export default function TeamsPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let rafId: number | undefined;
     let resizeHandler: (() => void) | null = null;
 
-    const existingStyle = document.getElementById("singularityAboutStyles");
+    const existingStyle = document.getElementById("singularityTeamsStyles");
     if (existingStyle) existingStyle.remove();
 
     const styleEl = document.createElement("style");
-    styleEl.id = "singularityAboutStyles";
+    styleEl.id = "singularityTeamsStyles";
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
 
@@ -1554,7 +1418,7 @@ export default function AboutPage() {
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
         if (ix2) ix2.init();
-
+      
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
       }
@@ -1562,9 +1426,9 @@ export default function AboutPage() {
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
         (window as any).UnicornStudio.init();
         let resizeTimer: any;
-        resizeHandler = function () {
+        resizeHandler = function() {
           clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(function () {
+          resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
               (window as any).UnicornStudio.init();
             }
@@ -1576,7 +1440,7 @@ export default function AboutPage() {
       if ((window as any).__lenisInstance) {
         try {
           (window as any).__lenisInstance.destroy();
-        } catch (e) { }
+        } catch (e) {}
       }
 
       if (typeof (window as any).Lenis !== 'undefined') {
@@ -1660,7 +1524,7 @@ export default function AboutPage() {
       dataScript.remove();
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
-        try { (window as any).__lenisInstance.destroy(); } catch (e) { }
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
