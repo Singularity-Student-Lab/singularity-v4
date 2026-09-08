@@ -1658,3 +1658,177 @@ html.lenis, html.lenis body {
   display: inline-block !important;
   opacity: 0.85 !important;
 }
+
+/* =========================================================
+   LEADERSHIP, ADVISORY & SOCIAL ICON ARCHITECTURE
+   ========================================================= */
+.leader-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 3.5vw, 3rem);
+}
+
+@media (max-width: 767px) {
+  .leader-dual-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+.leader-item-with-avatar {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 1.2rem !important;
+}
+
+@media (max-width: 479px) {
+  .leader-item-with-avatar {
+    gap: 1rem !important;
+  }
+}
+
+.leader-avatar-md {
+  width: clamp(75px, 9vw, 90px) !important;
+  height: clamp(75px, 9vw, 90px) !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  min-width: 75px !important;
+  min-height: 75px !important;
+  border-radius: 8px !important;
+  object-fit: cover !important;
+  object-position: center 20% !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.leader-avatar-md:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.sub-role-label {
+  font-size: 0.75rem !important;
+  letter-spacing: 2px !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.35rem 0 !important;
+  text-transform: uppercase !important;
+}
+
+.leader-name {
+  font-family: var(--font--second-font) !important;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem) !important;
+  color: #ffffff !important;
+  margin: 0 0 0.25rem 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.1 !important;
+}
+
+.leader-title {
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+
+.leader-links-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  margin-top: 0.6rem !important;
+}
+
+/* Modern Circular Social Icon Buttons */
+.social-icon-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+  flex-shrink: 0 !important;
+}
+
+.social-icon-btn svg {
+  width: 17px !important;
+  height: 17px !important;
+  fill: currentColor !important;
+  transition: transform 0.2s ease !important;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-2px) !important;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+}
+
+.social-icon-btn:hover svg {
+  transform: scale(1.1) !important;
+}
+
+.social-icon-btn.github:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+}
+
+.social-icon-btn.linkedin:hover {
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.35) !important;
+}
+
+.social-icon-btn.twitter:hover,
+.social-icon-btn.x:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+}
+
+.social-icon-btn.instagram:hover {
+  color: #f43f5e !important;
+  background: rgba(244, 63, 94, 0.15) !important;
+  border-color: rgba(244, 63, 94, 0.6) !important;
+  box-shadow: 0 0 14px rgba(244, 63, 94, 0.35) !important;
+}
+
+.social-icon-btn.website:hover {
+  color: #34d399 !important;
+  background: rgba(52, 211, 153, 0.15) !important;
+  border-color: rgba(52, 211, 153, 0.6) !important;
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.35) !important;
+}
+
+/* ─── Global Visibility Safety Net ─── */
+/* Ensures editorial content sections are always visible,
+   preventing opacity:0 from stale script state or race conditions */
+.section-content,
+.editorial-section,
+.editorial-container,
+.editorial-split-layout,
+.editorial-left-col,
+.editorial-right-col,
+.editorial-metrics-row,
+.executives-grid,
+.executive-card,
+.leader-dual-grid,
+.leader-card {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

@@ -235,13 +235,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">B Md Fawaz</h3>
                       <p class="executive-role" style="color: #C4B5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/f4w4z" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/f4w4z" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/fawaaaaz/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/fawaaaaz/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -258,13 +256,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Lavjeet Kumar Rai</h3>
                       <p class="executive-role" style="color: #C4B5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/lavjeetrai" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/lavjeetrai" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/lavjeet-rai/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/lavjeet-rai/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -284,11 +280,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">A Sai Shivanand</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/asaishivanand-design" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/asaishivanand-design" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/sai-shivanand-appalla-9398b3321" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/sai-shivanand-appalla-9398b3321" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -304,11 +300,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Arijit Das</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/arijitdas369" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/arijitdas369" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/arijit-das-891119383" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/arijit-das-891119383" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -324,11 +320,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">05</div>
                     <div class="member-col-name">K Guna Vishnu</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/vishnukusi" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/vishnukusi" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/guna-vishnu-kusi-208522375" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/guna-vishnu-kusi-208522375" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -337,11 +333,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">06</div>
                     <div class="member-col-name">Priyanshu</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Priyanshu-777" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/Priyanshu-777" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/priyanshu002" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/priyanshu002" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -350,11 +346,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">07</div>
                     <div class="member-col-name">Ritabbrata Chakraborty</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/ChakrabortyRitabbrata-design" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/ChakrabortyRitabbrata-design" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/ritabbrata-chakraborty-028a83342" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/ritabbrata-chakraborty-028a83342" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -363,11 +359,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">08</div>
                     <div class="member-col-name">Shashanka Biswas</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Shashanka25" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/Shashanka25" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/shashanka-biswas-b09967395" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/shashanka-biswas-b09967395" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -376,11 +372,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">09</div>
                     <div class="member-col-name">Surya Teja E</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/sonic-08/" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/sonic-08/" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/surya-teja-evuri-3bb1933b1" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/surya-teja-evuri-3bb1933b1" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -389,11 +385,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">10</div>
                     <div class="member-col-name">Tarun Karma</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/HackerZ-app" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://github.com/HackerZ-app" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/tarun-karma-581a043b9" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/tarun-karma-581a043b9" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -402,11 +398,11 @@ const BODY_HTML = `
                     <div class="member-col-idx">11</div>
                     <div class="member-col-name">Y Naga Pragnesh</div>
                     <div class="member-col-links">
-                      <a href="https://www.gitHub.com/Pragnesh-10" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        GitHub &nearr;
+                      <a href="https://www.gitHub.com/Pragnesh-10" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/yedrunagapragnesh" target="_blank" rel="noopener noreferrer" class="member-link-pill">
-                        LinkedIn &nearr;
+                      <a href="https://www.linkedin.com/in/yedrunagapragnesh" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -1047,6 +1043,56 @@ const HEAD_STYLES = `
     transform: translateY(-1px);
   }
 
+  /* MODERN SOCIAL ICON BUTTONS */
+  .social-icon-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .social-icon-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+    fill: currentColor !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .social-icon-btn:hover {
+    transform: translateY(-2px) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .social-icon-btn:hover svg {
+    transform: scale(1.1) !important;
+  }
+
+  .social-icon-btn.github:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.65) !important;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .social-icon-btn.linkedin:hover {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.15) !important;
+    border-color: rgba(56, 189, 248, 0.6) !important;
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.35) !important;
+  }
+
   /* FOOTER RESPONSIVE */
   .footer-responsive {
     padding-top: clamp(4rem, 7vw, 7rem);
@@ -1456,7 +1502,7 @@ export default function PrajnaKritrimaLabPage() {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
-        if (ix2) ix2.init();
+        if (ix2) { try { ix2.destroy(); } catch (e) {} ix2.init(); }
 
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
@@ -1559,25 +1605,33 @@ export default function PrajnaKritrimaLabPage() {
     })();
 
     return () => {
-      styleEl.remove();
-      dataScript.remove();
+      // Destroy Webflow IX2 before React unmounts the DOM
+      if ((window as any).Webflow) {
+        try { (window as any).Webflow.destroy(); } catch (e) {}
+      }
+      if ((window as any).ScrollTrigger) {
+        try { (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill()); } catch (e) {}
+      }
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
         try { (window as any).__lenisInstance.destroy(); } catch (e) {}
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
-      if ((window as any).ScrollTrigger) {
-        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
-      }
+      // Guard DOM removal — nodes may already be detached by React
+      try { if (styleEl.parentNode) styleEl.remove(); } catch (e) {}
+      try { if (dataScript.parentNode) dataScript.remove(); } catch (e) {}
     };
   }, []);
 
   return (
-    <main
-      ref={containerRef}
-      suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: BODY_HTML }}
-    />
+    <>
+      <style id="singularityPrajnaKritrimaStylesSSR" dangerouslySetInnerHTML={{ __html: HEAD_STYLES }} />
+      <main
+        ref={containerRef}
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: BODY_HTML }}
+      />
+    </>
   );
 }

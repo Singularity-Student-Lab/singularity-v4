@@ -1273,7 +1273,7 @@ export default function JoinPage() {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
-        if (ix2) ix2.init();
+        if (ix2) { try { ix2.destroy(); } catch (e) {} ix2.init(); }
         
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
@@ -1376,17 +1376,22 @@ export default function JoinPage() {
     })();
 
     return () => {
-      styleEl.remove();
-      dataScript.remove();
+      // Destroy Webflow IX2 before React unmounts the DOM
+      if ((window as any).Webflow) {
+        try { (window as any).Webflow.destroy(); } catch (e) {}
+      }
+      if ((window as any).ScrollTrigger) {
+        try { (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill()); } catch (e) {}
+      }
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
         try { (window as any).__lenisInstance.destroy(); } catch (e) {}
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
-      if ((window as any).ScrollTrigger) {
-        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
-      }
+      // Guard DOM removal — nodes may already be detached by React
+      try { if (styleEl.parentNode) styleEl.remove(); } catch (e) {}
+      try { if (dataScript.parentNode) dataScript.remove(); } catch (e) {}
     };
   }, []);
 

@@ -251,13 +251,11 @@ const BODY_HTML = `
                         <h3 class="executive-name">Yuvraj Singh</h3>
                         <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                         <div class="executive-links">
-                          <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                            <div class="social-circle-small" style="background: #34D399;"></div>
-                            <span>GitHub &nearr;</span>
+                          <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                           </a>
-                          <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                            <div class="social-circle-small" style="background: #34D399;"></div>
-                            <span>LinkedIn &nearr;</span>
+                          <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                           </a>
                         </div>
                       </div>
@@ -275,13 +273,11 @@ const BODY_HTML = `
                         <h3 class="executive-name">Praneeth</h3>
                         <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                         <div class="executive-links">
-                          <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                            <div class="social-circle-small" style="background: #34D399;"></div>
-                            <span>GitHub &nearr;</span>
+                          <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                           </a>
-                          <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                            <div class="social-circle-small" style="background: #34D399;"></div>
-                            <span>LinkedIn &nearr;</span>
+                          <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                           </a>
                         </div>
                       </div>
@@ -308,9 +304,8 @@ const BODY_HTML = `
                         <h3 class="leader-name">Anwar Faizaan Reza</h3>
                         <p class="leader-title">Advisor</p>
                         <div class="leader-links-row" style="margin-top: 0.5rem;">
-                          <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                            <div class="social-circle-small" style="background: #34D399;"></div>
-                            <span>LinkedIn &nearr;</span>
+                          <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                           </a>
                         </div>
                       </div>
@@ -329,8 +324,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">01</div>
                     <div class="member-col-name">Arnav Mehar</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Arnavmehar-5" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/arnavmehar" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/Arnavmehar-5" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/arnavmehar" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
 
@@ -338,8 +337,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">02</div>
                     <div class="member-col-name">Avantika Singh</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/avantika770" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/avantika-space" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/avantika770" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/avantika-space" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
 
@@ -347,8 +350,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">03</div>
                     <div class="member-col-name">Jignesh Setty</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/JIGNESH-SETTY" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/jignesh-setty-957620380" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/JIGNESH-SETTY" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/jignesh-setty-957620380" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
 
@@ -356,8 +363,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">04</div>
                     <div class="member-col-name">Sunkara Purna Jaswanth</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/purnajaswanth-dev" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://linkedin.com/in/sunkara-purna-jaswanth" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/purnajaswanth-dev" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://linkedin.com/in/sunkara-purna-jaswanth" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
 
@@ -365,8 +376,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">05</div>
                     <div class="member-col-name">Vinay Sathwik Motakatla</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/vinaysathwik-ai" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/motakatla-vinay-sathwik-387b94392/" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/vinaysathwik-ai" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/motakatla-vinay-sathwik-387b94392/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
 
@@ -374,8 +389,12 @@ const BODY_HTML = `
                     <div class="member-col-idx">06</div>
                     <div class="member-col-name">Yash Jaiswal</div>
                     <div class="member-col-links">
-                      <a href="https://github.com/Yash-programs16" target="_blank" rel="noopener noreferrer" class="member-link-pill">GitHub &nearr;</a>
-                      <a href="https://www.linkedin.com/in/yash-jaiswal-78390739b" target="_blank" rel="noopener noreferrer" class="member-link-pill">LinkedIn &nearr;</a>
+                      <a href="https://github.com/Yash-programs16" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/yash-jaiswal-78390739b" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -934,6 +953,75 @@ const HEAD_STYLES = `
     flex-shrink: 0;
   }
 
+  /* LEADER & ADVISORY STYLES */
+  .leader-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 3.5vw, 3rem);
+  }
+
+  @media (max-width: 767px) {
+    .leader-dual-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+    }
+  }
+
+  .leader-item-with-avatar {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.2rem !important;
+  }
+
+  .leader-avatar-md {
+    width: clamp(75px, 9vw, 90px) !important;
+    height: clamp(75px, 9vw, 90px) !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+    min-width: 75px !important;
+    min-height: 75px !important;
+    border-radius: 8px !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+
+  .sub-role-label {
+    font-size: 0.75rem !important;
+    letter-spacing: 2px !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    font-weight: 600 !important;
+    margin: 0 0 0.35rem 0 !important;
+    text-transform: uppercase !important;
+  }
+
+  .leader-name {
+    font-family: var(--font--second-font) !important;
+    font-size: clamp(1.2rem, 1.8vw, 1.6rem) !important;
+    color: #ffffff !important;
+    margin: 0 0 0.25rem 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.1 !important;
+  }
+
+  .leader-title {
+    font-size: 0.85rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+  }
+
+  .leader-links-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    margin-top: 0.6rem !important;
+  }
+
   /* MEMBERS EDITORIAL TABLE */
   .editorial-members-row {
     display: flex;
@@ -1385,7 +1473,7 @@ export default function BhaskaracharyaLabPage() {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
-        if (ix2) ix2.init();
+        if (ix2) { try { ix2.destroy(); } catch (e) {} ix2.init(); }
         
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
@@ -1488,25 +1576,33 @@ export default function BhaskaracharyaLabPage() {
     })();
 
     return () => {
-      styleEl.remove();
-      dataScript.remove();
+      // Destroy Webflow IX2 before React unmounts the DOM
+      if ((window as any).Webflow) {
+        try { (window as any).Webflow.destroy(); } catch (e) {}
+      }
+      if ((window as any).ScrollTrigger) {
+        try { (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill()); } catch (e) {}
+      }
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
         try { (window as any).__lenisInstance.destroy(); } catch (e) {}
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
-      if ((window as any).ScrollTrigger) {
-        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
-      }
+      // Guard DOM removal — nodes may already be detached by React
+      try { if (styleEl.parentNode) styleEl.remove(); } catch (e) {}
+      try { if (dataScript.parentNode) dataScript.remove(); } catch (e) {}
     };
   }, []);
 
   return (
-    <main
-      ref={containerRef}
-      suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: BODY_HTML }}
-    />
+    <>
+      <style id="singularityBhaskaracharyaStylesSSR" dangerouslySetInnerHTML={{ __html: HEAD_STYLES }} />
+      <main
+        ref={containerRef}
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: BODY_HTML }}
+      />
+    </>
   );
 }

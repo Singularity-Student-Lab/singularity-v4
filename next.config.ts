@@ -61,6 +61,15 @@ const nextConfig: NextConfig = {
     "127.0.0.1:3000",
     "127.0.0.1:3001",
   ],
+  async redirects() {
+    return [
+      {
+        source: "/team",
+        destination: "/teams",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -104,7 +104,7 @@ const BODY_HTML = `
       </div>
     </div>
 
-    <div id="Hero" class="main-hero-wrapper">
+    <div id="Hero" class="top-main hero-wrapper-responsive">
       
       <div data-us-project-src="singularityProjectData" class="absolute-effect hero-webgl-canvas"></div>
 
@@ -158,7 +158,7 @@ const BODY_HTML = `
       <section id="Executives" class="editorial-section">
         <div class="editorial-container">
           
-          <div class="editorial-split-layout" data-scroll-fade>
+          <div class="editorial-split-layout">
             <div class="editorial-left-col">
               <p class="section-top-label">01 // CURRENT EXECUTIVES</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -184,13 +184,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">B Md Fawaz</h3>
                       <p class="executive-role" style="color: #C4B5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/f4w4z" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #A78BFA;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/f4w4z" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/fawaaaaz/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #A78BFA;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/fawaaaaz/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -208,13 +206,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Lavjeet Kumar Rai</h3>
                       <p class="executive-role" style="color: #C4B5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/lavjeetrai" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #A78BFA;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/lavjeetrai" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/lavjeet-rai/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #A78BFA;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/lavjeet-rai/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -240,13 +236,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Baratam Praneeth Gupta</h3>
                       <p class="executive-role" style="color: #67E8F9;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/Praneeth0910" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #22D3EE;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/Praneeth0910" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/baratam-praneeth-gupta-baba24361" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #22D3EE;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/baratam-praneeth-gupta-baba24361" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -286,13 +280,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Shambo Chakraborty</h3>
                       <p class="executive-role" style="color: #F9A8D4;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/shambochakraborty10-stack" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #F472B6;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/shambochakraborty10-stack" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/shambo-chakraborty-480747395" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #F472B6;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/shambo-chakraborty-480747395" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -303,7 +295,7 @@ const BODY_HTML = `
               <div class="editorial-hairline"></div>
 
               <div class="editorial-leader-row">
-                <p class="leader-category-tag">LAB 04 // VARAMIHIRA</p>
+                <p class="leader-category-tag">LAB 04 // VARAHAMIHIRA</p>
                 
                 <div class="executives-grid">
                   <div class="executive-card">
@@ -318,13 +310,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Anmol Sharma</h3>
                       <p class="executive-role" style="color: #93C5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/Gostmennnnn" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #60A5FA;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/Gostmennnnn" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/Anmol-sharma-ba0b6a387" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #60A5FA;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/Anmol-sharma-ba0b6a387" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -342,13 +332,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Aditya Joshi</h3>
                       <p class="executive-role" style="color: #93C5FD;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/adityajoshi18vk-art" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #60A5FA;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/adityajoshi18vk-art" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/aditya-joshi-659001350/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #60A5FA;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/aditya-joshi-659001350/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -374,13 +362,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Yuvraj Singh</h3>
                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/YUVRAJ-SINGH-3178" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/yuvraj-singh-3178saturn/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -398,13 +384,11 @@ const BODY_HTML = `
                       <h3 class="executive-name">Praneeth</h3>
                       <p class="executive-role" style="color: #6EE7B7;">Executive</p>
                       <div class="executive-links">
-                        <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>GitHub &nearr;</span>
+                        <a href="https://github.com/praneethzz" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small" style="background: #34D399;"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/praneeth-zz-985638391" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -487,7 +471,7 @@ const BODY_HTML = `
             </div>
           </div>
 
-          <div class="editorial-metrics-row" data-scroll-fade>
+          <div class="editorial-metrics-row">
             <div class="metric-cell">
               <div class="metric-big-num">07</div>
               <p class="metric-desc">Research Labs</p>
@@ -512,7 +496,7 @@ const BODY_HTML = `
       <section id="Advisory" class="editorial-section">
         <div class="editorial-container">
           
-          <div class="editorial-split-layout" data-scroll-fade>
+          <div class="editorial-split-layout">
             <div class="editorial-left-col">
               <p class="section-top-label">02 // ADVISORY PANEL</p>
               <h2 class="about-title effect split-reveal section-title-heading">
@@ -571,9 +555,8 @@ const BODY_HTML = `
                       <h3 class="leader-name">Anwar Faizaan Reza</h3>
                       <p class="leader-title">Advisor</p>
                       <div class="leader-links-row" style="margin-top: 0.5rem;">
-                        <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                          <div class="social-circle-small"></div>
-                          <span>LinkedIn &nearr;</span>
+                        <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                       </div>
                     </div>
@@ -690,6 +673,20 @@ const HEAD_STYLES = `
     width: 100%;
     position: fixed;
     inset: 0%;
+  }
+
+  .hero-wrapper-responsive {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 80vh !important;
+    min-height: 80dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    background: #000000 !important;
+    padding: 0 1rem !important;
   }
 
   .hero-webgl-canvas {
@@ -838,6 +835,14 @@ const HEAD_STYLES = `
     text-align: right;
   }
 
+  .section-content {
+    position: relative !important;
+    z-index: 10 !important;
+    background-color: #000000 !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
   .editorial-section {
     background-color: #000000;
     position: relative;
@@ -857,6 +862,16 @@ const HEAD_STYLES = `
     grid-template-columns: 340px 1fr;
     gap: clamp(2.5rem, 5vw, 4.5rem);
     align-items: flex-start;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .editorial-metrics-row,
+  .executives-grid,
+  .executive-card,
+  .leader-dual-grid {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
   .editorial-left-col {
@@ -907,34 +922,58 @@ const HEAD_STYLES = `
 
   .leader-dual-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: clamp(1.5rem, 3vw, 2rem);
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 3.5vw, 3rem);
+  }
+
+  @media (max-width: 767px) {
+    .leader-dual-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+    }
   }
 
   .leader-item-with-avatar {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.2rem !important;
+  }
+
+  @media (max-width: 479px) {
+    .leader-item-with-avatar {
+      gap: 1rem !important;
+    }
   }
 
   .leader-avatar-md {
-    width: clamp(75px, 9vw, 90px);
-    height: clamp(75px, 9vw, 90px);
-    border-radius: 6px;
-    object-fit: cover;
-    object-position: center top;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-    flex-shrink: 0;
+    width: clamp(75px, 9vw, 90px) !important;
+    height: clamp(75px, 9vw, 90px) !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+    min-width: 75px !important;
+    min-height: 75px !important;
+    border-radius: 8px !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    transition: transform 0.3s ease, border-color 0.3s ease !important;
+  }
+
+  .leader-avatar-md:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.45) !important;
   }
 
   .sub-role-label {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    text-transform: uppercase;
+    font-size: 0.75rem !important;
+    letter-spacing: 2px !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    font-weight: 600 !important;
+    margin: 0 0 0.35rem 0 !important;
+    text-transform: uppercase !important;
   }
 
   .leader-name {
@@ -955,10 +994,61 @@ const HEAD_STYLES = `
   }
 
   .leader-links-row {
-    display: flex;
-    gap: clamp(1rem, 2vw, 1.8rem);
+    display: flex !important;
+    gap: 0.6rem !important;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 0.6rem !important;
+  }
+
+  /* Modern Circular Social Icon Buttons */
+  .social-icon-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .social-icon-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+    fill: currentColor !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .social-icon-btn:hover {
+    transform: translateY(-2px) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .social-icon-btn:hover svg {
+    transform: scale(1.1) !important;
+  }
+
+  .social-icon-btn.github:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.65) !important;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .social-icon-btn.linkedin:hover {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.15) !important;
+    border-color: rgba(56, 189, 248, 0.6) !important;
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.35) !important;
   }
 
   .editorial-dot-link {
@@ -1341,11 +1431,12 @@ const PROJECT_DATA = `{
       "animating": false,
       "isMask": 0,
       "compiledFragmentShaders": [
-        "#version 300 es\\nprecision highp float;\\nprecision highp int;in vec2 vTextureCoord;\\nin vec3 vVertexPosition;uniform sampler2D uTexture;\\nuniform sampler2D uPingPongTexture;\\nvec3 blend (int blendMode, vec3 src, vec3 dst) {\\nreturn src + dst;\\n}uvec2 pcg2d(uvec2 v) {\\nv = v * 1664525u + 1013904223u;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nv ^= v >> 16;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nreturn v;\\n}float randFibo(vec2 p) {\\nuvec2 v = floatBitsToUint(p);\\nv = pcg2d(v);\\nuint r = v.x ^ v.y;\\nreturn float(r) / float(0xffffffffu);\\n}const float PI = 3.1415926;out vec4 fragColor;vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}void main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);\\nvec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;if(1 > 0) {\\nvec3 blendedRgb = blend(1, color.rgb + dither, bg.rgb);\\nfragColor = vec4(mix(bg.rgb, blendedRgb, mouseTrail.z), 1.0);\\n} else {\\nfragColor = mix(bg, color, mouseTrail.z);\\n}\\n}",
-        "#version 300 es\\nprecision highp float;in vec3 vVertexPosition;\\nin vec2 vTextureCoord;uniform sampler2D uPingPongTexture;\\nuniform vec2 uPreviousMousePos;\\nuniform float uTime;uniform vec2 uMousePos;\\nuniform vec2 uResolution;const float PI = 3.1415926;\\nconst float TWOPI = 6.2831852;out vec4 fragColor;vec3 hsv2rgb(vec3 c) {\\nvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\\nvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\\nreturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\\n}vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}mat2 rot(float a) {\\nreturn mat2(cos(a), -sin(a), sin(a), cos(a));\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}vec2 liquify(vec2 st, vec2 dir) {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nst.x *= aspectRatio;\\nfloat amplitude = 0.0025;\\nfloat freq = 6.;\\nfor (float i = 1.0; i <= 5.0; i++) {\\nst = st * rot(i / 5.0 * PI * 2.0);\\nst += vec2(\\namplitude * cos(i * freq * st.y + uTime * 0.02 * dir.x),\\namplitude * sin(i * freq * st.x + uTime * 0.02 * dir.y)\\n);\\n}\\nst.x /= aspectRatio;\\nreturn st;\\n}vec3 calculateTrailContribution(vec2 mousePos, vec2 prevMousePos, vec2 uv, vec2 correctedUv, float aspectRatio, float radius) {\\nvec2 dir = (mousePos - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat angle = atan(dir.y, dir.x);\\nif (angle < 0.0) angle += TWOPI;\\nvec2 mouseVec = mousePos - prevMousePos;\\nfloat mouseLen = length(mouseVec);\\nvec2 mouseDir = mouseLen > 0.0 ? mouseVec / mouseLen : vec2(0.0);\\nvec2 posToUv = (correctedUv - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat projection = clamp(dot(posToUv, mouseDir * vec2(aspectRatio, 1.0)), 0.0, mouseLen);\\nfloat invRadius = radius > 0.0 ? 1.0 / radius : 0.0;\\nfloat trailStrength = min(1.0, invRadius * (strength * (1.0 - 0.5) * 0.5));\\nreturn trailStrength;\\n}\\nvoid main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);\\nvec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;\\nfragColor = mix(bg, color, strength * mouseTrail.z * 0.5);\\n}",
+        "#version 300 es\\nprecision highp float;\\nprecision highp int;in vec2 vTextureCoord;\\nin vec3 vVertexPosition;uniform sampler2D uTexture;\\nuniform sampler2D uPingPongTexture;\\nvec3 blend (int blendMode, vec3 src, vec3 dst) {\\nreturn src + dst;\\n}uvec2 pcg2d(uvec2 v) {\\nv = v * 1664525u + 1013904223u;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nv ^= v >> 16;\\nv.x += v.y * v.y * 1664525u + 1013904223u;\\nv.y += v.x * v.x * 1664525u + 1013904223u;\\nreturn v;\\n}float randFibo(vec2 p) {\\nuvec2 v = floatBitsToUint(p);\\nv = pcg2d(v);\\nuint r = v.x ^ v.y;\\nreturn float(r) / float(0xffffffffu);\\n}const float PI = 3.1415926;out vec4 fragColor;vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}void main() {\\nvec2 uv = vTextureCoord;\\nvec2 pingpongUv = uv;vec3 mouseRgb = texture(uPingPongTexture, pingpongUv).rgb;\\nvec3 mouseTrail = rgb2hsv(mouseRgb);\\nfloat angle = mouseTrail.x;\\nfloat strength = mouseTrail.z * (1.0000 * 5.0);vec2 direction = angleToDir(angle);vec4 bg = texture(uTexture, uv - (direction * 0.1 * strength * 0.0000));\\nvec4 color = vec4(0,0,0,1);color.rgb = vec3(strength * mix(mouseRgb, vec3(0, 0, 0), 0.5000));\\nfloat dither = (randFibo(gl_FragCoord.xy) - 0.5) / 255.0;if(1 > 0) {\\nvec3 blendedRgb = blend(1, color.rgb + dither, bg.rgb);\\nfragColor = vec4(mix(bg.rgb, blendedRgb, mouseTrail.z), 1.0);\\n} else {\\nfragColor = mix(bg, color, mouseTrail.z);\\n}\\n}",
+        "#version 300 es\\nprecision highp float;in vec3 vVertexPosition;\\nin vec2 vTextureCoord;uniform sampler2D uPingPongTexture;\\nuniform vec2 uPreviousMousePos;\\nuniform float uTime;uniform vec2 uMousePos;\\nuniform vec2 uResolution;const float PI = 3.1415926;\\nconst float TWOPI = 6.2831852;out vec4 fragColor;vec3 hsv2rgb(vec3 c) {\\nvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\\nvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\\nreturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\\n}vec3 rgb2hsv(vec3 c) {\\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));float d = q.x - min(q.w, q.y);\\nfloat e = 1.0e-10;\\nreturn vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\\n}mat2 rot(float a) {\\nreturn mat2(cos(a), -sin(a), sin(a), cos(a));\\n}vec2 angleToDir(float angle) {\\nfloat rad = angle * 2.0 * PI;\\nreturn vec2(cos(rad), sin(rad));\\n}vec2 liquify(vec2 st, vec2 dir) {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nst.x *= aspectRatio;\\nfloat amplitude = 0.0025;\\nfloat freq = 6.;\\nfor (float i = 1.0; i <= 5.0; i++) {\\nst = st * rot(i / 5.0 * PI * 2.0);\\nst += vec2(\\namplitude * cos(i * freq * st.y + uTime * 0.02 * dir.x),\\namplitude * sin(i * freq * st.x + uTime * 0.02 * dir.y)\\n);\\n}\\nst.x /= aspectRatio;\\nreturn st;\\n}vec3 calculateTrailContribution(vec2 mousePos, vec2 prevMousePos, vec2 uv, vec2 correctedUv, float aspectRatio, float radius) {\\nvec2 dir = (mousePos - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat angle = atan(dir.y, dir.x);\\nif (angle < 0.0) angle += TWOPI;\\nvec2 mouseVec = mousePos - prevMousePos;\\nfloat mouseLen = length(mouseVec);\\nvec2 mouseDir = mouseLen > 0.0 ? mouseVec / mouseLen : vec2(0.0);\\nvec2 posToUv = (correctedUv - prevMousePos) * vec2(aspectRatio, 1.0);\\nfloat projection = clamp(dot(posToUv, mouseDir * vec2(aspectRatio, 1.0)), 0.0, mouseLen * aspectRatio);\\nvec2 closestPoint = prevMousePos * vec2(aspectRatio, 1.0) + mouseDir * vec2(aspectRatio, 1.0) * projection;\\nfloat distanceToLine = distance(correctedUv, closestPoint);\\nfloat s = (1.0 + radius)/(distanceToLine + radius) * radius;\\nvec3 color = vec3(angle / TWOPI, 1.0, 1.0);\\nvec3 pointColor = hsv2rgb(color);\\npointColor = pow(pointColor, vec3(2.2));\\nfloat intensity = pow(s, 10.0 * (1. - 0.3000 + 0.1));\\nreturn pointColor * intensity;\\n}void main() {\\nfloat aspectRatio = uResolution.x / uResolution.y;\\nvec2 uv = vTextureCoord;\\nvec2 correctedUv = (uv) * vec2(aspectRatio, 1.0);vec3 lastFrameColor = texture(uPingPongTexture, uv).rgb;\\nvec3 lastFrameColorGamma = pow(lastFrameColor, vec3(2.2));\\nvec3 hsv = rgb2hsv(lastFrameColor);\\nvec3 hsvGamma = rgb2hsv(lastFrameColorGamma);\\nvec2 prevDir = angleToDir(hsv.x);\\nfloat prevStrength = hsvGamma.z;\\nvec2 dir = (uMousePos - uPreviousMousePos) * vec2(aspectRatio, 1.0);\\nfloat dist = length(dir);\\nfloat blurAmount = 0.03 * prevStrength;\\nuv = uv - prevDir * blurAmount;\\nuv = mix(uv, liquify(uv - prevDir * 0.005, prevDir), (1. - prevStrength) * 0.2300);\\nlastFrameColor = texture(uPingPongTexture, uv).rgb;\\nlastFrameColor = pow(lastFrameColor, vec3(2.2));\\nint numPoints = int(max(12.0, dist * 24.0));\\nfloat speedFactor = clamp(dist, 0.7, 1.3);\\nfloat radius = mix(0.1, 0.7, 0.3100 * speedFactor);\\nvec3 trailColor = vec3(0.0);\\nint iter = min(numPoints, 24);\\nfor (int i = 0; i <= iter; i++) {\\nfloat t = float(i) / float(numPoints);\\nvec2 interpPos = mix(uPreviousMousePos, uMousePos, t);\\nvec2 prevInterpPos = i > 0 ? mix(uPreviousMousePos, uMousePos, float(i-1) / float(numPoints)) : uPreviousMousePos;\\ntrailColor += calculateTrailContribution(interpPos, prevInterpPos, uv, correctedUv, aspectRatio, radius);\\n}\\ntrailColor = trailColor / float(min(numPoints, 50) + 1);\\nvec3 blurredLastFrame = vec3(0.0);\\nfloat clampedDist = clamp(length(trailColor) * dist, 0.0, 1.0);\\nfloat blurRadius = 0.005;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(blurRadius, 0.0)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(-blurRadius, 0.0)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(0.0, blurRadius)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += pow(texture(uPingPongTexture, uv + vec2(0.0, -blurRadius)).rgb, vec3(2.2)) * 0.2;\\nblurredLastFrame += lastFrameColor * 0.2;\\nblurredLastFrame *= pow(0.8000, 0.2);\\nvec3 draw = mix(blurredLastFrame, trailColor, clampedDist);\\ndraw = pow(draw, vec3(1.0/2.2));\\ndraw.r = max(0.0, draw.r - 0.01);\\ndraw.g = max(0.0, draw.g - 0.01);\\ndraw.b = max(0.0, draw.b - 0.01);\\nfragColor = vec4(draw, 1.0);\\n}"
       ],
       "compiledVertexShaders": [
-        "#version 300 es\\nprecision mediump float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;\\nuniform mat4 uTextureMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = (uTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;\\nvTextureCoord = aTextureCoord;\\n}"
+        "#version 300 es\\nprecision highp float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;\\nuniform mat4 uTextureMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = (uTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;\\n}",
+        "#version 300 es\\nprecision highp float;in vec3 aVertexPosition;\\nin vec2 aTextureCoord;uniform mat4 uMVMatrix;\\nuniform mat4 uPMatrix;out vec2 vTextureCoord;\\nout vec3 vVertexPosition;void main() {\\ngl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);\\nvTextureCoord = aTextureCoord;\\n}"
       ],
       "data": {
         "depth": false,
@@ -1389,7 +1480,6 @@ export default function TeamsPage() {
     styleEl.id = "singularityTeamsStyles";
     styleEl.textContent = HEAD_STYLES;
     document.head.appendChild(styleEl);
-
     const existingData = document.getElementById("singularityProjectData");
     if (existingData) existingData.remove();
 
@@ -1431,20 +1521,29 @@ export default function TeamsPage() {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
-        if (ix2) ix2.init();
+        if (ix2) { try { ix2.destroy(); } catch (e) {} ix2.init(); }
       
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
       }
 
       if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
-        (window as any).UnicornStudio.init();
+        try {
+          const initPromise = (window as any).UnicornStudio.init();
+          if (initPromise && typeof initPromise.catch === "function") {
+            initPromise.catch((e: any) => console.warn("UnicornStudio init note:", e));
+          }
+        } catch (e) {
+          console.warn("UnicornStudio init catch:", e);
+        }
         let resizeTimer: any;
         resizeHandler = function() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function() {
             if ((window as any).UnicornStudio && (window as any).UnicornStudio.init) {
-              (window as any).UnicornStudio.init();
+              try {
+                (window as any).UnicornStudio.init();
+              } catch (e) {}
             }
           }, 100);
         };
@@ -1487,6 +1586,10 @@ export default function TeamsPage() {
         const SplitText = (window as any).SplitText;
         gsap.registerPlugin(ScrollTrigger);
 
+        if ((window as any).__lenisInstance) {
+          (window as any).__lenisInstance.on('scroll', ScrollTrigger.update);
+        }
+
         if (SplitText) {
           const splitTitles = document.querySelectorAll(".split-reveal");
           splitTitles.forEach((title) => {
@@ -1494,48 +1597,35 @@ export default function TeamsPage() {
               const split = new SplitText(title, { type: "words,chars", wordsClass: "split-word" });
               gsap.from(split.chars, {
                 opacity: 0,
-                y: 40,
-                rotateX: -45,
-                stagger: 0.02,
-                duration: 1,
-                ease: "power3.out",
+                y: 24,
+                stagger: 0.015,
+                duration: 0.8,
+                ease: "power2.out",
                 scrollTrigger: {
                   trigger: title,
-                  start: "top 88%",
+                  start: "top 92%",
                   toggleActions: "play none none none"
                 }
               });
             } catch (e) {
-              gsap.fromTo(title, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+              gsap.fromTo(title, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" });
             }
           });
         }
 
-        const fadeElements = document.querySelectorAll("[data-scroll-fade]");
-        fadeElements.forEach((el) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 30 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.85,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 88%",
-                toggleActions: "play none none none"
-              }
-            }
-          );
-        });
+        ScrollTrigger.refresh();
+
+        // Delayed refresh after WebPreload exits (2.7s) to recalculate positions
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 3200);
       }
 
     })();
 
     return () => {
-      styleEl.remove();
-      dataScript.remove();
+      if (styleEl.parentNode) styleEl.remove();
+      if (dataScript.parentNode) dataScript.remove();
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
         try { (window as any).__lenisInstance.destroy(); } catch (e) {}
@@ -1549,10 +1639,13 @@ export default function TeamsPage() {
   }, []);
 
   return (
-    <main
-      ref={containerRef}
-      suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: BODY_HTML }}
-    />
+    <>
+      <style id="singularityTeamsStylesSSR" dangerouslySetInnerHTML={{ __html: HEAD_STYLES }} />
+      <main
+        ref={containerRef}
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: BODY_HTML }}
+      />
+    </>
   );
 }

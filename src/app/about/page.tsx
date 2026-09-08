@@ -243,25 +243,20 @@ const BODY_HTML = `
                       <p class="leader-title">Founder &amp; Lead</p>
                     </div>
                     <div class="leader-links-row">
-                      <a href="https://jayanthramakrishnan.online" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>Website &nearr;</span>
+                      <a href="https://jayanthramakrishnan.online" target="_blank" rel="noopener noreferrer" class="social-icon-btn website" title="Website" aria-label="Website">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                       </a>
-                      <a href="https://www.linkedin.com/in/jayanth-ramakrishnan/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>LinkedIn &nearr;</span>
+                      <a href="https://www.linkedin.com/in/jayanth-ramakrishnan/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       </a>
-                      <a href="https://x.com/jayanth_in" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>X / Twitter &nearr;</span>
+                      <a href="https://x.com/jayanth_in" target="_blank" rel="noopener noreferrer" class="social-icon-btn x" title="X (Twitter)" aria-label="X (Twitter)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                       </a>
-                      <a href="https://www.instagram.com/thejayanthramakrishnan/" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>Instagram &nearr;</span>
+                      <a href="https://www.instagram.com/thejayanthramakrishnan/" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram" aria-label="Instagram">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                       </a>
-                      <a href="https://github.com/jayanthoffl" target="_blank" rel="noopener noreferrer" class="editorial-dot-link">
-                        <div class="social-circle-small"></div>
-                        <span>GitHub &nearr;</span>
+                      <a href="https://github.com/jayanthoffl" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub" aria-label="GitHub">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                       </a>
                     </div>
                   </div>
@@ -996,6 +991,78 @@ const HEAD_STYLES = `
     flex-shrink: 0;
   }
 
+  /* MODERN SOCIAL ICON BUTTONS */
+  .social-icon-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .social-icon-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+    fill: currentColor !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .social-icon-btn:hover {
+    transform: translateY(-2px) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .social-icon-btn:hover svg {
+    transform: scale(1.1) !important;
+  }
+
+  .social-icon-btn.github:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.65) !important;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .social-icon-btn.linkedin:hover {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.15) !important;
+    border-color: rgba(56, 189, 248, 0.6) !important;
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.35) !important;
+  }
+
+  .social-icon-btn.twitter:hover,
+  .social-icon-btn.x:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.65) !important;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .social-icon-btn.instagram:hover {
+    color: #f43f5e !important;
+    background: rgba(244, 63, 94, 0.15) !important;
+    border-color: rgba(244, 63, 94, 0.6) !important;
+    box-shadow: 0 0 14px rgba(244, 63, 94, 0.35) !important;
+  }
+
+  .social-icon-btn.website:hover {
+    color: #34d399 !important;
+    background: rgba(52, 211, 153, 0.15) !important;
+    border-color: rgba(52, 211, 153, 0.6) !important;
+    box-shadow: 0 0 14px rgba(52, 211, 153, 0.35) !important;
+  }
+
   .leader-dual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1521,7 +1588,7 @@ export default function AboutPage() {
         (window as any).Webflow.destroy();
         (window as any).Webflow.ready();
         const ix2 = (window as any).Webflow.require('ix2');
-        if (ix2) ix2.init();
+        if (ix2) { try { ix2.destroy(); } catch (e) {} ix2.init(); }
 
         document.dispatchEvent(new Event('readystatechange'));
         window.dispatchEvent(new Event('load'));
@@ -1624,25 +1691,33 @@ export default function AboutPage() {
     })();
 
     return () => {
-      styleEl.remove();
-      dataScript.remove();
+      // Destroy Webflow IX2 before React unmounts the DOM
+      if ((window as any).Webflow) {
+        try { (window as any).Webflow.destroy(); } catch (e) {}
+      }
+      if ((window as any).ScrollTrigger) {
+        try { (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill()); } catch (e) {}
+      }
       if (rafId) cancelAnimationFrame(rafId);
       if ((window as any).__lenisInstance) {
-        try { (window as any).__lenisInstance.destroy(); } catch (e) { }
+        try { (window as any).__lenisInstance.destroy(); } catch (e) {}
         (window as any).__lenisInstance = null;
       }
       if (resizeHandler) window.removeEventListener("resize", resizeHandler);
-      if ((window as any).ScrollTrigger) {
-        (window as any).ScrollTrigger.getAll().forEach((t: any) => t.kill());
-      }
+      // Guard DOM removal — nodes may already be detached by React
+      try { if (styleEl.parentNode) styleEl.remove(); } catch (e) {}
+      try { if (dataScript.parentNode) dataScript.remove(); } catch (e) {}
     };
   }, []);
 
   return (
-    <main
-      ref={containerRef}
-      suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: BODY_HTML }}
-    />
+    <>
+      <style id="singularityAboutStylesSSR" dangerouslySetInnerHTML={{ __html: HEAD_STYLES }} />
+      <main
+        ref={containerRef}
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: BODY_HTML }}
+      />
+    </>
   );
 }
