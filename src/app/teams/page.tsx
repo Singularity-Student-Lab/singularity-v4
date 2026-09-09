@@ -415,7 +415,7 @@ const BODY_HTML = `
               <div class="editorial-leader-row">
                 <p class="leader-category-tag">LAB 06 // AGASTYA</p>
                 
-                <div class="executives-grid single-exec">
+                <div class="executives-grid">
                   <div class="executive-card">
                     <img
                       src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/agastya.png"
@@ -426,6 +426,19 @@ const BODY_HTML = `
                     />
                     <div class="executive-info">
                       <h3 class="executive-name">Agastya Pandey</h3>
+                      <p class="executive-role" style="color: #FDBA74;">Executive</p>
+                    </div>
+                  </div>
+                  <div class="executive-card">
+                    <img
+                      src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787073655/team/placeholder.png"
+                      alt="Tarun Karma"
+                      class="executive-avatar"
+                      style="border-color: rgba(249, 115, 22, 0.4);"
+                      loading="lazy"
+                    />
+                    <div class="executive-info">
+                      <h3 class="executive-name">Tarun Karma</h3>
                       <p class="executive-role" style="color: #FDBA74;">Executive</p>
                     </div>
                   </div>
