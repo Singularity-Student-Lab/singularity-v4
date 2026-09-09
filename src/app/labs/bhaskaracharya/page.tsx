@@ -286,33 +286,7 @@ const BODY_HTML = `
 
                 </div>
 
-                <div class="editorial-hairline"></div>
 
-                <div class="editorial-leader-row">
-                  <p class="leader-category-tag" style="color: #34D399;">LAB ADVISORY</p>
-
-                  <div class="leader-dual-grid">
-                    <div class="leader-item-with-avatar">
-                      <img
-                        src="https://res.cloudinary.com/dtlder1hw/image/upload/v1787501604/team/anwar.jpg"
-                        alt="Anwar Faizaan Reza"
-                        class="leader-avatar-md"
-                        loading="lazy"
-                      />
-                      <div>
-                        <p class="sub-role-label">ADVISOR</p>
-                        <h3 class="leader-name">Anwar Faizaan Reza</h3>
-                        <p class="leader-title">Advisor</p>
-                        <div class="leader-links-row" style="margin-top: 0.5rem;">
-                          <a href="https://www.linkedin.com/in/anwar-faizaan-reza-265188432" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
 
                <div class="editorial-hairline"></div>
 
